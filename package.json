@@ -1,6 +1,6 @@
 {
   "name": "@admiral-io/sdk",
-  "version": "1.1.0",
+  "version": "0.0.1",
   "private": false,
   "description": "TypeScript client for Admiral API",
   "type": "module",
@@ -34,6 +34,10 @@
     "api-client"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DataliftHQ/admiral-ts"
+  },
   "engines": {
     "node": ">=22"
   },
