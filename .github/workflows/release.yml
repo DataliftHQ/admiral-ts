@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**/*.ts'
+      - '**/*.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
   workflow_dispatch:
 
 permissions:
