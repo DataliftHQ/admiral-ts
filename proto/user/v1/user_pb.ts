@@ -4,14 +4,20 @@
 
 import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
 import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { AccessToken } from "../../accesstoken/v1/accesstoken_pb";
+import { file_accesstoken_v1_accesstoken } from "../../accesstoken/v1/accesstoken_pb";
+import { file_authz_v1_annotations } from "../../authz/v1/annotations_pb";
+import { file_buf_validate_validate } from "../../buf/validate/validate_pb";
 import { file_google_api_annotations } from "../../google/api/annotations_pb";
+import type { Timestamp } from "@bufbuild/protobuf/wkt";
+import { file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file user/v1/user.proto.
  */
 export const file_user_v1_user: GenFile = /*@__PURE__*/
-  fileDesc("ChJ1c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEiEAoOR2V0VXNlclJlcXVlc3Qi5QEKD0dldFVzZXJSZXNwb25zZRIKCgJpZBgBIAEoCRIRCgl0ZW5hbnRfaWQYAiABKAkSDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsMnEKB1VzZXJBUEkSZgoHR2V0VXNlchIjLmFkbWlyYWwuYXBpLnVzZXIudjEuR2V0VXNlclJlcXVlc3QaJC5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXNwb25zZSIQgtPkkwIKEggvdjEvdXNlckK7AQoXY29tLmFkbWlyYWwuYXBpLnVzZXIudjFCCVVzZXJQcm90b1ABWiZnby5hZG1pcmFsLmlvL3Nkay9wcm90by91c2VyL3YxO3VzZXJ2MaICA0FBVaoCE0FkbWlyYWwuQXBpLlVzZXIuVjHKAhNBZG1pcmFsXEFwaVxVc2VyXFYx4gIfQWRtaXJhbFxBcGlcVXNlclxWMVxHUEJNZXRhZGF0YeoCFkFkbWlyYWw6OkFwaTo6VXNlcjo6VjFiBnByb3RvMw", [file_google_api_annotations]);
+  fileDesc("ChJ1c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEiEAoOR2V0VXNlclJlcXVlc3Qi5QEKD0dldFVzZXJSZXNwb25zZRIKCgJpZBgBIAEoCRIRCgl0ZW5hbnRfaWQYAiABKAkSDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsIoQBCiBDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIgCgxkaXNwbGF5X25hbWUYASABKAlCCrpIB3IFEAEY/wESDgoGc2NvcGVzGAIgAygJEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wInwKIUNyZWF0ZVBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIlgKH0xpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBhZ2VfdG9rZW4YAiABKAkSDgoGZmlsdGVyGAMgASgJInsKIExpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlEj4KDWFjY2Vzc190b2tlbnMYASADKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiOwodR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QSGgoIdG9rZW5faWQYASABKAlCCLpIBXIDsAEBIl8KHkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbiI+CiBSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIaCgh0b2tlbl9pZBgBIAEoCUIIukgFcgOwAQEiYgohUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlEj0KDGFjY2Vzc190b2tlbhgBIAEoCzInLmFkbWlyYWwuYXBpLmFjY2Vzc3Rva2VuLnYxLkFjY2Vzc1Rva2VuMuoGCgdVc2VyQVBJEmoKB0dldFVzZXISIy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXF1ZXN0GiQuYWRtaXJhbC5hcGkudXNlci52MS5HZXRVc2VyUmVzcG9uc2UiFIK1GACC0+STAgoSCC92MS91c2VyErgBChlDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5DcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuQ3JlYXRlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIiyCtRgOCgx0b2tlbnM6d3JpdGWC0+STAhQ6ASoiDy92MS91c2VyL3Rva2VucxKxAQoYTGlzdFBlcnNvbmFsQWNjZXNzVG9rZW5zEjQuYWRtaXJhbC5hcGkudXNlci52MS5MaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnNSZXF1ZXN0GjUuYWRtaXJhbC5hcGkudXNlci52MS5MaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnNSZXNwb25zZSIogrUYDQoLdG9rZW5zOnJlYWSC0+STAhESDy92MS91c2VyL3Rva2VucxK2AQoWR2V0UGVyc29uYWxBY2Nlc3NUb2tlbhIyLmFkbWlyYWwuYXBpLnVzZXIudjEuR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QaMy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZSIzgrUYDQoLdG9rZW5zOnJlYWSC0+STAhwSGi92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9EsoBChlSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5SZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIj6CtRgOCgx0b2tlbnM6d3JpdGWC0+STAiY6ASoiIS92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9L3Jldm9rZUK7AQoXY29tLmFkbWlyYWwuYXBpLnVzZXIudjFCCVVzZXJQcm90b1ABWiZnby5hZG1pcmFsLmlvL3Nkay9wcm90by91c2VyL3YxO3VzZXJ2MaICA0FBVaoCE0FkbWlyYWwuQXBpLlVzZXIuVjHKAhNBZG1pcmFsXEFwaVxVc2VyXFYx4gIfQWRtaXJhbFxBcGlcVXNlclxWMVxHUEJNZXRhZGF0YeoCFkFkbWlyYWw6OkFwaTo6VXNlcjo6VjFiBnByb3RvMw", [file_accesstoken_v1_accesstoken, file_authz_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_timestamp]);
 
 /**
  * GetUserRequest is the request message for GetUser.
@@ -43,7 +49,7 @@ export type GetUserResponse = Message<"admiral.api.user.v1.GetUserResponse"> & {
   id: string;
 
   /**
-   * The tenant/organization this user belongs to (UUID format).
+   * The tenant this user belongs to (UUID format).
    *
    * @generated from field: string tenant_id = 2;
    */
@@ -93,7 +99,226 @@ export const GetUserResponseSchema: GenMessage<GetUserResponse> = /*@__PURE__*/
   messageDesc(file_user_v1_user, 1);
 
 /**
- * UserAPI provides operations for retrieving user profile information.
+ * CreatePersonalAccessTokenRequest contains the parameters for creating a new PAT.
+ *
+ * @generated from message admiral.api.user.v1.CreatePersonalAccessTokenRequest
+ */
+export type CreatePersonalAccessTokenRequest = Message<"admiral.api.user.v1.CreatePersonalAccessTokenRequest"> & {
+  /**
+   * Human-readable name for the token (e.g., "postman-testing").
+   * Must be unique per user within the tenant.
+   *
+   * @generated from field: string display_name = 1;
+   */
+  displayName: string;
+
+  /**
+   * The scopes to grant this token. Must be valid scopes allowed for PATs.
+   *
+   * @generated from field: repeated string scopes = 2;
+   */
+  scopes: string[];
+
+  /**
+   * Optional expiration time. If unset, the token does not expire.
+   * Tenant policies may enforce a maximum lifetime.
+   *
+   * @generated from field: google.protobuf.Timestamp expires_at = 3;
+   */
+  expiresAt?: Timestamp;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.CreatePersonalAccessTokenRequest.
+ * Use `create(CreatePersonalAccessTokenRequestSchema)` to create a new message.
+ */
+export const CreatePersonalAccessTokenRequestSchema: GenMessage<CreatePersonalAccessTokenRequest> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 2);
+
+/**
+ * CreatePersonalAccessTokenResponse contains the newly created PAT.
+ *
+ * @generated from message admiral.api.user.v1.CreatePersonalAccessTokenResponse
+ */
+export type CreatePersonalAccessTokenResponse = Message<"admiral.api.user.v1.CreatePersonalAccessTokenResponse"> & {
+  /**
+   * The created token metadata.
+   *
+   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   */
+  accessToken?: AccessToken;
+
+  /**
+   * The raw token secret (e.g., "adm_pat_7kH3mNqR2xFb..."). This value is
+   * shown exactly once and cannot be retrieved again. Store it securely.
+   *
+   * @generated from field: string plain_text_token = 2;
+   */
+  plainTextToken: string;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.CreatePersonalAccessTokenResponse.
+ * Use `create(CreatePersonalAccessTokenResponseSchema)` to create a new message.
+ */
+export const CreatePersonalAccessTokenResponseSchema: GenMessage<CreatePersonalAccessTokenResponse> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 3);
+
+/**
+ * ListPersonalAccessTokensRequest contains pagination and filter parameters.
+ *
+ * @generated from message admiral.api.user.v1.ListPersonalAccessTokensRequest
+ */
+export type ListPersonalAccessTokensRequest = Message<"admiral.api.user.v1.ListPersonalAccessTokensRequest"> & {
+  /**
+   * Maximum number of tokens to return per page.
+   *
+   * @generated from field: int32 page_size = 1;
+   */
+  pageSize: number;
+
+  /**
+   * Opaque pagination token from a previous response.
+   *
+   * @generated from field: string page_token = 2;
+   */
+  pageToken: string;
+
+  /**
+   * Filter expression using the PEG filter DSL
+   * (e.g., `status = "active"` or `display_name = "ci-*"`).
+   *
+   * @generated from field: string filter = 3;
+   */
+  filter: string;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.ListPersonalAccessTokensRequest.
+ * Use `create(ListPersonalAccessTokensRequestSchema)` to create a new message.
+ */
+export const ListPersonalAccessTokensRequestSchema: GenMessage<ListPersonalAccessTokensRequest> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 4);
+
+/**
+ * ListPersonalAccessTokensResponse contains a page of PAT metadata.
+ *
+ * @generated from message admiral.api.user.v1.ListPersonalAccessTokensResponse
+ */
+export type ListPersonalAccessTokensResponse = Message<"admiral.api.user.v1.ListPersonalAccessTokensResponse"> & {
+  /**
+   * The list of tokens. Token secrets are never included.
+   *
+   * @generated from field: repeated admiral.api.accesstoken.v1.AccessToken access_tokens = 1;
+   */
+  accessTokens: AccessToken[];
+
+  /**
+   * Pagination token for the next page. Empty when there are no more results.
+   *
+   * @generated from field: string next_page_token = 2;
+   */
+  nextPageToken: string;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.ListPersonalAccessTokensResponse.
+ * Use `create(ListPersonalAccessTokensResponseSchema)` to create a new message.
+ */
+export const ListPersonalAccessTokensResponseSchema: GenMessage<ListPersonalAccessTokensResponse> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 5);
+
+/**
+ * GetPersonalAccessTokenRequest identifies a PAT to retrieve.
+ *
+ * @generated from message admiral.api.user.v1.GetPersonalAccessTokenRequest
+ */
+export type GetPersonalAccessTokenRequest = Message<"admiral.api.user.v1.GetPersonalAccessTokenRequest"> & {
+  /**
+   * The unique identifier of the token (UUID).
+   *
+   * @generated from field: string token_id = 1;
+   */
+  tokenId: string;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.GetPersonalAccessTokenRequest.
+ * Use `create(GetPersonalAccessTokenRequestSchema)` to create a new message.
+ */
+export const GetPersonalAccessTokenRequestSchema: GenMessage<GetPersonalAccessTokenRequest> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 6);
+
+/**
+ * GetPersonalAccessTokenResponse contains the requested PAT metadata.
+ *
+ * @generated from message admiral.api.user.v1.GetPersonalAccessTokenResponse
+ */
+export type GetPersonalAccessTokenResponse = Message<"admiral.api.user.v1.GetPersonalAccessTokenResponse"> & {
+  /**
+   * The token metadata. The token secret is never included.
+   *
+   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   */
+  accessToken?: AccessToken;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.GetPersonalAccessTokenResponse.
+ * Use `create(GetPersonalAccessTokenResponseSchema)` to create a new message.
+ */
+export const GetPersonalAccessTokenResponseSchema: GenMessage<GetPersonalAccessTokenResponse> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 7);
+
+/**
+ * RevokePersonalAccessTokenRequest identifies a PAT to revoke.
+ *
+ * @generated from message admiral.api.user.v1.RevokePersonalAccessTokenRequest
+ */
+export type RevokePersonalAccessTokenRequest = Message<"admiral.api.user.v1.RevokePersonalAccessTokenRequest"> & {
+  /**
+   * The unique identifier of the token to revoke (UUID).
+   *
+   * @generated from field: string token_id = 1;
+   */
+  tokenId: string;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.RevokePersonalAccessTokenRequest.
+ * Use `create(RevokePersonalAccessTokenRequestSchema)` to create a new message.
+ */
+export const RevokePersonalAccessTokenRequestSchema: GenMessage<RevokePersonalAccessTokenRequest> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 8);
+
+/**
+ * RevokePersonalAccessTokenResponse contains the revoked PAT metadata.
+ *
+ * @generated from message admiral.api.user.v1.RevokePersonalAccessTokenResponse
+ */
+export type RevokePersonalAccessTokenResponse = Message<"admiral.api.user.v1.RevokePersonalAccessTokenResponse"> & {
+  /**
+   * The token metadata with updated status.
+   *
+   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   */
+  accessToken?: AccessToken;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.RevokePersonalAccessTokenResponse.
+ * Use `create(RevokePersonalAccessTokenResponseSchema)` to create a new message.
+ */
+export const RevokePersonalAccessTokenResponseSchema: GenMessage<RevokePersonalAccessTokenResponse> = /*@__PURE__*/
+  messageDesc(file_user_v1_user, 9);
+
+/**
+ * UserAPI provides operations for the currently authenticated user, including
+ * profile retrieval and Personal Access Token (PAT) management.
+ *
+ * PATs allow users to authenticate with the Admiral API from scripts, CI
+ * pipelines, and other programmatic contexts. Each PAT has user-selected
+ * scopes and an optional expiration.
  *
  * @generated from service admiral.api.user.v1.UserAPI
  */
@@ -108,6 +333,59 @@ export const UserAPI: GenService<{
     methodKind: "unary";
     input: typeof GetUserRequestSchema;
     output: typeof GetUserResponseSchema;
+  },
+  /**
+   * CreatePersonalAccessToken creates a new PAT for the authenticated user.
+   * The response includes the raw token secret, which is shown exactly once
+   * and cannot be retrieved again.
+   *
+   * Scope: `tokens:write`
+   *
+   * @generated from rpc admiral.api.user.v1.UserAPI.CreatePersonalAccessToken
+   */
+  createPersonalAccessToken: {
+    methodKind: "unary";
+    input: typeof CreatePersonalAccessTokenRequestSchema;
+    output: typeof CreatePersonalAccessTokenResponseSchema;
+  },
+  /**
+   * ListPersonalAccessTokens returns a paginated list of the authenticated
+   * user's PATs. Token secrets are never included.
+   *
+   * Scope: `tokens:read`
+   *
+   * @generated from rpc admiral.api.user.v1.UserAPI.ListPersonalAccessTokens
+   */
+  listPersonalAccessTokens: {
+    methodKind: "unary";
+    input: typeof ListPersonalAccessTokensRequestSchema;
+    output: typeof ListPersonalAccessTokensResponseSchema;
+  },
+  /**
+   * GetPersonalAccessToken retrieves a single PAT by ID.
+   * Returns metadata only — the token secret is never included.
+   *
+   * Scope: `tokens:read`
+   *
+   * @generated from rpc admiral.api.user.v1.UserAPI.GetPersonalAccessToken
+   */
+  getPersonalAccessToken: {
+    methodKind: "unary";
+    input: typeof GetPersonalAccessTokenRequestSchema;
+    output: typeof GetPersonalAccessTokenResponseSchema;
+  },
+  /**
+   * RevokePersonalAccessToken permanently revokes a PAT. The token becomes
+   * immediately unusable and cannot be restored.
+   *
+   * Scope: `tokens:write`
+   *
+   * @generated from rpc admiral.api.user.v1.UserAPI.RevokePersonalAccessToken
+   */
+  revokePersonalAccessToken: {
+    methodKind: "unary";
+    input: typeof RevokePersonalAccessTokenRequestSchema;
+    output: typeof RevokePersonalAccessTokenResponseSchema;
   },
 }> = /*@__PURE__*/
   serviceDesc(file_user_v1_user, 0);

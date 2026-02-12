@@ -19,7 +19,11 @@ const client = createClient({
 });
 
 // Access services via properties
+// await client.agent.methodName({ ... });
+// await client.cluster.methodName({ ... });
 // await client.healthcheck.methodName({ ... });
+// await client.runner.methodName({ ... });
+// await client.serviceAccount.methodName({ ... });
 // await client.user.methodName({ ... });
 ```
 
@@ -27,7 +31,11 @@ const client = createClient({
 
 | Service | Property | Description |
 |---------|----------|-------------|
+| AgentAPI | `client.agent` | Agent service |
+| ClusterAPI | `client.cluster` | Cluster service |
 | HealthcheckAPI | `client.healthcheck` | Healthcheck service |
+| RunnerAPI | `client.runner` | Runner service |
+| ServiceAccountAPI | `client.serviceAccount` | ServiceAccount service |
 | UserAPI | `client.user` | User service |
 
 ## Example
@@ -49,7 +57,7 @@ async function main() {
 
   // Call a service method
   try {
-    const response = await client.healthcheck.listMethod({});
+    const response = await client.agent.listMethod({});
     console.log(response);
   } catch (err) {
     console.error("Request failed:", err);
