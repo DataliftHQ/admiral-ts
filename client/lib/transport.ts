@@ -1,14 +1,15 @@
 import { createConnectTransport } from "@connectrpc/connect-node";
 import type { Interceptor, Transport } from "@connectrpc/connect";
-import type { ClientConfig } from "./config.js";
+import type { ClientConfig, AuthScheme } from "./config.js";
 import { resolveConfig } from "./config.js";
 
 /**
  * Creates an authentication interceptor that adds the Authorization header.
  */
-function createAuthInterceptor(authToken: string): Interceptor {
+function createAuthInterceptor(authToken: string, scheme: AuthScheme): Interceptor {
+  const prefix = scheme === "token" ? "Token" : "Bearer";
   return (next) => async (req) => {
-    req.header.set("Authorization", `Bearer ${authToken}`);
+    req.header.set("Authorization", `${prefix} ${authToken}`);
     return next(req);
   };
 }
@@ -64,7 +65,7 @@ export function createTransport(config: ClientConfig): Transport {
   // Add auth interceptor if token provided
   // Note: Token validation is lazy - use client.validateToken() to check
   if (resolved.authToken) {
-    interceptors.push(createAuthInterceptor(resolved.authToken));
+    interceptors.push(createAuthInterceptor(resolved.authToken, resolved.authScheme));
   }
 
   return createConnectTransport({

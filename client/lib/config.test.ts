@@ -84,6 +84,40 @@ describe("resolveConfig", () => {
   });
 });
 
+  it("defaults authScheme to bearer", () => {
+    const config: ClientConfig = {
+      authToken: "test-token",
+    };
+
+    const resolved = resolveConfig(config);
+    expect(resolved.authScheme).toBe("bearer");
+  });
+
+  it("preserves provided authScheme", () => {
+    const config: ClientConfig = {
+      authToken: "test-token",
+      authScheme: "token",
+    };
+
+    const resolved = resolveConfig(config);
+    expect(resolved.authScheme).toBe("token");
+  });
+
+  it("defaults logger to noopLogger", () => {
+    const config: ClientConfig = {
+      authToken: "test-token",
+    };
+
+    const resolved = resolveConfig(config);
+    expect(resolved.logger).toBeDefined();
+    // Should not throw
+    resolved.logger.debug("test");
+    resolved.logger.info("test");
+    resolved.logger.warn("test");
+    resolved.logger.error("test");
+  });
+});
+
 describe("DEFAULT_CONFIG", () => {
   it("has expected default values", () => {
     expect(DEFAULT_CONFIG.baseUrl).toBe("https://api.admiral.io");

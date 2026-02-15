@@ -2,7 +2,10 @@
 export { createClient, type Client } from "./client.js";
 
 // Configuration
-export { type ClientConfig, DEFAULT_CONFIG, resolveConfig } from "./lib/config.js";
+export { type ClientConfig, type AuthScheme, DEFAULT_CONFIG, resolveConfig } from "./lib/config.js";
+
+// Logging
+export { type Logger, type LogLevel, noopLogger, createConsoleLogger } from "./lib/logger.js";
 
 // Token utilities
 export {

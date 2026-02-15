@@ -1,6 +1,7 @@
 import type { Transport, Client as ConnectClient } from "@connectrpc/connect";
 import { createClient as createConnectClient } from "@connectrpc/connect";
 import type { ClientConfig } from "./lib/config.js";
+import { resolveConfig } from "./lib/config.js";
 import { createTransport } from "./lib/transport.js";
 import { validateAuthToken, getTokenInfo, type JWTClaims } from "./lib/auth.js";
 import { AgentAPI } from "../proto/agent/v1/agent_pb.js";
@@ -76,7 +77,10 @@ export interface Client {
  * ```
  */
 export function createClient(config: ClientConfig): Client {
+  const resolved = resolveConfig(config);
   const transport = createTransport(config);
+
+  resolved.logger.debug("connected to Admiral API", resolved.baseUrl);
 
   // Lazily initialized service clients
   let _agent: AgentClient | undefined;
