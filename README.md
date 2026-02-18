@@ -19,11 +19,10 @@ const client = createClient({
 });
 
 // Access services via properties
-// await client.agent.methodName({ ... });
+// await client.application.methodName({ ... });
 // await client.cluster.methodName({ ... });
+// await client.environment.methodName({ ... });
 // await client.healthcheck.methodName({ ... });
-// await client.runner.methodName({ ... });
-// await client.serviceAccount.methodName({ ... });
 // await client.user.methodName({ ... });
 ```
 
@@ -31,11 +30,10 @@ const client = createClient({
 
 | Service | Property | Description |
 |---------|----------|-------------|
-| AgentAPI | `client.agent` | Agent service |
+| ApplicationAPI | `client.application` | Application service |
 | ClusterAPI | `client.cluster` | Cluster service |
+| EnvironmentAPI | `client.environment` | Environment service |
 | HealthcheckAPI | `client.healthcheck` | Healthcheck service |
-| RunnerAPI | `client.runner` | Runner service |
-| ServiceAccountAPI | `client.serviceAccount` | ServiceAccount service |
 | UserAPI | `client.user` | User service |
 
 ## Example
@@ -57,7 +55,7 @@ async function main() {
 
   // Call a service method
   try {
-    const response = await client.agent.listMethod({});
+    const response = await client.application.listMethod({});
     console.log(response);
   } catch (err) {
     console.error("Request failed:", err);

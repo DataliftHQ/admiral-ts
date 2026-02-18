@@ -4,9 +4,9 @@
 
 import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
 import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
-import type { AccessToken } from "../../accesstoken/v1/accesstoken_pb";
-import { file_accesstoken_v1_accesstoken } from "../../accesstoken/v1/accesstoken_pb";
-import { file_authz_v1_annotations } from "../../authz/v1/annotations_pb";
+import { file_admiral_common_v1_annotations } from "../../admiral/common/v1/annotations_pb";
+import type { AccessToken } from "../../admiral/common/v1/token_pb";
+import { file_admiral_common_v1_token } from "../../admiral/common/v1/token_pb";
 import { file_buf_validate_validate } from "../../buf/validate/validate_pb";
 import { file_google_api_annotations } from "../../google/api/annotations_pb";
 import type { FieldMask, Timestamp } from "@bufbuild/protobuf/wkt";
@@ -17,7 +17,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file cluster/v1/cluster.proto.
  */
 export const file_cluster_v1_cluster: GenFile = /*@__PURE__*/
-  fileDesc("ChhjbHVzdGVyL3YxL2NsdXN0ZXIucHJvdG8SFmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEigwMKB0NsdXN0ZXISFAoCaWQYASABKAlCCLpIBXIDsAEBEhsKCXRlbmFudF9pZBgCIAEoCUIIukgFcgOwAQESIAoMZGlzcGxheV9uYW1lGAMgASgJQgq6SAdyBRABGP8BEjsKBmxhYmVscxgEIAMoCzIrLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3Rlci5MYWJlbHNFbnRyeRITCgtjbHVzdGVyX3VpZBgFIAEoCRJCCg1oZWFsdGhfc3RhdHVzGAYgASgOMisuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVySGVhbHRoU3RhdHVzEi4KCmNyZWF0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEimAMKDUNsdXN0ZXJTdGF0dXMSEwoLazhzX3ZlcnNpb24YASABKAkSEgoKbm9kZV9jb3VudBgCIAEoBRITCgtub2Rlc19yZWFkeRgDIAEoBRIUCgxwb2RfY2FwYWNpdHkYBCABKAUSEQoJcG9kX2NvdW50GAUgASgFEhQKDHBvZHNfcnVubmluZxgGIAEoBRIUCgxwb2RzX3BlbmRpbmcYByABKAUSEwoLcG9kc19mYWlsZWQYCCABKAUSHwoXY3B1X2NhcGFjaXR5X21pbGxpY29yZXMYCSABKAMSGwoTY3B1X3VzZWRfbWlsbGljb3JlcxgKIAEoAxIdChVtZW1vcnlfY2FwYWNpdHlfYnl0ZXMYCyABKAMSGQoRbWVtb3J5X3VzZWRfYnl0ZXMYDCABKAMSFwoPd29ya2xvYWRzX3RvdGFsGA0gASgFEhkKEXdvcmtsb2Fkc19oZWFsdGh5GA4gASgFEhoKEndvcmtsb2Fkc19kZWdyYWRlZBgPIAEoBRIXCg93b3JrbG9hZHNfZXJyb3IYECABKAUilgUKCFdvcmtsb2FkEgoKAmlkGAEgASgJEhIKCmNsdXN0ZXJfaWQYAiABKAkSEQoJbmFtZXNwYWNlGAMgASgJEgwKBG5hbWUYBCABKAkSDAoEa2luZBgFIAEoCRI8CgZsYWJlbHMYBiADKAsyLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkLkxhYmVsc0VudHJ5EkMKDWhlYWx0aF9zdGF0dXMYByABKA4yLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkSGVhbHRoU3RhdHVzEhUKDXN0YXR1c19yZWFzb24YCCABKAkSGAoQcmVwbGljYXNfZGVzaXJlZBgJIAEoBRIWCg5yZXBsaWNhc19yZWFkeRgKIAEoBRIaChJyZXBsaWNhc19hdmFpbGFibGUYCyABKAUSHwoXY3B1X3JlcXVlc3RzX21pbGxpY29yZXMYDCABKAMSHQoVY3B1X2xpbWl0c19taWxsaWNvcmVzGA0gASgDEhsKE2NwdV91c2VkX21pbGxpY29yZXMYDiABKAMSHQoVbWVtb3J5X3JlcXVlc3RzX2J5dGVzGA8gASgDEhsKE21lbW9yeV9saW1pdHNfYnl0ZXMYECABKAMSGQoRbWVtb3J5X3VzZWRfYnl0ZXMYESABKAMSOwoKY29udGFpbmVycxgSIAMoCzInLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ29udGFpbmVyU3RhdHVzEjMKD2xhc3RfdXBkYXRlZF9hdBgTIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJjCg9Db250YWluZXJTdGF0dXMSDAoEbmFtZRgBIAEoCRINCgVpbWFnZRgCIAEoCRIVCg1yZXN0YXJ0X2NvdW50GAMgASgFEg0KBXN0YXRlGAQgASgJEg0KBXJlYWR5GAUgASgIIkAKD09iamVjdFJlZmVyZW5jZRIMCgRraW5kGAEgASgJEhEKCW5hbWVzcGFjZRgCIAEoCRIMCgRuYW1lGAMgASgJIvUBCg1Xb3JrbG9hZEV2ZW50EgsKA3VpZBgBIAEoCRIMCgR0eXBlGAIgASgJEg4KBnJlYXNvbhgDIAEoCRI6CglyZWdhcmRpbmcYBCABKAsyJy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLk9iamVjdFJlZmVyZW5jZRIPCgdtZXNzYWdlGAUgASgJEi4KCmZpcnN0X3NlZW4YBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi0KCWxhc3Rfc2VlbhgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASDQoFY291bnQYCCABKAUisQEKFENyZWF0ZUNsdXN0ZXJSZXF1ZXN0EiAKDGRpc3BsYXlfbmFtZRgBIAEoCUIKukgHcgUQARj/ARJICgZsYWJlbHMYAiADKAsyOC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNyZWF0ZUNsdXN0ZXJSZXF1ZXN0LkxhYmVsc0VudHJ5Gi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiYwoVQ3JlYXRlQ2x1c3RlclJlc3BvbnNlEjAKB2NsdXN0ZXIYASABKAsyHy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXISGAoQcGxhaW5fdGV4dF90b2tlbhgCIAEoCSIxChFHZXRDbHVzdGVyUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABASJGChJHZXRDbHVzdGVyUmVzcG9uc2USMAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlciJMChNMaXN0Q2x1c3RlcnNSZXF1ZXN0EhEKCXBhZ2Vfc2l6ZRgBIAEoBRISCgpwYWdlX3Rva2VuGAIgASgJEg4KBmZpbHRlchgDIAEoCSJiChRMaXN0Q2x1c3RlcnNSZXNwb25zZRIxCghjbHVzdGVycxgBIAMoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlchIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkigQEKFFVwZGF0ZUNsdXN0ZXJSZXF1ZXN0EjgKB2NsdXN0ZXIYASABKAsyHy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXJCBrpIA8gBARIvCgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2siSQoVVXBkYXRlQ2x1c3RlclJlc3BvbnNlEjAKB2NsdXN0ZXIYASABKAsyHy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXIiNAoURGVsZXRlQ2x1c3RlclJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQEiFwoVRGVsZXRlQ2x1c3RlclJlc3BvbnNlIjcKF0dldENsdXN0ZXJTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBIsYBChhHZXRDbHVzdGVyU3RhdHVzUmVzcG9uc2USQgoNaGVhbHRoX3N0YXR1cxgBIAEoDjIrLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlckhlYWx0aFN0YXR1cxI1CgZzdGF0dXMYAiABKAsyJS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXJTdGF0dXMSLwoLcmVwb3J0ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIpwCChpSZXBvcnRDbHVzdGVyU3RhdHVzUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARI9CgZzdGF0dXMYAiABKAsyJS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXJTdGF0dXNCBrpIA8gBARI5Cgl3b3JrbG9hZHMYAyADKAsyJi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkU3RhdHVzEjUKBmV2ZW50cxgEIAMoCzIlLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuV29ya2xvYWRFdmVudBIvCgtyZXBvcnRlZF9hdBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAitgQKDldvcmtsb2FkU3RhdHVzEhEKCW5hbWVzcGFjZRgBIAEoCRIMCgRuYW1lGAIgASgJEgwKBGtpbmQYAyABKAkSQgoGbGFiZWxzGAQgAygLMjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZFN0YXR1cy5MYWJlbHNFbnRyeRIYChByZXBsaWNhc19kZXNpcmVkGAUgASgFEhYKDnJlcGxpY2FzX3JlYWR5GAYgASgFEhoKEnJlcGxpY2FzX2F2YWlsYWJsZRgHIAEoBRIfChdjcHVfcmVxdWVzdHNfbWlsbGljb3JlcxgIIAEoAxIdChVjcHVfbGltaXRzX21pbGxpY29yZXMYCSABKAMSGwoTY3B1X3VzZWRfbWlsbGljb3JlcxgKIAEoAxIdChVtZW1vcnlfcmVxdWVzdHNfYnl0ZXMYCyABKAMSGwoTbWVtb3J5X2xpbWl0c19ieXRlcxgMIAEoAxIZChFtZW1vcnlfdXNlZF9ieXRlcxgNIAEoAxJDCg1oZWFsdGhfc3RhdHVzGA4gASgOMiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZEhlYWx0aFN0YXR1cxI7Cgpjb250YWluZXJzGA8gAygLMicuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Db250YWluZXJTdGF0dXMaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJFChtSZXBvcnRDbHVzdGVyU3RhdHVzUmVzcG9uc2USCwoDYWNrGAEgASgIEhkKEW5leHRfcHVzaF9zZWNvbmRzGAIgASgFImsKFExpc3RXb3JrbG9hZHNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJEg4KBmZpbHRlchgEIAEoCSJlChVMaXN0V29ya2xvYWRzUmVzcG9uc2USMwoJd29ya2xvYWRzGAEgAygLMiAuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkipwEKG1JlcG9ydFdvcmtsb2FkU3RhdHVzUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARI5Cgl3b3JrbG9hZHMYAiADKAsyJi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkU3RhdHVzEi8KC3JlcG9ydGVkX2F0GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCIrChxSZXBvcnRXb3JrbG9hZFN0YXR1c1Jlc3BvbnNlEgsKA2FjaxgBIAEoCCKLAQoZQ3JlYXRlQ2x1c3RlclRva2VuUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIgCgxkaXNwbGF5X25hbWUYAiABKAlCCrpIB3IFEAEY/wESLgoKZXhwaXJlc19hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAidQoaQ3JlYXRlQ2x1c3RlclRva2VuUmVzcG9uc2USPQoMYWNjZXNzX3Rva2VuGAEgASgLMicuYWRtaXJhbC5hcGkuYWNjZXNzdG9rZW4udjEuQWNjZXNzVG9rZW4SGAoQcGxhaW5fdGV4dF90b2tlbhgCIAEoCSJvChhMaXN0Q2x1c3RlclRva2Vuc1JlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESEQoJcGFnZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSDgoGZmlsdGVyGAQgASgJInQKGUxpc3RDbHVzdGVyVG9rZW5zUmVzcG9uc2USPgoNYWNjZXNzX3Rva2VucxgBIAMoCzInLmFkbWlyYWwuYXBpLmFjY2Vzc3Rva2VuLnYxLkFjY2Vzc1Rva2VuEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSJSChZHZXRDbHVzdGVyVG9rZW5SZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhoKCHRva2VuX2lkGAIgASgJQgi6SAVyA7ABASJYChdHZXRDbHVzdGVyVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbiJVChlSZXZva2VDbHVzdGVyVG9rZW5SZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhoKCHRva2VuX2lkGAIgASgJQgi6SAVyA7ABASJbChpSZXZva2VDbHVzdGVyVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbiruAQoTQ2x1c3RlckhlYWx0aFN0YXR1cxIlCiFDTFVTVEVSX0hFQUxUSF9TVEFUVVNfVU5TUEVDSUZJRUQQABIhCh1DTFVTVEVSX0hFQUxUSF9TVEFUVVNfUEVORElORxABEiEKHUNMVVNURVJfSEVBTFRIX1NUQVRVU19IRUFMVEhZEAISIgoeQ0xVU1RFUl9IRUFMVEhfU1RBVFVTX0RFR1JBREVEEAMSHwobQ0xVU1RFUl9IRUFMVEhfU1RBVFVTX0VSUk9SEAQSJQohQ0xVU1RFUl9IRUFMVEhfU1RBVFVTX1VOUkVBQ0hBQkxFEAUqqQEKFFdvcmtsb2FkSGVhbHRoU3RhdHVzEiYKIldPUktMT0FEX0hFQUxUSF9TVEFUVVNfVU5TUEVDSUZJRUQQABIiCh5XT1JLTE9BRF9IRUFMVEhfU1RBVFVTX0hFQUxUSFkQARIjCh9XT1JLTE9BRF9IRUFMVEhfU1RBVFVTX0RFR1JBREVEEAISIAocV09SS0xPQURfSEVBTFRIX1NUQVRVU19FUlJPUhADMq4SCgpDbHVzdGVyQVBJEpkBCg1DcmVhdGVDbHVzdGVyEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ3JlYXRlQ2x1c3RlclJlc3BvbnNlIiuCtRgQCg5jbHVzdGVyczp3cml0ZYLT5JMCEToBKiIML3YxL2NsdXN0ZXJzEpkBCgpHZXRDbHVzdGVyEikuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5HZXRDbHVzdGVyUmVxdWVzdBoqLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclJlc3BvbnNlIjSCtRgPCg1jbHVzdGVyczpyZWFkgtPkkwIbEhkvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9ErIBChBHZXRDbHVzdGVyU3RhdHVzEi8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5HZXRDbHVzdGVyU3RhdHVzUmVxdWVzdBowLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclN0YXR1c1Jlc3BvbnNlIjuCtRgPCg1jbHVzdGVyczpyZWFkgtPkkwIiEiAvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3N0YXR1cxKSAQoMTGlzdENsdXN0ZXJzEisuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0Q2x1c3RlcnNSZXF1ZXN0GiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0Q2x1c3RlcnNSZXNwb25zZSIngrUYDwoNY2x1c3RlcnM6cmVhZILT5JMCDhIML3YxL2NsdXN0ZXJzEqYBCg1VcGRhdGVDbHVzdGVyEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5VcGRhdGVDbHVzdGVyUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuVXBkYXRlQ2x1c3RlclJlc3BvbnNlIjiCtRgQCg5jbHVzdGVyczp3cml0ZYLT5JMCHjoBKjIZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyLmlkfRKjAQoNRGVsZXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuRGVsZXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkRlbGV0ZUNsdXN0ZXJSZXNwb25zZSI1grUYEAoOY2x1c3RlcnM6d3JpdGWC0+STAhsqGS92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0SvAEKEkNyZWF0ZUNsdXN0ZXJUb2tlbhIxLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ3JlYXRlQ2x1c3RlclRva2VuUmVxdWVzdBoyLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ3JlYXRlQ2x1c3RlclRva2VuUmVzcG9uc2UiP4K1GBAKDmNsdXN0ZXJzOndyaXRlgtPkkwIlOgEqIiAvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3Rva2VucxK1AQoRTGlzdENsdXN0ZXJUb2tlbnMSMC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyVG9rZW5zUmVxdWVzdBoxLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuTGlzdENsdXN0ZXJUb2tlbnNSZXNwb25zZSI7grUYDwoNY2x1c3RlcnM6cmVhZILT5JMCIhIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMSugEKD0dldENsdXN0ZXJUb2tlbhIuLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVxdWVzdBovLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVzcG9uc2UiRoK1GA8KDWNsdXN0ZXJzOnJlYWSC0+STAi0SKy92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vdG9rZW5zL3t0b2tlbl9pZH0SzgEKElJldm9rZUNsdXN0ZXJUb2tlbhIxLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmV2b2tlQ2x1c3RlclRva2VuUmVxdWVzdBoyLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmV2b2tlQ2x1c3RlclRva2VuUmVzcG9uc2UiUYK1GBAKDmNsdXN0ZXJzOndyaXRlgtPkkwI3OgEqIjIvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3Rva2Vucy97dG9rZW5faWR9L3Jldm9rZRLFAQoTUmVwb3J0Q2x1c3RlclN0YXR1cxIyLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmVwb3J0Q2x1c3RlclN0YXR1c1JlcXVlc3QaMy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlJlcG9ydENsdXN0ZXJTdGF0dXNSZXNwb25zZSJFgrUYFgoPY2x1c3RlcnM6c3RhdHVzEgNhZ3SC0+STAiU6ASoiIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEqwBCg1MaXN0V29ya2xvYWRzEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0V29ya2xvYWRzUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuTGlzdFdvcmtsb2Fkc1Jlc3BvbnNlIj6CtRgPCg1jbHVzdGVyczpyZWFkgtPkkwIlEiMvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3dvcmtsb2FkcxLSAQoUUmVwb3J0V29ya2xvYWRTdGF0dXMSMy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlJlcG9ydFdvcmtsb2FkU3RhdHVzUmVxdWVzdBo0LmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmVwb3J0V29ya2xvYWRTdGF0dXNSZXNwb25zZSJPgrUYFgoPY2x1c3RlcnM6c3RhdHVzEgNhZ3SC0+STAi86ASoiKi92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vd29ya2xvYWRzL3N0YXR1c0LTAQoaY29tLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjFCDENsdXN0ZXJQcm90b1ABWixnby5hZG1pcmFsLmlvL3Nkay9wcm90by9jbHVzdGVyL3YxO2NsdXN0ZXJ2MaICA0FBQ6oCFkFkbWlyYWwuQXBpLkNsdXN0ZXIuVjHKAhZBZG1pcmFsXEFwaVxDbHVzdGVyXFYx4gIiQWRtaXJhbFxBcGlcQ2x1c3RlclxWMVxHUEJNZXRhZGF0YeoCGUFkbWlyYWw6OkFwaTo6Q2x1c3Rlcjo6VjFiBnByb3RvMw", [file_accesstoken_v1_accesstoken, file_authz_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("ChhjbHVzdGVyL3YxL2NsdXN0ZXIucHJvdG8SFmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEiugMKB0NsdXN0ZXISFAoCaWQYASABKAlCCLpIBXIDsAEBEhsKCXRlbmFudF9pZBgCIAEoCUIIukgFcgOwAQESOAoEbmFtZRgDIAEoCUIqukgnciUYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBI7CgZsYWJlbHMYBSADKAsyKy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXIuTGFiZWxzRW50cnkSEwoLY2x1c3Rlcl91aWQYBiABKAkSQgoNaGVhbHRoX3N0YXR1cxgHIAEoDjIrLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlckhlYWx0aFN0YXR1cxIuCgpjcmVhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIpgDCg1DbHVzdGVyU3RhdHVzEhMKC2s4c192ZXJzaW9uGAEgASgJEhIKCm5vZGVfY291bnQYAiABKAUSEwoLbm9kZXNfcmVhZHkYAyABKAUSFAoMcG9kX2NhcGFjaXR5GAQgASgFEhEKCXBvZF9jb3VudBgFIAEoBRIUCgxwb2RzX3J1bm5pbmcYBiABKAUSFAoMcG9kc19wZW5kaW5nGAcgASgFEhMKC3BvZHNfZmFpbGVkGAggASgFEh8KF2NwdV9jYXBhY2l0eV9taWxsaWNvcmVzGAkgASgDEhsKE2NwdV91c2VkX21pbGxpY29yZXMYCiABKAMSHQoVbWVtb3J5X2NhcGFjaXR5X2J5dGVzGAsgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGAwgASgDEhcKD3dvcmtsb2Fkc190b3RhbBgNIAEoBRIZChF3b3JrbG9hZHNfaGVhbHRoeRgOIAEoBRIaChJ3b3JrbG9hZHNfZGVncmFkZWQYDyABKAUSFwoPd29ya2xvYWRzX2Vycm9yGBAgASgFIpYFCghXb3JrbG9hZBIKCgJpZBgBIAEoCRISCgpjbHVzdGVyX2lkGAIgASgJEhEKCW5hbWVzcGFjZRgDIAEoCRIMCgRuYW1lGAQgASgJEgwKBGtpbmQYBSABKAkSPAoGbGFiZWxzGAYgAygLMiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZC5MYWJlbHNFbnRyeRJDCg1oZWFsdGhfc3RhdHVzGAcgASgOMiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZEhlYWx0aFN0YXR1cxIVCg1zdGF0dXNfcmVhc29uGAggASgJEhgKEHJlcGxpY2FzX2Rlc2lyZWQYCSABKAUSFgoOcmVwbGljYXNfcmVhZHkYCiABKAUSGgoScmVwbGljYXNfYXZhaWxhYmxlGAsgASgFEh8KF2NwdV9yZXF1ZXN0c19taWxsaWNvcmVzGAwgASgDEh0KFWNwdV9saW1pdHNfbWlsbGljb3JlcxgNIAEoAxIbChNjcHVfdXNlZF9taWxsaWNvcmVzGA4gASgDEh0KFW1lbW9yeV9yZXF1ZXN0c19ieXRlcxgPIAEoAxIbChNtZW1vcnlfbGltaXRzX2J5dGVzGBAgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGBEgASgDEjsKCmNvbnRhaW5lcnMYEiADKAsyJy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNvbnRhaW5lclN0YXR1cxIzCg9sYXN0X3VwZGF0ZWRfYXQYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiYwoPQ29udGFpbmVyU3RhdHVzEgwKBG5hbWUYASABKAkSDQoFaW1hZ2UYAiABKAkSFQoNcmVzdGFydF9jb3VudBgDIAEoBRINCgVzdGF0ZRgEIAEoCRINCgVyZWFkeRgFIAEoCCJACg9PYmplY3RSZWZlcmVuY2USDAoEa2luZBgBIAEoCRIRCgluYW1lc3BhY2UYAiABKAkSDAoEbmFtZRgDIAEoCSL1AQoNV29ya2xvYWRFdmVudBILCgN1aWQYASABKAkSDAoEdHlwZRgCIAEoCRIOCgZyZWFzb24YAyABKAkSOgoJcmVnYXJkaW5nGAQgASgLMicuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5PYmplY3RSZWZlcmVuY2USDwoHbWVzc2FnZRgFIAEoCRIuCgpmaXJzdF9zZWVuGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCglsYXN0X3NlZW4YByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg0KBWNvdW50GAggASgFIugBChRDcmVhdGVDbHVzdGVyUmVxdWVzdBI4CgRuYW1lGAEgASgJQiq6SCdyJRg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyQSHQoLZGVzY3JpcHRpb24YAiABKAlCCLpIBXIDGIAIEkgKBmxhYmVscxgDIAMoCzI4LmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ3JlYXRlQ2x1c3RlclJlcXVlc3QuTGFiZWxzRW50cnkaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJjChVDcmVhdGVDbHVzdGVyUmVzcG9uc2USMAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlchIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIjEKEUdldENsdXN0ZXJSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBIkYKEkdldENsdXN0ZXJSZXNwb25zZRIwCgdjbHVzdGVyGAEgASgLMh8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVyIkwKE0xpc3RDbHVzdGVyc1JlcXVlc3QSDgoGZmlsdGVyGAEgASgJEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJImIKFExpc3RDbHVzdGVyc1Jlc3BvbnNlEjEKCGNsdXN0ZXJzGAEgAygLMh8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVyEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKBAQoUVXBkYXRlQ2x1c3RlclJlcXVlc3QSOAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlckIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJJChVVcGRhdGVDbHVzdGVyUmVzcG9uc2USMAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlciI0ChREZWxldGVDbHVzdGVyUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABASIXChVEZWxldGVDbHVzdGVyUmVzcG9uc2UiNwoXR2V0Q2x1c3RlclN0YXR1c1JlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQEixgEKGEdldENsdXN0ZXJTdGF0dXNSZXNwb25zZRJCCg1oZWFsdGhfc3RhdHVzGAEgASgOMisuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVySGVhbHRoU3RhdHVzEjUKBnN0YXR1cxgCIAEoCzIlLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlclN0YXR1cxIvCgtyZXBvcnRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAinAIKGlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEj0KBnN0YXR1cxgCIAEoCzIlLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlclN0YXR1c0IGukgDyAEBEjkKCXdvcmtsb2FkcxgDIAMoCzImLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuV29ya2xvYWRTdGF0dXMSNQoGZXZlbnRzGAQgAygLMiUuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZEV2ZW50Ei8KC3JlcG9ydGVkX2F0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCK2BAoOV29ya2xvYWRTdGF0dXMSEQoJbmFtZXNwYWNlGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEa2luZBgDIAEoCRJCCgZsYWJlbHMYBCADKAsyMi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkU3RhdHVzLkxhYmVsc0VudHJ5EhgKEHJlcGxpY2FzX2Rlc2lyZWQYBSABKAUSFgoOcmVwbGljYXNfcmVhZHkYBiABKAUSGgoScmVwbGljYXNfYXZhaWxhYmxlGAcgASgFEh8KF2NwdV9yZXF1ZXN0c19taWxsaWNvcmVzGAggASgDEh0KFWNwdV9saW1pdHNfbWlsbGljb3JlcxgJIAEoAxIbChNjcHVfdXNlZF9taWxsaWNvcmVzGAogASgDEh0KFW1lbW9yeV9yZXF1ZXN0c19ieXRlcxgLIAEoAxIbChNtZW1vcnlfbGltaXRzX2J5dGVzGAwgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGA0gASgDEkMKDWhlYWx0aF9zdGF0dXMYDiABKA4yLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkSGVhbHRoU3RhdHVzEjsKCmNvbnRhaW5lcnMYDyADKAsyJy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNvbnRhaW5lclN0YXR1cxotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIkUKG1JlcG9ydENsdXN0ZXJTdGF0dXNSZXNwb25zZRILCgNhY2sYASABKAgSGQoRbmV4dF9wdXNoX3NlY29uZHMYAiABKAUiawoUTGlzdFdvcmtsb2Fkc1JlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESDgoGZmlsdGVyGAIgASgJEhEKCXBhZ2Vfc2l6ZRgDIAEoBRISCgpwYWdlX3Rva2VuGAQgASgJImUKFUxpc3RXb3JrbG9hZHNSZXNwb25zZRIzCgl3b3JrbG9hZHMYASADKAsyIC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKnAQobUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEjkKCXdvcmtsb2FkcxgCIAMoCzImLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuV29ya2xvYWRTdGF0dXMSLwoLcmVwb3J0ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIisKHFJlcG9ydFdvcmtsb2FkU3RhdHVzUmVzcG9uc2USCwoDYWNrGAEgASgIIosBChlDcmVhdGVDbHVzdGVyVG9rZW5SZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEiAKDGRpc3BsYXlfbmFtZRgCIAEoCUIKukgHcgUQARj/ARIuCgpleHBpcmVzX2F0GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJsChpDcmVhdGVDbHVzdGVyVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIm8KGExpc3RDbHVzdGVyVG9rZW5zUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiawoZTGlzdENsdXN0ZXJUb2tlbnNSZXNwb25zZRI1Cg1hY2Nlc3NfdG9rZW5zGAEgAygLMh4uYWRtaXJhbC5jb21tb24udjEuQWNjZXNzVG9rZW4SFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIlIKFkdldENsdXN0ZXJUb2tlblJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESGgoIdG9rZW5faWQYAiABKAlCCLpIBXIDsAEBIk8KF0dldENsdXN0ZXJUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuIlUKGVJldm9rZUNsdXN0ZXJUb2tlblJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESGgoIdG9rZW5faWQYAiABKAlCCLpIBXIDsAEBIlIKGlJldm9rZUNsdXN0ZXJUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuKu4BChNDbHVzdGVySGVhbHRoU3RhdHVzEiUKIUNMVVNURVJfSEVBTFRIX1NUQVRVU19VTlNQRUNJRklFRBAAEiEKHUNMVVNURVJfSEVBTFRIX1NUQVRVU19QRU5ESU5HEAESIQodQ0xVU1RFUl9IRUFMVEhfU1RBVFVTX0hFQUxUSFkQAhIiCh5DTFVTVEVSX0hFQUxUSF9TVEFUVVNfREVHUkFERUQQAxIfChtDTFVTVEVSX0hFQUxUSF9TVEFUVVNfRVJST1IQBBIlCiFDTFVTVEVSX0hFQUxUSF9TVEFUVVNfVU5SRUFDSEFCTEUQBSqpAQoUV29ya2xvYWRIZWFsdGhTdGF0dXMSJgoiV09SS0xPQURfSEVBTFRIX1NUQVRVU19VTlNQRUNJRklFRBAAEiIKHldPUktMT0FEX0hFQUxUSF9TVEFUVVNfSEVBTFRIWRABEiMKH1dPUktMT0FEX0hFQUxUSF9TVEFUVVNfREVHUkFERUQQAhIgChxXT1JLTE9BRF9IRUFMVEhfU1RBVFVTX0VSUk9SEAMyoRIKCkNsdXN0ZXJBUEkSmAEKDUNyZWF0ZUNsdXN0ZXISLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNyZWF0ZUNsdXN0ZXJSZXF1ZXN0Gi0uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyUmVzcG9uc2UiKqKXJA8KDWNsdXN0ZXI6d3JpdGWC0+STAhE6ASoiDC92MS9jbHVzdGVycxKYAQoKR2V0Q2x1c3RlchIpLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclJlcXVlc3QaKi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkdldENsdXN0ZXJSZXNwb25zZSIzopckDgoMY2x1c3RlcjpyZWFkgtPkkwIbEhkvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9ErEBChBHZXRDbHVzdGVyU3RhdHVzEi8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5HZXRDbHVzdGVyU3RhdHVzUmVxdWVzdBowLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclN0YXR1c1Jlc3BvbnNlIjqilyQOCgxjbHVzdGVyOnJlYWSC0+STAiISIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEpEBCgxMaXN0Q2x1c3RlcnMSKy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1JlcXVlc3QaLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1Jlc3BvbnNlIiailyQOCgxjbHVzdGVyOnJlYWSC0+STAg4SDC92MS9jbHVzdGVycxKlAQoNVXBkYXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuVXBkYXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlVwZGF0ZUNsdXN0ZXJSZXNwb25zZSI3opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCHjoBKjIZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyLmlkfRKiAQoNRGVsZXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuRGVsZXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkRlbGV0ZUNsdXN0ZXJSZXNwb25zZSI0opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCGyoZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfRK7AQoSQ3JlYXRlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXNwb25zZSI+opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCJToBKiIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMStAEKEUxpc3RDbHVzdGVyVG9rZW5zEjAuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0Q2x1c3RlclRva2Vuc1JlcXVlc3QaMS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyVG9rZW5zUmVzcG9uc2UiOqKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCIhIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMSuQEKD0dldENsdXN0ZXJUb2tlbhIuLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVxdWVzdBovLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVzcG9uc2UiRaKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCLRIrL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfRLNAQoSUmV2b2tlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXNwb25zZSJQopckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCNzoBKiIyL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfS9yZXZva2USxAEKE1JlcG9ydENsdXN0ZXJTdGF0dXMSMi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0GjMuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRDbHVzdGVyU3RhdHVzUmVzcG9uc2UiRKKXJBUKDmNsdXN0ZXI6c3RhdHVzEgNhZ3SC0+STAiU6ASoiIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEqsBCg1MaXN0V29ya2xvYWRzEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0V29ya2xvYWRzUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuTGlzdFdvcmtsb2Fkc1Jlc3BvbnNlIj2ilyQOCgxjbHVzdGVyOnJlYWSC0+STAiUSIy92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vd29ya2xvYWRzEtEBChRSZXBvcnRXb3JrbG9hZFN0YXR1cxIzLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0GjQuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRXb3JrbG9hZFN0YXR1c1Jlc3BvbnNlIk6ilyQVCg5jbHVzdGVyOnN0YXR1cxIDYWd0gtPkkwIvOgEqIiovdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3dvcmtsb2Fkcy9zdGF0dXNC0wEKGmNvbS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxQgxDbHVzdGVyUHJvdG9QAVosZ28uYWRtaXJhbC5pby9zZGsvcHJvdG8vY2x1c3Rlci92MTtjbHVzdGVydjGiAgNBQUOqAhZBZG1pcmFsLkFwaS5DbHVzdGVyLlYxygIWQWRtaXJhbFxBcGlcQ2x1c3RlclxWMeICIkFkbWlyYWxcQXBpXENsdXN0ZXJcVjFcR1BCTWV0YWRhdGHqAhlBZG1pcmFsOjpBcGk6OkNsdXN0ZXI6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * Cluster represents a registered Kubernetes cluster within a tenant.
@@ -40,17 +40,27 @@ export type Cluster = Message<"admiral.api.cluster.v1.Cluster"> & {
   tenantId: string;
 
   /**
-   * Human-readable name (e.g., "prod-us-east-1"). Unique within the tenant.
+   * URL-safe, human-readable identifier (e.g., "prod-us-east-1"). Unique
+   * within the tenant. Lowercase alphanumeric and hyphens only, must start
+   * with a letter and end with an alphanumeric character (1-63 chars).
    *
-   * @generated from field: string display_name = 3;
+   * @generated from field: string name = 3;
    */
-  displayName: string;
+  name: string;
+
+  /**
+   * Optional longer-form description of the cluster's purpose
+   * (e.g., "Primary production cluster serving US East traffic").
+   *
+   * @generated from field: string description = 4;
+   */
+  description: string;
 
   /**
    * Arbitrary key-value labels for organizing and filtering clusters
    * (e.g., `{"region": "us-east-1", "cloud": "aws"}`).
    *
-   * @generated from field: map<string, string> labels = 4;
+   * @generated from field: map<string, string> labels = 5;
    */
   labels: { [key: string]: string };
 
@@ -59,28 +69,28 @@ export type Cluster = Message<"admiral.api.cluster.v1.Cluster"> & {
    * using a first-write-wins strategy. Used to detect when a token is
    * accidentally deployed to a different physical cluster.
    *
-   * @generated from field: string cluster_uid = 5;
+   * @generated from field: string cluster_uid = 6;
    */
   clusterUid: string;
 
   /**
    * Derived health status based on agent connectivity and workload state.
    *
-   * @generated from field: admiral.api.cluster.v1.ClusterHealthStatus health_status = 6;
+   * @generated from field: admiral.api.cluster.v1.ClusterHealthStatus health_status = 7;
    */
   healthStatus: ClusterHealthStatus;
 
   /**
    * When the cluster record was created.
    *
-   * @generated from field: google.protobuf.Timestamp created_at = 7;
+   * @generated from field: google.protobuf.Timestamp created_at = 8;
    */
   createdAt?: Timestamp;
 
   /**
    * When the cluster record was last updated.
    *
-   * @generated from field: google.protobuf.Timestamp updated_at = 8;
+   * @generated from field: google.protobuf.Timestamp updated_at = 9;
    */
   updatedAt?: Timestamp;
 };
@@ -534,18 +544,25 @@ export const WorkloadEventSchema: GenMessage<WorkloadEvent> = /*@__PURE__*/
  */
 export type CreateClusterRequest = Message<"admiral.api.cluster.v1.CreateClusterRequest"> & {
   /**
-   * Human-readable name for the cluster (e.g., "prod-us-east-1").
-   * Must be unique within the tenant.
+   * URL-safe, human-readable identifier (e.g., "prod-us-east-1"). Must be
+   * unique within the tenant. Lowercase alphanumeric and hyphens only.
    *
-   * @generated from field: string display_name = 1;
+   * @generated from field: string name = 1;
    */
-  displayName: string;
+  name: string;
+
+  /**
+   * Optional longer-form description of the cluster's purpose.
+   *
+   * @generated from field: string description = 2;
+   */
+  description: string;
 
   /**
    * Arbitrary key-value labels for organizing and filtering clusters
    * (e.g., `{"region": "us-east-1", "cloud": "aws"}`).
    *
-   * @generated from field: map<string, string> labels = 2;
+   * @generated from field: map<string, string> labels = 3;
    */
   labels: { [key: string]: string };
 };
@@ -641,26 +658,25 @@ export const GetClusterResponseSchema: GenMessage<GetClusterResponse> = /*@__PUR
  */
 export type ListClustersRequest = Message<"admiral.api.cluster.v1.ListClustersRequest"> & {
   /**
+   * Filter expression using the PEG filter DSL
+   *
+   * @generated from field: string filter = 1;
+   */
+  filter: string;
+
+  /**
    * Maximum number of clusters to return per page.
    *
-   * @generated from field: int32 page_size = 1;
+   * @generated from field: int32 page_size = 2;
    */
   pageSize: number;
 
   /**
    * Opaque pagination token from a previous response.
    *
-   * @generated from field: string page_token = 2;
+   * @generated from field: string page_token = 3;
    */
   pageToken: string;
-
-  /**
-   * Filter expression using the PEG filter DSL
-   * (e.g., `health_status = "healthy"` or `labels.region = "us-east-1"`).
-   *
-   * @generated from field: string filter = 3;
-   */
-  filter: string;
 };
 
 /**
@@ -714,7 +730,7 @@ export type UpdateClusterRequest = Message<"admiral.api.cluster.v1.UpdateCluster
 
   /**
    * The set of fields to update. If unset, all mutable fields are updated.
-   * Supported fields: `display_name`, `labels`.
+   * Supported fields: `name`, `description`, `labels`.
    *
    * @generated from field: google.protobuf.FieldMask update_mask = 2;
    */
@@ -1061,26 +1077,25 @@ export type ListWorkloadsRequest = Message<"admiral.api.cluster.v1.ListWorkloads
   clusterId: string;
 
   /**
+   * Filter expression using the PEG filter DSL
+   *
+   * @generated from field: string filter = 2;
+   */
+  filter: string;
+
+  /**
    * Maximum number of workloads to return per page.
    *
-   * @generated from field: int32 page_size = 2;
+   * @generated from field: int32 page_size = 3;
    */
   pageSize: number;
 
   /**
    * Opaque pagination token from a previous response.
    *
-   * @generated from field: string page_token = 3;
+   * @generated from field: string page_token = 4;
    */
   pageToken: string;
-
-  /**
-   * Filter expression using the PEG filter DSL
-   * (e.g., `namespace = "production"` or `health_status = "degraded"`).
-   *
-   * @generated from field: string filter = 4;
-   */
-  filter: string;
 };
 
 /**
@@ -1219,7 +1234,7 @@ export type CreateClusterTokenResponse = Message<"admiral.api.cluster.v1.CreateC
   /**
    * The created token metadata. Scopes are auto-assigned for cluster AGTs.
    *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   * @generated from field: admiral.common.v1.AccessToken access_token = 1;
    */
   accessToken?: AccessToken;
 
@@ -1290,7 +1305,7 @@ export type ListClusterTokensResponse = Message<"admiral.api.cluster.v1.ListClus
   /**
    * The list of tokens. Token secrets are never included.
    *
-   * @generated from field: repeated admiral.api.accesstoken.v1.AccessToken access_tokens = 1;
+   * @generated from field: repeated admiral.common.v1.AccessToken access_tokens = 1;
    */
   accessTokens: AccessToken[];
 
@@ -1346,7 +1361,7 @@ export type GetClusterTokenResponse = Message<"admiral.api.cluster.v1.GetCluster
   /**
    * The token metadata. The token secret is never included.
    *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   * @generated from field: admiral.common.v1.AccessToken access_token = 1;
    */
   accessToken?: AccessToken;
 };
@@ -1395,7 +1410,7 @@ export type RevokeClusterTokenResponse = Message<"admiral.api.cluster.v1.RevokeC
   /**
    * The token metadata with updated status.
    *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   * @generated from field: admiral.common.v1.AccessToken access_token = 1;
    */
   accessToken?: AccessToken;
 };
@@ -1528,7 +1543,7 @@ export const ClusterAPI: GenService<{
    * or a Kubernetes Secret). The agent uses it to authenticate with
    * AgentAPI.RegisterAgent on first boot.
    *
-   * Scope: `clusters:write`
+   * Scope: `cluster:write`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.CreateCluster
    */
@@ -1544,7 +1559,7 @@ export const ClusterAPI: GenService<{
    * detailed telemetry (node counts, resource usage, workload summary), use
    * GetClusterStatus instead.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.GetCluster
    */
@@ -1562,7 +1577,7 @@ export const ClusterAPI: GenService<{
    * no agent has reported telemetry yet, the response will have health_status
    * PENDING and no status message.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.GetClusterStatus
    */
@@ -1574,7 +1589,7 @@ export const ClusterAPI: GenService<{
   /**
    * ListClusters returns a paginated list of clusters within the caller's tenant.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.ListClusters
    */
@@ -1584,10 +1599,10 @@ export const ClusterAPI: GenService<{
     output: typeof ListClustersResponseSchema;
   },
   /**
-   * UpdateCluster updates a cluster's mutable fields (display name, labels).
+   * UpdateCluster updates a cluster's mutable fields.
    * Use the `update_mask` to specify which fields to update.
    *
-   * Scope: `clusters:write`
+   * Scope: `cluster:write`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.UpdateCluster
    */
@@ -1600,7 +1615,7 @@ export const ClusterAPI: GenService<{
    * DeleteCluster permanently deletes a cluster record and revokes all
    * associated agent tokens. This action cannot be undone.
    *
-   * Scope: `clusters:write`
+   * Scope: `cluster:write`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.DeleteCluster
    */
@@ -1618,7 +1633,7 @@ export const ClusterAPI: GenService<{
    * zero-downtime token rotation). The initial AGT is created automatically
    * by CreateCluster.
    *
-   * Scope: `clusters:write`
+   * Scope: `cluster:write`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.CreateClusterToken
    */
@@ -1631,7 +1646,7 @@ export const ClusterAPI: GenService<{
    * ListClusterTokens returns a paginated list of AGTs bound to the specified
    * cluster. Token secrets are never included.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.ListClusterTokens
    */
@@ -1644,7 +1659,7 @@ export const ClusterAPI: GenService<{
    * GetClusterToken retrieves a single AGT by ID.
    * Returns metadata only — the token secret is never included.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.GetClusterToken
    */
@@ -1658,7 +1673,7 @@ export const ClusterAPI: GenService<{
    * The agent will receive a 401 on its next request. If this is the only
    * active AGT for the cluster, the agent will become disconnected.
    *
-   * Scope: `clusters:write`
+   * Scope: `cluster:write`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.RevokeClusterToken
    */
@@ -1674,7 +1689,7 @@ export const ClusterAPI: GenService<{
    *
    * This endpoint is agent-facing and restricted to agent tokens.
    *
-   * Scope: `clusters:status` | Token types: `agt`
+   * Scope: `cluster:status` | Token types: `agt`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.ReportClusterStatus
    */
@@ -1686,7 +1701,7 @@ export const ClusterAPI: GenService<{
   /**
    * ListWorkloads returns a paginated list of workloads running in a specific cluster.
    *
-   * Scope: `clusters:read`
+   * Scope: `cluster:read`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.ListWorkloads
    */
@@ -1701,7 +1716,7 @@ export const ClusterAPI: GenService<{
    *
    * This endpoint is agent-facing and restricted to agent tokens.
    *
-   * Scope: `clusters:status` | Token types: `agt`
+   * Scope: `cluster:status` | Token types: `agt`
    *
    * @generated from rpc admiral.api.cluster.v1.ClusterAPI.ReportWorkloadStatus
    */

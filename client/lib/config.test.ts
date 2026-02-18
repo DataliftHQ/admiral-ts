@@ -82,7 +82,6 @@ describe("resolveConfig", () => {
     const resolved = resolveConfig(config);
     expect(resolved.headers).toBeUndefined();
   });
-});
 
   it("defaults authScheme to bearer", () => {
     const config: ClientConfig = {

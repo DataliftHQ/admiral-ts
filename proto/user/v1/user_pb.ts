@@ -4,9 +4,9 @@
 
 import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
 import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
-import type { AccessToken } from "../../accesstoken/v1/accesstoken_pb";
-import { file_accesstoken_v1_accesstoken } from "../../accesstoken/v1/accesstoken_pb";
-import { file_authz_v1_annotations } from "../../authz/v1/annotations_pb";
+import { file_admiral_common_v1_annotations } from "../../admiral/common/v1/annotations_pb";
+import type { AccessToken } from "../../admiral/common/v1/token_pb";
+import { file_admiral_common_v1_token } from "../../admiral/common/v1/token_pb";
 import { file_buf_validate_validate } from "../../buf/validate/validate_pb";
 import { file_google_api_annotations } from "../../google/api/annotations_pb";
 import type { Timestamp } from "@bufbuild/protobuf/wkt";
@@ -17,7 +17,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file user/v1/user.proto.
  */
 export const file_user_v1_user: GenFile = /*@__PURE__*/
-  fileDesc("ChJ1c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEiEAoOR2V0VXNlclJlcXVlc3Qi5QEKD0dldFVzZXJSZXNwb25zZRIKCgJpZBgBIAEoCRIRCgl0ZW5hbnRfaWQYAiABKAkSDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsIoQBCiBDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIgCgxkaXNwbGF5X25hbWUYASABKAlCCrpIB3IFEAEY/wESDgoGc2NvcGVzGAIgAygJEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wInwKIUNyZWF0ZVBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIlgKH0xpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBhZ2VfdG9rZW4YAiABKAkSDgoGZmlsdGVyGAMgASgJInsKIExpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlEj4KDWFjY2Vzc190b2tlbnMYASADKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiOwodR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QSGgoIdG9rZW5faWQYASABKAlCCLpIBXIDsAEBIl8KHkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI9CgxhY2Nlc3NfdG9rZW4YASABKAsyJy5hZG1pcmFsLmFwaS5hY2Nlc3N0b2tlbi52MS5BY2Nlc3NUb2tlbiI+CiBSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIaCgh0b2tlbl9pZBgBIAEoCUIIukgFcgOwAQEiYgohUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlEj0KDGFjY2Vzc190b2tlbhgBIAEoCzInLmFkbWlyYWwuYXBpLmFjY2Vzc3Rva2VuLnYxLkFjY2Vzc1Rva2VuMuoGCgdVc2VyQVBJEmoKB0dldFVzZXISIy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXF1ZXN0GiQuYWRtaXJhbC5hcGkudXNlci52MS5HZXRVc2VyUmVzcG9uc2UiFIK1GACC0+STAgoSCC92MS91c2VyErgBChlDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5DcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuQ3JlYXRlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIiyCtRgOCgx0b2tlbnM6d3JpdGWC0+STAhQ6ASoiDy92MS91c2VyL3Rva2VucxKxAQoYTGlzdFBlcnNvbmFsQWNjZXNzVG9rZW5zEjQuYWRtaXJhbC5hcGkudXNlci52MS5MaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnNSZXF1ZXN0GjUuYWRtaXJhbC5hcGkudXNlci52MS5MaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnNSZXNwb25zZSIogrUYDQoLdG9rZW5zOnJlYWSC0+STAhESDy92MS91c2VyL3Rva2VucxK2AQoWR2V0UGVyc29uYWxBY2Nlc3NUb2tlbhIyLmFkbWlyYWwuYXBpLnVzZXIudjEuR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QaMy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZSIzgrUYDQoLdG9rZW5zOnJlYWSC0+STAhwSGi92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9EsoBChlSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5SZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIj6CtRgOCgx0b2tlbnM6d3JpdGWC0+STAiY6ASoiIS92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9L3Jldm9rZUK7AQoXY29tLmFkbWlyYWwuYXBpLnVzZXIudjFCCVVzZXJQcm90b1ABWiZnby5hZG1pcmFsLmlvL3Nkay9wcm90by91c2VyL3YxO3VzZXJ2MaICA0FBVaoCE0FkbWlyYWwuQXBpLlVzZXIuVjHKAhNBZG1pcmFsXEFwaVxVc2VyXFYx4gIfQWRtaXJhbFxBcGlcVXNlclxWMVxHUEJNZXRhZGF0YeoCFkFkbWlyYWw6OkFwaTo6VXNlcjo6VjFiBnByb3RvMw", [file_accesstoken_v1_accesstoken, file_authz_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_timestamp]);
+  fileDesc("ChJ1c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEiEAoOR2V0VXNlclJlcXVlc3Qi5QEKD0dldFVzZXJSZXNwb25zZRIKCgJpZBgBIAEoCRIRCgl0ZW5hbnRfaWQYAiABKAkSDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsIoQBCiBDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIgCgxkaXNwbGF5X25hbWUYASABKAlCCrpIB3IFEAEY/wESDgoGc2NvcGVzGAIgAygJEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIj0KIUNyZWF0ZVBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIlgKH0xpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBhZ2VfdG9rZW4YAiABKAkSDgoGZmlsdGVyGAMgASgJInIKIExpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlEjUKDWFjY2Vzc190b2tlbnMYASADKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiOwodR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QSGgoIdG9rZW5faWQYASABKAlCCLpIBXIDsAEBIlYKHkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbiI+CiBSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIaCgh0b2tlbl9pZBgBIAEoCUIIukgFcgOwAQEiWQohUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuMuYGCgdVc2VyQVBJEmoKB0dldFVzZXISIy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXF1ZXN0GiQuYWRtaXJhbC5hcGkudXNlci52MS5HZXRVc2VyUmVzcG9uc2UiFKKXJACC0+STAgoSCC92MS91c2VyErcBChlDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5DcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuQ3JlYXRlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIiuilyQNCgt0b2tlbjp3cml0ZYLT5JMCFDoBKiIPL3YxL3VzZXIvdG9rZW5zErABChhMaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnMSNC5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QaNS5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlIieilyQMCgp0b2tlbjpyZWFkgtPkkwIREg8vdjEvdXNlci90b2tlbnMStQEKFkdldFBlcnNvbmFsQWNjZXNzVG9rZW4SMi5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXF1ZXN0GjMuYWRtaXJhbC5hcGkudXNlci52MS5HZXRQZXJzb25hbEFjY2Vzc1Rva2VuUmVzcG9uc2UiMqKXJAwKCnRva2VuOnJlYWSC0+STAhwSGi92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9EskBChlSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5SZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIj2ilyQNCgt0b2tlbjp3cml0ZYLT5JMCJjoBKiIhL3YxL3VzZXIvdG9rZW5zL3t0b2tlbl9pZH0vcmV2b2tlQrsBChdjb20uYWRtaXJhbC5hcGkudXNlci52MUIJVXNlclByb3RvUAFaJmdvLmFkbWlyYWwuaW8vc2RrL3Byb3RvL3VzZXIvdjE7dXNlcnYxogIDQUFVqgITQWRtaXJhbC5BcGkuVXNlci5WMcoCE0FkbWlyYWxcQXBpXFVzZXJcVjHiAh9BZG1pcmFsXEFwaVxVc2VyXFYxXEdQQk1ldGFkYXRh6gIWQWRtaXJhbDo6QXBpOjpVc2VyOjpWMWIGcHJvdG8z", [file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_timestamp]);
 
 /**
  * GetUserRequest is the request message for GetUser.
@@ -138,16 +138,12 @@ export const CreatePersonalAccessTokenRequestSchema: GenMessage<CreatePersonalAc
 /**
  * CreatePersonalAccessTokenResponse contains the newly created PAT.
  *
+ * The created token metadata.
+ *  admiral.common.v1.AccessToken access_token = 1;
+ *
  * @generated from message admiral.api.user.v1.CreatePersonalAccessTokenResponse
  */
 export type CreatePersonalAccessTokenResponse = Message<"admiral.api.user.v1.CreatePersonalAccessTokenResponse"> & {
-  /**
-   * The created token metadata.
-   *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
-   */
-  accessToken?: AccessToken;
-
   /**
    * The raw token secret (e.g., "adm_pat_7kH3mNqR2xFb..."). This value is
    * shown exactly once and cannot be retrieved again. Store it securely.
@@ -209,7 +205,7 @@ export type ListPersonalAccessTokensResponse = Message<"admiral.api.user.v1.List
   /**
    * The list of tokens. Token secrets are never included.
    *
-   * @generated from field: repeated admiral.api.accesstoken.v1.AccessToken access_tokens = 1;
+   * @generated from field: repeated admiral.common.v1.AccessToken access_tokens = 1;
    */
   accessTokens: AccessToken[];
 
@@ -258,7 +254,7 @@ export type GetPersonalAccessTokenResponse = Message<"admiral.api.user.v1.GetPer
   /**
    * The token metadata. The token secret is never included.
    *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   * @generated from field: admiral.common.v1.AccessToken access_token = 1;
    */
   accessToken?: AccessToken;
 };
@@ -300,7 +296,7 @@ export type RevokePersonalAccessTokenResponse = Message<"admiral.api.user.v1.Rev
   /**
    * The token metadata with updated status.
    *
-   * @generated from field: admiral.api.accesstoken.v1.AccessToken access_token = 1;
+   * @generated from field: admiral.common.v1.AccessToken access_token = 1;
    */
   accessToken?: AccessToken;
 };
@@ -339,7 +335,7 @@ export const UserAPI: GenService<{
    * The response includes the raw token secret, which is shown exactly once
    * and cannot be retrieved again.
    *
-   * Scope: `tokens:write`
+   * Scope: `token:write`
    *
    * @generated from rpc admiral.api.user.v1.UserAPI.CreatePersonalAccessToken
    */
@@ -352,7 +348,7 @@ export const UserAPI: GenService<{
    * ListPersonalAccessTokens returns a paginated list of the authenticated
    * user's PATs. Token secrets are never included.
    *
-   * Scope: `tokens:read`
+   * Scope: `token:read`
    *
    * @generated from rpc admiral.api.user.v1.UserAPI.ListPersonalAccessTokens
    */
@@ -365,7 +361,7 @@ export const UserAPI: GenService<{
    * GetPersonalAccessToken retrieves a single PAT by ID.
    * Returns metadata only — the token secret is never included.
    *
-   * Scope: `tokens:read`
+   * Scope: `token:read`
    *
    * @generated from rpc admiral.api.user.v1.UserAPI.GetPersonalAccessToken
    */
@@ -378,7 +374,7 @@ export const UserAPI: GenService<{
    * RevokePersonalAccessToken permanently revokes a PAT. The token becomes
    * immediately unusable and cannot be restored.
    *
-   * Scope: `tokens:write`
+   * Scope: `token:write`
    *
    * @generated from rpc admiral.api.user.v1.UserAPI.RevokePersonalAccessToken
    */

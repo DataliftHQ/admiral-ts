@@ -4,19 +4,17 @@ import type { ClientConfig } from "./lib/config.js";
 import { resolveConfig } from "./lib/config.js";
 import { createTransport } from "./lib/transport.js";
 import { validateAuthToken, getTokenInfo, type JWTClaims } from "./lib/auth.js";
-import { AgentAPI } from "../proto/agent/v1/agent_pb.js";
+import { ApplicationAPI } from "../proto/application/v1/application_pb.js";
 import { ClusterAPI } from "../proto/cluster/v1/cluster_pb.js";
+import { EnvironmentAPI } from "../proto/environment/v1/environment_pb.js";
 import { HealthcheckAPI } from "../proto/healthcheck/v1/healthcheck_pb.js";
-import { RunnerAPI } from "../proto/runner/v1/runner_pb.js";
-import { ServiceAccountAPI } from "../proto/serviceaccount/v1/serviceaccount_pb.js";
 import { UserAPI } from "../proto/user/v1/user_pb.js";
 
 // Service client types
-type AgentClient = ConnectClient<typeof AgentAPI>;
+type ApplicationClient = ConnectClient<typeof ApplicationAPI>;
 type ClusterClient = ConnectClient<typeof ClusterAPI>;
+type EnvironmentClient = ConnectClient<typeof EnvironmentAPI>;
 type HealthcheckClient = ConnectClient<typeof HealthcheckAPI>;
-type RunnerClient = ConnectClient<typeof RunnerAPI>;
-type ServiceAccountClient = ConnectClient<typeof ServiceAccountAPI>;
 type UserClient = ConnectClient<typeof UserAPI>;
 
 /**
@@ -26,20 +24,17 @@ export interface Client {
   /** The underlying Connect transport */
   readonly transport: Transport;
 
-  /** Agent service client */
-  readonly agent: AgentClient;
+  /** Application service client */
+  readonly application: ApplicationClient;
 
   /** Cluster service client */
   readonly cluster: ClusterClient;
 
+  /** Environment service client */
+  readonly environment: EnvironmentClient;
+
   /** Healthcheck service client */
   readonly healthcheck: HealthcheckClient;
-
-  /** Runner service client */
-  readonly runner: RunnerClient;
-
-  /** ServiceAccount service client */
-  readonly serviceAccount: ServiceAccountClient;
 
   /** User service client */
   readonly user: UserClient;
@@ -73,7 +68,7 @@ export interface Client {
  * });
  *
  * // Access services via properties
- * const resp = await client.agent.agentMethod({});
+ * const resp = await client.application.applicationMethod({});
  * ```
  */
 export function createClient(config: ClientConfig): Client {
@@ -83,21 +78,20 @@ export function createClient(config: ClientConfig): Client {
   resolved.logger.debug("connected to Admiral API", resolved.baseUrl);
 
   // Lazily initialized service clients
-  let _agent: AgentClient | undefined;
+  let _application: ApplicationClient | undefined;
   let _cluster: ClusterClient | undefined;
+  let _environment: EnvironmentClient | undefined;
   let _healthcheck: HealthcheckClient | undefined;
-  let _runner: RunnerClient | undefined;
-  let _serviceAccount: ServiceAccountClient | undefined;
   let _user: UserClient | undefined;
 
   return {
     transport,
 
-    get agent() {
-      if (!_agent) {
-        _agent = createConnectClient(AgentAPI, transport);
+    get application() {
+      if (!_application) {
+        _application = createConnectClient(ApplicationAPI, transport);
       }
-      return _agent;
+      return _application;
     },
 
     get cluster() {
@@ -107,25 +101,18 @@ export function createClient(config: ClientConfig): Client {
       return _cluster;
     },
 
+    get environment() {
+      if (!_environment) {
+        _environment = createConnectClient(EnvironmentAPI, transport);
+      }
+      return _environment;
+    },
+
     get healthcheck() {
       if (!_healthcheck) {
         _healthcheck = createConnectClient(HealthcheckAPI, transport);
       }
       return _healthcheck;
-    },
-
-    get runner() {
-      if (!_runner) {
-        _runner = createConnectClient(RunnerAPI, transport);
-      }
-      return _runner;
-    },
-
-    get serviceAccount() {
-      if (!_serviceAccount) {
-        _serviceAccount = createConnectClient(ServiceAccountAPI, transport);
-      }
-      return _serviceAccount;
     },
 
     get user() {
