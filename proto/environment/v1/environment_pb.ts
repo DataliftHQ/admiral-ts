@@ -2,8 +2,8 @@
 // @generated from file environment/v1/environment.proto (package admiral.api.environment.v1, syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
-import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
 import { file_admiral_common_v1_annotations } from "../../admiral/common/v1/annotations_pb";
 import { file_buf_validate_validate } from "../../buf/validate/validate_pb";
 import { file_google_api_annotations } from "../../google/api/annotations_pb";
@@ -15,12 +15,40 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file environment/v1/environment.proto.
  */
 export const file_environment_v1_environment: GenFile = /*@__PURE__*/
-  fileDesc("CiBlbnZpcm9ubWVudC92MS9lbnZpcm9ubWVudC5wcm90bxIaYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEipAMKC0Vudmlyb25tZW50EhQKAmlkGAEgASgJQgi6SAVyA7ABARIgCg5hcHBsaWNhdGlvbl9pZBgCIAEoCUIIukgFcgOwAQESOwoEbmFtZRgDIAEoCUItukgqcigQARj/ATIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEhcKCmNsdXN0ZXJfaWQYBCABKAlIAIgBARIWCgluYW1lc3BhY2UYBSABKAlIAYgBARJDCgZsYWJlbHMYBiADKAsyMy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudC5MYWJlbHNFbnRyeRIuCgpjcmVhdGVkX2F0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBQg0KC19jbHVzdGVyX2lkQgwKCl9uYW1lc3BhY2UiyAIKGENyZWF0ZUVudmlyb25tZW50UmVxdWVzdBIgCg5hcHBsaWNhdGlvbl9pZBgBIAEoCUIIukgFcgOwAQESOwoEbmFtZRgCIAEoCUItukgqcigQARj/ATIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEhcKCmNsdXN0ZXJfaWQYAyABKAlIAIgBARIWCgluYW1lc3BhY2UYBCABKAlIAYgBARJQCgZsYWJlbHMYBSADKAsyQC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5DcmVhdGVFbnZpcm9ubWVudFJlcXVlc3QuTGFiZWxzRW50cnkaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUINCgtfY2x1c3Rlcl9pZEIMCgpfbmFtZXNwYWNlIlkKGUNyZWF0ZUVudmlyb25tZW50UmVzcG9uc2USPAoLZW52aXJvbm1lbnQYASABKAsyJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudCI5ChVHZXRFbnZpcm9ubWVudFJlcXVlc3QSIAoOZW52aXJvbm1lbnRfaWQYASABKAlCCLpIBXIDsAEBIlYKFkdldEVudmlyb25tZW50UmVzcG9uc2USPAoLZW52aXJvbm1lbnQYASABKAsyJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudCJQChdMaXN0RW52aXJvbm1lbnRzUmVxdWVzdBIOCgZmaWx0ZXIYASABKAkSEQoJcGFnZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkicgoYTGlzdEVudmlyb25tZW50c1Jlc3BvbnNlEj0KDGVudmlyb25tZW50cxgBIAMoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50EhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKRAQoYVXBkYXRlRW52aXJvbm1lbnRSZXF1ZXN0EkQKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnRCBrpIA8gBARIvCgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2siWQoZVXBkYXRlRW52aXJvbm1lbnRSZXNwb25zZRI8CgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50IjwKGERlbGV0ZUVudmlyb25tZW50UmVxdWVzdBIgCg5lbnZpcm9ubWVudF9pZBgBIAEoCUIIukgFcgOwAQEiGwoZRGVsZXRlRW52aXJvbm1lbnRSZXNwb25zZTKXBwoORW52aXJvbm1lbnRBUEkSrAEKEUNyZWF0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuQ3JlYXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuQ3JlYXRlRW52aXJvbm1lbnRSZXNwb25zZSIqopckCwoJZW52OndyaXRlgtPkkwIVOgEqIhAvdjEvZW52aXJvbm1lbnRzErABCg5HZXRFbnZpcm9ubWVudBIxLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkdldEVudmlyb25tZW50UmVxdWVzdBoyLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkdldEVudmlyb25tZW50UmVzcG9uc2UiN6KXJAoKCGVudjpyZWFkgtPkkwIjEiEvdjEvZW52aXJvbm1lbnRzL3tlbnZpcm9ubWVudF9pZH0SpQEKEExpc3RFbnZpcm9ubWVudHMSMy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5MaXN0RW52aXJvbm1lbnRzUmVxdWVzdBo0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkxpc3RFbnZpcm9ubWVudHNSZXNwb25zZSImopckCgoIZW52OnJlYWSC0+STAhISEC92MS9lbnZpcm9ubWVudHMSvQEKEVVwZGF0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuVXBkYXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuVXBkYXRlRW52aXJvbm1lbnRSZXNwb25zZSI7opckCwoJZW52OndyaXRlgtPkkwImOgEqMiEvdjEvZW52aXJvbm1lbnRzL3tlbnZpcm9ubWVudC5pZH0SugEKEURlbGV0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXNwb25zZSI4opckCwoJZW52OndyaXRlgtPkkwIjKiEvdjEvZW52aXJvbm1lbnRzL3tlbnZpcm9ubWVudF9pZH1C8wEKHmNvbS5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MUIQRW52aXJvbm1lbnRQcm90b1ABWjRnby5hZG1pcmFsLmlvL3Nkay9wcm90by9lbnZpcm9ubWVudC92MTtlbnZpcm9ubWVudHYxogIDQUFFqgIaQWRtaXJhbC5BcGkuRW52aXJvbm1lbnQuVjHKAhpBZG1pcmFsXEFwaVxFbnZpcm9ubWVudFxWMeICJkFkbWlyYWxcQXBpXEVudmlyb25tZW50XFYxXEdQQk1ldGFkYXRh6gIdQWRtaXJhbDo6QXBpOjpFbnZpcm9ubWVudDo6VjFiBnByb3RvMw", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CiBlbnZpcm9ubWVudC92MS9lbnZpcm9ubWVudC5wcm90bxIaYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEiVgoQS3ViZXJuZXRlc0NvbmZpZxIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIWCgluYW1lc3BhY2UYAiABKAlIAIgBAUIMCgpfbmFtZXNwYWNlIusDCgtFbnZpcm9ubWVudBIUCgJpZBgBIAEoCUIIukgFcgOwAQESIAoOYXBwbGljYXRpb25faWQYAiABKAlCCLpIBXIDsAEBEjsKBG5hbWUYAyABKAlCLbpIKnIoEAEY/wEyIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBI9CgxydW50aW1lX3R5cGUYBCABKA4yJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5SdW50aW1lVHlwZRJCCgprdWJlcm5ldGVzGAUgASgLMiwuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuS3ViZXJuZXRlc0NvbmZpZ0gAEkMKBmxhYmVscxgGIAMoCzIzLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50LkxhYmVsc0VudHJ5Ei4KCmNyZWF0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCEAoOcnVudGltZV9jb25maWcijwMKGENyZWF0ZUVudmlyb25tZW50UmVxdWVzdBIgCg5hcHBsaWNhdGlvbl9pZBgBIAEoCUIIukgFcgOwAQESOwoEbmFtZRgCIAEoCUItukgqcigQARj/ATIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEj0KDHJ1bnRpbWVfdHlwZRgDIAEoDjInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLlJ1bnRpbWVUeXBlEkIKCmt1YmVybmV0ZXMYBCABKAsyLC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5LdWJlcm5ldGVzQ29uZmlnSAASUAoGbGFiZWxzGAUgAygLMkAuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuQ3JlYXRlRW52aXJvbm1lbnRSZXF1ZXN0LkxhYmVsc0VudHJ5Gi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCEAoOcnVudGltZV9jb25maWciWQoZQ3JlYXRlRW52aXJvbm1lbnRSZXNwb25zZRI8CgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50IjkKFUdldEVudmlyb25tZW50UmVxdWVzdBIgCg5lbnZpcm9ubWVudF9pZBgBIAEoCUIIukgFcgOwAQEiVgoWR2V0RW52aXJvbm1lbnRSZXNwb25zZRI8CgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50IlAKF0xpc3RFbnZpcm9ubWVudHNSZXF1ZXN0Eg4KBmZpbHRlchgBIAEoCRIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCSJyChhMaXN0RW52aXJvbm1lbnRzUmVzcG9uc2USPQoMZW52aXJvbm1lbnRzGAEgAygLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIpEBChhVcGRhdGVFbnZpcm9ubWVudFJlcXVlc3QSRAoLZW52aXJvbm1lbnQYASABKAsyJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudEIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJZChlVcGRhdGVFbnZpcm9ubWVudFJlc3BvbnNlEjwKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQiPAoYRGVsZXRlRW52aXJvbm1lbnRSZXF1ZXN0EiAKDmVudmlyb25tZW50X2lkGAEgASgJQgi6SAVyA7ABASIbChlEZWxldGVFbnZpcm9ubWVudFJlc3BvbnNlKkgKC1J1bnRpbWVUeXBlEhwKGFJVTlRJTUVfVFlQRV9VTlNQRUNJRklFRBAAEhsKF1JVTlRJTUVfVFlQRV9LVUJFUk5FVEVTEAEylwcKDkVudmlyb25tZW50QVBJEqwBChFDcmVhdGVFbnZpcm9ubWVudBI0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkNyZWF0ZUVudmlyb25tZW50UmVxdWVzdBo1LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkNyZWF0ZUVudmlyb25tZW50UmVzcG9uc2UiKqKXJAsKCWVudjp3cml0ZYLT5JMCFToBKiIQL3YxL2Vudmlyb25tZW50cxKwAQoOR2V0RW52aXJvbm1lbnQSMS5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5HZXRFbnZpcm9ubWVudFJlcXVlc3QaMi5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5HZXRFbnZpcm9ubWVudFJlc3BvbnNlIjeilyQKCghlbnY6cmVhZILT5JMCIxIhL3YxL2Vudmlyb25tZW50cy97ZW52aXJvbm1lbnRfaWR9EqUBChBMaXN0RW52aXJvbm1lbnRzEjMuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuTGlzdEVudmlyb25tZW50c1JlcXVlc3QaNC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5MaXN0RW52aXJvbm1lbnRzUmVzcG9uc2UiJqKXJAoKCGVudjpyZWFkgtPkkwISEhAvdjEvZW52aXJvbm1lbnRzEr0BChFVcGRhdGVFbnZpcm9ubWVudBI0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLlVwZGF0ZUVudmlyb25tZW50UmVxdWVzdBo1LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLlVwZGF0ZUVudmlyb25tZW50UmVzcG9uc2UiO6KXJAsKCWVudjp3cml0ZYLT5JMCJjoBKjIhL3YxL2Vudmlyb25tZW50cy97ZW52aXJvbm1lbnQuaWR9EroBChFEZWxldGVFbnZpcm9ubWVudBI0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkRlbGV0ZUVudmlyb25tZW50UmVxdWVzdBo1LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkRlbGV0ZUVudmlyb25tZW50UmVzcG9uc2UiOKKXJAsKCWVudjp3cml0ZYLT5JMCIyohL3YxL2Vudmlyb25tZW50cy97ZW52aXJvbm1lbnRfaWR9QvMBCh5jb20uYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjFCEEVudmlyb25tZW50UHJvdG9QAVo0Z28uYWRtaXJhbC5pby9zZGsvcHJvdG8vZW52aXJvbm1lbnQvdjE7ZW52aXJvbm1lbnR2MaICA0FBRaoCGkFkbWlyYWwuQXBpLkVudmlyb25tZW50LlYxygIaQWRtaXJhbFxBcGlcRW52aXJvbm1lbnRcVjHiAiZBZG1pcmFsXEFwaVxFbnZpcm9ubWVudFxWMVxHUEJNZXRhZGF0YeoCHUFkbWlyYWw6OkFwaTo6RW52aXJvbm1lbnQ6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+
+/**
+ * KubernetesConfig contains Kubernetes-specific settings for an environment.
+ *
+ * @generated from message admiral.api.environment.v1.KubernetesConfig
+ */
+export type KubernetesConfig = Message<"admiral.api.environment.v1.KubernetesConfig"> & {
+  /**
+   * The cluster this environment deploys to (UUID).
+   *
+   * @generated from field: string cluster_id = 1;
+   */
+  clusterId: string;
+
+  /**
+   * The Kubernetes namespace for this environment's workloads.
+   * Defaults to the environment name if not specified at deploy time.
+   *
+   * @generated from field: optional string namespace = 2;
+   */
+  namespace?: string;
+};
+
+/**
+ * Describes the message admiral.api.environment.v1.KubernetesConfig.
+ * Use `create(KubernetesConfigSchema)` to create a new message.
+ */
+export const KubernetesConfigSchema: GenMessage<KubernetesConfig> = /*@__PURE__*/
+  messageDesc(file_environment_v1_environment, 0);
 
 /**
  * Environment represents a named deployment target for an application. Each
- * environment binds an application to a cluster and namespace where its
- * workloads are deployed.
+ * environment binds an application to a runtime where its workloads are deployed.
  *
  * @generated from message admiral.api.environment.v1.Environment
  */
@@ -49,20 +77,27 @@ export type Environment = Message<"admiral.api.environment.v1.Environment"> & {
   name: string;
 
   /**
-   * The cluster this environment deploys to (UUID). Optional — can be assigned
+   * The kind of runtime this environment targets. Optional — can be assigned
    * after creation.
    *
-   * @generated from field: optional string cluster_id = 4;
+   * @generated from field: admiral.api.environment.v1.RuntimeType runtime_type = 4;
    */
-  clusterId?: string;
+  runtimeType: RuntimeType;
 
   /**
-   * The Kubernetes namespace for this environment's workloads. Optional —
-   * defaults to the environment name if not specified at deploy time.
+   * Runtime-specific configuration. The active field must match runtime_type.
    *
-   * @generated from field: optional string namespace = 5;
+   * @generated from oneof admiral.api.environment.v1.Environment.runtime_config
    */
-  namespace?: string;
+  runtimeConfig: {
+    /**
+     * Kubernetes-specific settings (cluster, namespace).
+     *
+     * @generated from field: admiral.api.environment.v1.KubernetesConfig kubernetes = 5;
+     */
+    value: KubernetesConfig;
+    case: "kubernetes";
+  } | { case: undefined; value?: undefined };
 
   /**
    * Arbitrary key-value labels for organizing and filtering environments
@@ -92,7 +127,7 @@ export type Environment = Message<"admiral.api.environment.v1.Environment"> & {
  * Use `create(EnvironmentSchema)` to create a new message.
  */
 export const EnvironmentSchema: GenMessage<Environment> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 0);
+  messageDesc(file_environment_v1_environment, 1);
 
 /**
  * CreateEnvironmentRequest contains the parameters for creating a new environment.
@@ -116,19 +151,27 @@ export type CreateEnvironmentRequest = Message<"admiral.api.environment.v1.Creat
   name: string;
 
   /**
-   * The cluster to deploy this environment to (UUID). Optional — can be
-   * assigned later via UpdateEnvironment.
+   * The kind of runtime this environment targets. Optional — can be assigned
+   * later via UpdateEnvironment.
    *
-   * @generated from field: optional string cluster_id = 3;
+   * @generated from field: admiral.api.environment.v1.RuntimeType runtime_type = 3;
    */
-  clusterId?: string;
+  runtimeType: RuntimeType;
 
   /**
-   * The Kubernetes namespace for this environment's workloads.
+   * Runtime-specific configuration. The active field must match runtime_type.
    *
-   * @generated from field: optional string namespace = 4;
+   * @generated from oneof admiral.api.environment.v1.CreateEnvironmentRequest.runtime_config
    */
-  namespace?: string;
+  runtimeConfig: {
+    /**
+     * Kubernetes-specific settings (cluster, namespace).
+     *
+     * @generated from field: admiral.api.environment.v1.KubernetesConfig kubernetes = 4;
+     */
+    value: KubernetesConfig;
+    case: "kubernetes";
+  } | { case: undefined; value?: undefined };
 
   /**
    * Arbitrary key-value labels for organizing and filtering environments.
@@ -143,7 +186,7 @@ export type CreateEnvironmentRequest = Message<"admiral.api.environment.v1.Creat
  * Use `create(CreateEnvironmentRequestSchema)` to create a new message.
  */
 export const CreateEnvironmentRequestSchema: GenMessage<CreateEnvironmentRequest> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 1);
+  messageDesc(file_environment_v1_environment, 2);
 
 /**
  * CreateEnvironmentResponse contains the newly created environment.
@@ -164,7 +207,7 @@ export type CreateEnvironmentResponse = Message<"admiral.api.environment.v1.Crea
  * Use `create(CreateEnvironmentResponseSchema)` to create a new message.
  */
 export const CreateEnvironmentResponseSchema: GenMessage<CreateEnvironmentResponse> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 2);
+  messageDesc(file_environment_v1_environment, 3);
 
 /**
  * GetEnvironmentRequest identifies an environment to retrieve.
@@ -185,7 +228,7 @@ export type GetEnvironmentRequest = Message<"admiral.api.environment.v1.GetEnvir
  * Use `create(GetEnvironmentRequestSchema)` to create a new message.
  */
 export const GetEnvironmentRequestSchema: GenMessage<GetEnvironmentRequest> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 3);
+  messageDesc(file_environment_v1_environment, 4);
 
 /**
  * GetEnvironmentResponse contains the environment record.
@@ -206,7 +249,7 @@ export type GetEnvironmentResponse = Message<"admiral.api.environment.v1.GetEnvi
  * Use `create(GetEnvironmentResponseSchema)` to create a new message.
  */
 export const GetEnvironmentResponseSchema: GenMessage<GetEnvironmentResponse> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 4);
+  messageDesc(file_environment_v1_environment, 5);
 
 /**
  * ListEnvironmentsRequest contains pagination and filter parameters.
@@ -241,7 +284,7 @@ export type ListEnvironmentsRequest = Message<"admiral.api.environment.v1.ListEn
  * Use `create(ListEnvironmentsRequestSchema)` to create a new message.
  */
 export const ListEnvironmentsRequestSchema: GenMessage<ListEnvironmentsRequest> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 5);
+  messageDesc(file_environment_v1_environment, 6);
 
 /**
  * ListEnvironmentsResponse contains a page of environments.
@@ -269,7 +312,7 @@ export type ListEnvironmentsResponse = Message<"admiral.api.environment.v1.ListE
  * Use `create(ListEnvironmentsResponseSchema)` to create a new message.
  */
 export const ListEnvironmentsResponseSchema: GenMessage<ListEnvironmentsResponse> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 6);
+  messageDesc(file_environment_v1_environment, 7);
 
 /**
  * UpdateEnvironmentRequest contains the environment fields to update.
@@ -287,7 +330,7 @@ export type UpdateEnvironmentRequest = Message<"admiral.api.environment.v1.Updat
 
   /**
    * The set of fields to update. If unset, all mutable fields are updated.
-   * Supported fields: `name`, `cluster_id`, `namespace`, `labels`.
+   * Supported fields: `name`, `runtime_type`, `kubernetes`, `labels`.
    *
    * @generated from field: google.protobuf.FieldMask update_mask = 2;
    */
@@ -299,7 +342,7 @@ export type UpdateEnvironmentRequest = Message<"admiral.api.environment.v1.Updat
  * Use `create(UpdateEnvironmentRequestSchema)` to create a new message.
  */
 export const UpdateEnvironmentRequestSchema: GenMessage<UpdateEnvironmentRequest> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 7);
+  messageDesc(file_environment_v1_environment, 8);
 
 /**
  * UpdateEnvironmentResponse contains the updated environment.
@@ -320,7 +363,7 @@ export type UpdateEnvironmentResponse = Message<"admiral.api.environment.v1.Upda
  * Use `create(UpdateEnvironmentResponseSchema)` to create a new message.
  */
 export const UpdateEnvironmentResponseSchema: GenMessage<UpdateEnvironmentResponse> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 8);
+  messageDesc(file_environment_v1_environment, 9);
 
 /**
  * DeleteEnvironmentRequest identifies an environment to delete.
@@ -341,7 +384,7 @@ export type DeleteEnvironmentRequest = Message<"admiral.api.environment.v1.Delet
  * Use `create(DeleteEnvironmentRequestSchema)` to create a new message.
  */
 export const DeleteEnvironmentRequestSchema: GenMessage<DeleteEnvironmentRequest> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 9);
+  messageDesc(file_environment_v1_environment, 10);
 
 /**
  * DeleteEnvironmentResponse is empty on success.
@@ -356,15 +399,42 @@ export type DeleteEnvironmentResponse = Message<"admiral.api.environment.v1.Dele
  * Use `create(DeleteEnvironmentResponseSchema)` to create a new message.
  */
 export const DeleteEnvironmentResponseSchema: GenMessage<DeleteEnvironmentResponse> = /*@__PURE__*/
-  messageDesc(file_environment_v1_environment, 10);
+  messageDesc(file_environment_v1_environment, 11);
+
+/**
+ * RuntimeType identifies the kind of runtime an environment targets.
+ *
+ * @generated from enum admiral.api.environment.v1.RuntimeType
+ */
+export enum RuntimeType {
+  /**
+   * Default value. Must not be used.
+   *
+   * @generated from enum value: RUNTIME_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * Kubernetes cluster managed via Admiral's K8s agent.
+   *
+   * @generated from enum value: RUNTIME_TYPE_KUBERNETES = 1;
+   */
+  KUBERNETES = 1,
+}
+
+/**
+ * Describes the enum admiral.api.environment.v1.RuntimeType.
+ */
+export const RuntimeTypeSchema: GenEnum<RuntimeType> = /*@__PURE__*/
+  enumDesc(file_environment_v1_environment, 0);
 
 /**
  * EnvironmentAPI manages environments within an application.
  *
  * An environment is a named deployment target (e.g., dev, staging, prod) that
- * binds an application to a specific cluster and namespace. Each environment
- * carries its own configuration, credentials, and compute targets. Promotion
- * between environments is explicit — Admiral never auto-promotes.
+ * binds an application to a runtime where its workloads are deployed. Each
+ * environment carries its own configuration, credentials, and compute targets.
+ * Promotion between environments is explicit — Admiral never auto-promotes.
  *
  * @generated from service admiral.api.environment.v1.EnvironmentAPI
  */
@@ -395,7 +465,7 @@ export const EnvironmentAPI: GenService<{
   },
   /**
    * ListEnvironments returns a paginated list of environments. Use the filter
-   * to scope by application, cluster, or labels.
+   * to scope by application, runtime type, or labels.
    *
    * Scope: `env:read`
    *
@@ -421,8 +491,8 @@ export const EnvironmentAPI: GenService<{
   },
   /**
    * DeleteEnvironment permanently deletes an environment. This does not affect
-   * the underlying cluster or namespace — only the Admiral environment record
-   * is removed. This action cannot be undone.
+   * the underlying runtime — only the Admiral environment record is removed.
+   * This action cannot be undone.
    *
    * Scope: `env:write`
    *

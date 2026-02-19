@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/common/v1/token.proto.
  */
 export const file_admiral_common_v1_token: GenFile = /*@__PURE__*/
-  fileDesc("Ch1hZG1pcmFsL2NvbW1vbi92MS90b2tlbi5wcm90bxIRYWRtaXJhbC5jb21tb24udjEi8gMKC0FjY2Vzc1Rva2VuEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEhQKDGRpc3BsYXlfbmFtZRgDIAEoCRIUCgx0b2tlbl9wcmVmaXgYBCABKAkSMAoKdG9rZW5fdHlwZRgFIAEoDjIcLmFkbWlyYWwuY29tbW9uLnYxLlRva2VuVHlwZRIOCgZzY29wZXMYBiADKAkSNAoGc3RhdHVzGAcgASgOMiQuYWRtaXJhbC5jb21tb24udjEuQWNjZXNzVG9rZW5TdGF0dXMSDwoHdXNlcl9pZBgIIAEoCRISCgpjbHVzdGVyX2lkGAkgASgJEhEKCXJ1bm5lcl9pZBgKIAEoCRISCgpjcmVhdGVkX2J5GAsgASgJEi4KCmV4cGlyZXNfYXQYDCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjAKDGxhc3RfdXNlZF9hdBgNIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKY3JlYXRlZF9hdBgOIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKcmV2b2tlZF9hdBgPIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAqTwoJVG9rZW5UeXBlEhoKFlRPS0VOX1RZUEVfVU5TUEVDSUZJRUQQABISCg5UT0tFTl9UWVBFX1BBVBABEhIKDlRPS0VOX1RZUEVfQUdUEAIqmwEKEUFjY2Vzc1Rva2VuU3RhdHVzEiMKH0FDQ0VTU19UT0tFTl9TVEFUVVNfVU5TUEVDSUZJRUQQABIeChpBQ0NFU1NfVE9LRU5fU1RBVFVTX0FDVElWRRABEh8KG0FDQ0VTU19UT0tFTl9TVEFUVVNfUkVWT0tFRBACEiAKHEFDQ0VTU19UT0tFTl9TVEFUVVNfUk9UQVRJTkcQA0JPWk1idWYuYnVpbGQvZ2VuL2dvL2FkbWlyYWwvY29tbW9uL3Byb3RvY29sYnVmZmVycy9nby9hZG1pcmFsL2NvbW1vbi92MTtjb21tb252MWIGcHJvdG8z", [file_buf_validate_validate, file_google_protobuf_timestamp]);
+  fileDesc("Ch1hZG1pcmFsL2NvbW1vbi92MS90b2tlbi5wcm90bxIRYWRtaXJhbC5jb21tb24udjEilQQKC0FjY2Vzc1Rva2VuEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjsKBG5hbWUYAyABKAlCLbpIKnIoEAEY/wEyIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIwCgp0b2tlbl90eXBlGAUgASgOMhwuYWRtaXJhbC5jb21tb24udjEuVG9rZW5UeXBlEg4KBnNjb3BlcxgGIAMoCRI0CgZzdGF0dXMYByABKA4yJC5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlblN0YXR1cxI0CgxiaW5kaW5nX3R5cGUYCCABKA4yHi5hZG1pcmFsLmNvbW1vbi52MS5CaW5kaW5nVHlwZRISCgpiaW5kaW5nX2lkGAkgASgJEhIKCmNyZWF0ZWRfYnkYCyABKAkSLgoKZXhwaXJlc19hdBgMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMAoMbGFzdF91c2VkX2F0GA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgpjcmVhdGVkX2F0GA4gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgpyZXZva2VkX2F0GA8gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCpPCglUb2tlblR5cGUSGgoWVE9LRU5fVFlQRV9VTlNQRUNJRklFRBAAEhIKDlRPS0VOX1RZUEVfUEFUEAESEgoOVE9LRU5fVFlQRV9BR1QQAipcCgtCaW5kaW5nVHlwZRIcChhCSU5ESU5HX1RZUEVfVU5TUEVDSUZJRUQQABIVChFCSU5ESU5HX1RZUEVfVVNFUhABEhgKFEJJTkRJTkdfVFlQRV9DTFVTVEVSEAIqmwEKEUFjY2Vzc1Rva2VuU3RhdHVzEiMKH0FDQ0VTU19UT0tFTl9TVEFUVVNfVU5TUEVDSUZJRUQQABIeChpBQ0NFU1NfVE9LRU5fU1RBVFVTX0FDVElWRRABEh8KG0FDQ0VTU19UT0tFTl9TVEFUVVNfUkVWT0tFRBACEiAKHEFDQ0VTU19UT0tFTl9TVEFUVVNfUk9UQVRJTkcQA0JPWk1idWYuYnVpbGQvZ2VuL2dvL2FkbWlyYWwvY29tbW9uL3Byb3RvY29sYnVmZmVycy9nby9hZG1pcmFsL2NvbW1vbi92MTtjb21tb252MWIGcHJvdG8z", [file_buf_validate_validate, file_google_protobuf_timestamp]);
 
 /**
  * AccessToken contains token metadata common to all token types (PAT, AGT).
@@ -42,19 +42,13 @@ export type AccessToken = Message<"admiral.common.v1.AccessToken"> & {
   tenantId: string;
 
   /**
-   * Human-readable name for the token (e.g., "postman-testing", "ci-deploy-key").
+   * URL-safe, human-readable identifier for the token (e.g., "ci-deploy-key").
+   * Unique within the parent resource. Lowercase alphanumeric and hyphens only,
+   * must start with a letter and end with an alphanumeric character (1-63 chars).
    *
-   * @generated from field: string display_name = 3;
+   * @generated from field: string name = 3;
    */
-  displayName: string;
-
-  /**
-   * Display-safe prefix for identifying the token without exposing the secret
-   * (e.g., "adm_pat_7kH3").
-   *
-   * @generated from field: string token_prefix = 4;
-   */
-  tokenPrefix: string;
+  name: string;
 
   /**
    * The category of this token.
@@ -79,28 +73,18 @@ export type AccessToken = Message<"admiral.common.v1.AccessToken"> & {
   status: AccessTokenStatus;
 
   /**
-   * The user this token is bound to (UUID). Set when token_type is
-   * TOKEN_TYPE_PAT.
+   * The kind of resource this token is bound to.
    *
-   * @generated from field: string user_id = 8;
+   * @generated from field: admiral.common.v1.BindingType binding_type = 8;
    */
-  userId: string;
+  bindingType: BindingType;
 
   /**
-   * The cluster this token is bound to (UUID). Set when token_type is
-   * TOKEN_TYPE_AGT and the token is bound to a cluster.
+   * The ID of the resource this token is bound to (UUID).
    *
-   * @generated from field: string cluster_id = 9;
+   * @generated from field: string binding_id = 9;
    */
-  clusterId: string;
-
-  /**
-   * The runner this token is bound to (UUID). Set when token_type is
-   * TOKEN_TYPE_AGT and the token is bound to a runner.
-   *
-   * @generated from field: string runner_id = 10;
-   */
-  runnerId: string;
+  bindingId: string;
 
   /**
    * The user who created this token (UUID). For PATs, this is the token owner.
@@ -184,6 +168,40 @@ export const TokenTypeSchema: GenEnum<TokenType> = /*@__PURE__*/
   enumDesc(file_admiral_common_v1_token, 0);
 
 /**
+ * BindingType identifies the kind of resource an access token is bound to.
+ *
+ * @generated from enum admiral.common.v1.BindingType
+ */
+export enum BindingType {
+  /**
+   * Default value. Must not be used.
+   *
+   * @generated from enum value: BINDING_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * Token is bound to a user (PATs).
+   *
+   * @generated from enum value: BINDING_TYPE_USER = 1;
+   */
+  USER = 1,
+
+  /**
+   * Token is bound to a cluster (AGTs).
+   *
+   * @generated from enum value: BINDING_TYPE_CLUSTER = 2;
+   */
+  CLUSTER = 2,
+}
+
+/**
+ * Describes the enum admiral.common.v1.BindingType.
+ */
+export const BindingTypeSchema: GenEnum<BindingType> = /*@__PURE__*/
+  enumDesc(file_admiral_common_v1_token, 1);
+
+/**
  * AccessTokenStatus represents the lifecycle state of an access token.
  *
  * @generated from enum admiral.common.v1.AccessTokenStatus
@@ -223,5 +241,5 @@ export enum AccessTokenStatus {
  * Describes the enum admiral.common.v1.AccessTokenStatus.
  */
 export const AccessTokenStatusSchema: GenEnum<AccessTokenStatus> = /*@__PURE__*/
-  enumDesc(file_admiral_common_v1_token, 1);
+  enumDesc(file_admiral_common_v1_token, 2);
 
