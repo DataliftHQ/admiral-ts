@@ -24,6 +24,7 @@ const client = createClient({
 // await client.environment.methodName({ ... });
 // await client.healthcheck.methodName({ ... });
 // await client.user.methodName({ ... });
+// await client.variable.methodName({ ... });
 ```
 
 ## Available Services
@@ -35,6 +36,7 @@ const client = createClient({
 | EnvironmentAPI | `client.environment` | Environment service |
 | HealthcheckAPI | `client.healthcheck` | Healthcheck service |
 | UserAPI | `client.user` | User service |
+| VariableAPI | `client.variable` | Variable service |
 
 ## Example
 

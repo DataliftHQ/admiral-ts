@@ -9,6 +9,7 @@ import { ClusterAPI } from "../proto/cluster/v1/cluster_pb.js";
 import { EnvironmentAPI } from "../proto/environment/v1/environment_pb.js";
 import { HealthcheckAPI } from "../proto/healthcheck/v1/healthcheck_pb.js";
 import { UserAPI } from "../proto/user/v1/user_pb.js";
+import { VariableAPI } from "../proto/variable/v1/variable_pb.js";
 
 // Service client types
 type ApplicationClient = ConnectClient<typeof ApplicationAPI>;
@@ -16,6 +17,7 @@ type ClusterClient = ConnectClient<typeof ClusterAPI>;
 type EnvironmentClient = ConnectClient<typeof EnvironmentAPI>;
 type HealthcheckClient = ConnectClient<typeof HealthcheckAPI>;
 type UserClient = ConnectClient<typeof UserAPI>;
+type VariableClient = ConnectClient<typeof VariableAPI>;
 
 /**
  * Admiral client interface.
@@ -38,6 +40,9 @@ export interface Client {
 
   /** User service client */
   readonly user: UserClient;
+
+  /** Variable service client */
+  readonly variable: VariableClient;
 
   /**
    * Validates the current auth token.
@@ -83,6 +88,7 @@ export function createClient(config: ClientConfig): Client {
   let _environment: EnvironmentClient | undefined;
   let _healthcheck: HealthcheckClient | undefined;
   let _user: UserClient | undefined;
+  let _variable: VariableClient | undefined;
 
   return {
     transport,
@@ -120,6 +126,13 @@ export function createClient(config: ClientConfig): Client {
         _user = createConnectClient(UserAPI, transport);
       }
       return _user;
+    },
+
+    get variable() {
+      if (!_variable) {
+        _variable = createConnectClient(VariableAPI, transport);
+      }
+      return _variable;
     },
 
     validateToken() {
