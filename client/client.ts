@@ -4,12 +4,12 @@ import type { ClientConfig } from "./lib/config.js";
 import { resolveConfig } from "./lib/config.js";
 import { createTransport } from "./lib/transport.js";
 import { validateAuthToken, getTokenInfo, type JWTClaims } from "./lib/auth.js";
-import { ApplicationAPI } from "../proto/application/v1/application_pb.js";
-import { ClusterAPI } from "../proto/cluster/v1/cluster_pb.js";
-import { EnvironmentAPI } from "../proto/environment/v1/environment_pb.js";
-import { HealthcheckAPI } from "../proto/healthcheck/v1/healthcheck_pb.js";
-import { UserAPI } from "../proto/user/v1/user_pb.js";
-import { VariableAPI } from "../proto/variable/v1/variable_pb.js";
+import { ApplicationAPI } from "../proto/admiral/api/application/v1/application_pb.js";
+import { ClusterAPI } from "../proto/admiral/api/cluster/v1/cluster_pb.js";
+import { EnvironmentAPI } from "../proto/admiral/api/environment/v1/environment_pb.js";
+import { HealthcheckAPI } from "../proto/admiral/api/healthcheck/v1/healthcheck_pb.js";
+import { UserAPI } from "../proto/admiral/api/user/v1/user_pb.js";
+import { VariableAPI } from "../proto/admiral/api/variable/v1/variable_pb.js";
 
 // Service client types
 type ApplicationClient = ConnectClient<typeof ApplicationAPI>;

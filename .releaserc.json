@@ -1,5 +1,8 @@
 {
-  "branches": ["master"],
+  "branches": [
+    "master",
+    {"name": "dev/*", "prerelease": "${name.replace(/^dev\\//,'').replace(/[^a-zA-Z0-9]/g,'-')}", "channel": "dev"}
+  ],
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
