@@ -6,16 +6,28 @@ import { createTransport } from "./lib/transport.js";
 import { validateAuthToken, getTokenInfo, type JWTClaims } from "./lib/auth.js";
 import { ApplicationAPI } from "../proto/admiral/api/application/v1/application_pb.js";
 import { ClusterAPI } from "../proto/admiral/api/cluster/v1/cluster_pb.js";
+import { ComponentAPI } from "../proto/admiral/api/component/v1/component_pb.js";
+import { ConnectionAPI } from "../proto/admiral/api/connection/v1/connection_pb.js";
+import { DeploymentAPI } from "../proto/admiral/api/deployment/v1/deployment_pb.js";
 import { EnvironmentAPI } from "../proto/admiral/api/environment/v1/environment_pb.js";
 import { HealthcheckAPI } from "../proto/admiral/api/healthcheck/v1/healthcheck_pb.js";
+import { RunnerAPI } from "../proto/admiral/api/runner/v1/runner_pb.js";
+import { SourceAPI } from "../proto/admiral/api/source/v1/source_pb.js";
+import { StateAPI } from "../proto/admiral/api/state/v1/state_pb.js";
 import { UserAPI } from "../proto/admiral/api/user/v1/user_pb.js";
 import { VariableAPI } from "../proto/admiral/api/variable/v1/variable_pb.js";
 
 // Service client types
 type ApplicationClient = ConnectClient<typeof ApplicationAPI>;
 type ClusterClient = ConnectClient<typeof ClusterAPI>;
+type ComponentClient = ConnectClient<typeof ComponentAPI>;
+type ConnectionClient = ConnectClient<typeof ConnectionAPI>;
+type DeploymentClient = ConnectClient<typeof DeploymentAPI>;
 type EnvironmentClient = ConnectClient<typeof EnvironmentAPI>;
 type HealthcheckClient = ConnectClient<typeof HealthcheckAPI>;
+type RunnerClient = ConnectClient<typeof RunnerAPI>;
+type SourceClient = ConnectClient<typeof SourceAPI>;
+type StateClient = ConnectClient<typeof StateAPI>;
 type UserClient = ConnectClient<typeof UserAPI>;
 type VariableClient = ConnectClient<typeof VariableAPI>;
 
@@ -32,11 +44,29 @@ export interface Client {
   /** Cluster service client */
   readonly cluster: ClusterClient;
 
+  /** Component service client */
+  readonly component: ComponentClient;
+
+  /** Connection service client */
+  readonly connection: ConnectionClient;
+
+  /** Deployment service client */
+  readonly deployment: DeploymentClient;
+
   /** Environment service client */
   readonly environment: EnvironmentClient;
 
   /** Healthcheck service client */
   readonly healthcheck: HealthcheckClient;
+
+  /** Runner service client */
+  readonly runner: RunnerClient;
+
+  /** Source service client */
+  readonly source: SourceClient;
+
+  /** State service client */
+  readonly state: StateClient;
 
   /** User service client */
   readonly user: UserClient;
@@ -85,8 +115,14 @@ export function createClient(config: ClientConfig): Client {
   // Lazily initialized service clients
   let _application: ApplicationClient | undefined;
   let _cluster: ClusterClient | undefined;
+  let _component: ComponentClient | undefined;
+  let _connection: ConnectionClient | undefined;
+  let _deployment: DeploymentClient | undefined;
   let _environment: EnvironmentClient | undefined;
   let _healthcheck: HealthcheckClient | undefined;
+  let _runner: RunnerClient | undefined;
+  let _source: SourceClient | undefined;
+  let _state: StateClient | undefined;
   let _user: UserClient | undefined;
   let _variable: VariableClient | undefined;
 
@@ -107,6 +143,27 @@ export function createClient(config: ClientConfig): Client {
       return _cluster;
     },
 
+    get component() {
+      if (!_component) {
+        _component = createConnectClient(ComponentAPI, transport);
+      }
+      return _component;
+    },
+
+    get connection() {
+      if (!_connection) {
+        _connection = createConnectClient(ConnectionAPI, transport);
+      }
+      return _connection;
+    },
+
+    get deployment() {
+      if (!_deployment) {
+        _deployment = createConnectClient(DeploymentAPI, transport);
+      }
+      return _deployment;
+    },
+
     get environment() {
       if (!_environment) {
         _environment = createConnectClient(EnvironmentAPI, transport);
@@ -119,6 +176,27 @@ export function createClient(config: ClientConfig): Client {
         _healthcheck = createConnectClient(HealthcheckAPI, transport);
       }
       return _healthcheck;
+    },
+
+    get runner() {
+      if (!_runner) {
+        _runner = createConnectClient(RunnerAPI, transport);
+      }
+      return _runner;
+    },
+
+    get source() {
+      if (!_source) {
+        _source = createConnectClient(SourceAPI, transport);
+      }
+      return _source;
+    },
+
+    get state() {
+      if (!_state) {
+        _state = createConnectClient(StateAPI, transport);
+      }
+      return _state;
     },
 
     get user() {

@@ -17,39 +17,23 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/user/v1/user.proto.
  */
 export const file_admiral_api_user_v1_user: GenFile = /*@__PURE__*/
-  fileDesc("Ch5hZG1pcmFsL2FwaS91c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEiEAoOR2V0VXNlclJlcXVlc3Qi5QEKD0dldFVzZXJSZXNwb25zZRIKCgJpZBgBIAEoCRIRCgl0ZW5hbnRfaWQYAiABKAkSDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsIp8BCiBDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBI7CgRuYW1lGAEgASgJQi26SCpyKBABGP8BMiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyQSDgoGc2NvcGVzGAIgAygJEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wInMKIUNyZWF0ZVBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIlgKH0xpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBhZ2VfdG9rZW4YAiABKAkSDgoGZmlsdGVyGAMgASgJInIKIExpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlEjUKDWFjY2Vzc190b2tlbnMYASADKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiOwodR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QSGgoIdG9rZW5faWQYASABKAlCCLpIBXIDsAEBIlYKHkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbiI+CiBSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIaCgh0b2tlbl9pZBgBIAEoCUIIukgFcgOwAQEiWQohUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuMuYGCgdVc2VyQVBJEmoKB0dldFVzZXISIy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXF1ZXN0GiQuYWRtaXJhbC5hcGkudXNlci52MS5HZXRVc2VyUmVzcG9uc2UiFKKXJACC0+STAgoSCC92MS91c2VyErcBChlDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5DcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuQ3JlYXRlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIiuilyQNCgt0b2tlbjp3cml0ZYLT5JMCFDoBKiIPL3YxL3VzZXIvdG9rZW5zErABChhMaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnMSNC5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QaNS5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlIieilyQMCgp0b2tlbjpyZWFkgtPkkwIREg8vdjEvdXNlci90b2tlbnMStQEKFkdldFBlcnNvbmFsQWNjZXNzVG9rZW4SMi5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXF1ZXN0GjMuYWRtaXJhbC5hcGkudXNlci52MS5HZXRQZXJzb25hbEFjY2Vzc1Rva2VuUmVzcG9uc2UiMqKXJAwKCnRva2VuOnJlYWSC0+STAhwSGi92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9EskBChlSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5SZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIj2ilyQNCgt0b2tlbjp3cml0ZYLT5JMCJjoBKiIhL3YxL3VzZXIvdG9rZW5zL3t0b2tlbl9pZH0vcmV2b2tlQscBChdjb20uYWRtaXJhbC5hcGkudXNlci52MUIJVXNlclByb3RvUAFaMmdvLmFkbWlyYWwuaW8vc2RrL3Byb3RvL2FkbWlyYWwvYXBpL3VzZXIvdjE7dXNlcnYxogIDQUFVqgITQWRtaXJhbC5BcGkuVXNlci5WMcoCE0FkbWlyYWxcQXBpXFVzZXJcVjHiAh9BZG1pcmFsXEFwaVxVc2VyXFYxXEdQQk1ldGFkYXRh6gIWQWRtaXJhbDo6QXBpOjpVc2VyOjpWMWIGcHJvdG8z", [file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_timestamp]);
+  fileDesc("Ch5hZG1pcmFsL2FwaS91c2VyL3YxL3VzZXIucHJvdG8SE2FkbWlyYWwuYXBpLnVzZXIudjEizgIKBFVzZXISFAoCaWQYASABKAlCCLpIBXIDsAEBEhsKCXRlbmFudF9pZBgCIAEoCUIIukgFcgOwAQESDQoFZW1haWwYAyABKAkSGQoMZGlzcGxheV9uYW1lGAQgASgJSACIAQESFwoKZ2l2ZW5fbmFtZRgFIAEoCUgBiAEBEhgKC2ZhbWlseV9uYW1lGAYgASgJSAKIAQESFwoKYXZhdGFyX3VybBgHIAEoCUgDiAEBEi4KCmNyZWF0ZWRfYXQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg8KDV9kaXNwbGF5X25hbWVCDQoLX2dpdmVuX25hbWVCDgoMX2ZhbWlseV9uYW1lQg0KC19hdmF0YXJfdXJsIhAKDkdldFVzZXJSZXF1ZXN0IjoKD0dldFVzZXJSZXNwb25zZRInCgR1c2VyGAEgASgLMhkuYWRtaXJhbC5hcGkudXNlci52MS5Vc2VyIrEBCiBDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBI6CgRuYW1lGAEgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIhCgZzY29wZXMYAiADKAlCEbpIDpIBCxD/ASIGcgQQARhAEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wInMKIUNyZWF0ZVBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIm0KH0xpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QSGAoGZmlsdGVyGAEgASgJQgi6SAVyAxiACBIcCglwYWdlX3NpemUYAiABKAVCCbpIBhoEGGQoABISCgpwYWdlX3Rva2VuGAMgASgJInIKIExpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlEjUKDWFjY2Vzc190b2tlbnMYASADKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiOwodR2V0UGVyc29uYWxBY2Nlc3NUb2tlblJlcXVlc3QSGgoIdG9rZW5faWQYASABKAlCCLpIBXIDsAEBIlYKHkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbiI+CiBSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBIaCgh0b2tlbl9pZBgBIAEoCUIIukgFcgOwAQEiWQohUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuMuYGCgdVc2VyQVBJEmoKB0dldFVzZXISIy5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFVzZXJSZXF1ZXN0GiQuYWRtaXJhbC5hcGkudXNlci52MS5HZXRVc2VyUmVzcG9uc2UiFKKXJACC0+STAgoSCC92MS91c2VyErcBChlDcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5DcmVhdGVQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuQ3JlYXRlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIiuilyQNCgt0b2tlbjp3cml0ZYLT5JMCFDoBKiIPL3YxL3VzZXIvdG9rZW5zErABChhMaXN0UGVyc29uYWxBY2Nlc3NUb2tlbnMSNC5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1JlcXVlc3QaNS5hZG1pcmFsLmFwaS51c2VyLnYxLkxpc3RQZXJzb25hbEFjY2Vzc1Rva2Vuc1Jlc3BvbnNlIieilyQMCgp0b2tlbjpyZWFkgtPkkwIREg8vdjEvdXNlci90b2tlbnMStQEKFkdldFBlcnNvbmFsQWNjZXNzVG9rZW4SMi5hZG1pcmFsLmFwaS51c2VyLnYxLkdldFBlcnNvbmFsQWNjZXNzVG9rZW5SZXF1ZXN0GjMuYWRtaXJhbC5hcGkudXNlci52MS5HZXRQZXJzb25hbEFjY2Vzc1Rva2VuUmVzcG9uc2UiMqKXJAwKCnRva2VuOnJlYWSC0+STAhwSGi92MS91c2VyL3Rva2Vucy97dG9rZW5faWR9EskBChlSZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuEjUuYWRtaXJhbC5hcGkudXNlci52MS5SZXZva2VQZXJzb25hbEFjY2Vzc1Rva2VuUmVxdWVzdBo2LmFkbWlyYWwuYXBpLnVzZXIudjEuUmV2b2tlUGVyc29uYWxBY2Nlc3NUb2tlblJlc3BvbnNlIj2ilyQNCgt0b2tlbjp3cml0ZYLT5JMCJjoBKiIhL3YxL3VzZXIvdG9rZW5zL3t0b2tlbl9pZH0vcmV2b2tlQscBChdjb20uYWRtaXJhbC5hcGkudXNlci52MUIJVXNlclByb3RvUAFaMmdvLmFkbWlyYWwuaW8vc2RrL3Byb3RvL2FkbWlyYWwvYXBpL3VzZXIvdjE7dXNlcnYxogIDQUFVqgITQWRtaXJhbC5BcGkuVXNlci5WMcoCE0FkbWlyYWxcQXBpXFVzZXJcVjHiAh9BZG1pcmFsXEFwaVxVc2VyXFYxXEdQQk1ldGFkYXRh6gIWQWRtaXJhbDo6QXBpOjpVc2VyOjpWMWIGcHJvdG8z", [file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_timestamp]);
 
 /**
- * GetUserRequest is the request message for GetUser.
- * No parameters are required as the user is identified by the auth token.
+ * User represents the authenticated user's profile information.
  *
- * @generated from message admiral.api.user.v1.GetUserRequest
+ * @generated from message admiral.api.user.v1.User
  */
-export type GetUserRequest = Message<"admiral.api.user.v1.GetUserRequest"> & {
-};
-
-/**
- * Describes the message admiral.api.user.v1.GetUserRequest.
- * Use `create(GetUserRequestSchema)` to create a new message.
- */
-export const GetUserRequestSchema: GenMessage<GetUserRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 0);
-
-/**
- * GetUserResponse contains the authenticated user's profile information.
- *
- * @generated from message admiral.api.user.v1.GetUserResponse
- */
-export type GetUserResponse = Message<"admiral.api.user.v1.GetUserResponse"> & {
+export type User = Message<"admiral.api.user.v1.User"> & {
   /**
-   * Unique identifier for the user (UUID format).
+   * Unique identifier for the user (UUID).
    *
    * @generated from field: string id = 1;
    */
   id: string;
 
   /**
-   * The tenant this user belongs to (UUID format).
+   * The tenant this user belongs to (UUID).
    *
    * @generated from field: string tenant_id = 2;
    */
@@ -89,6 +73,57 @@ export type GetUserResponse = Message<"admiral.api.user.v1.GetUserResponse"> & {
    * @generated from field: optional string avatar_url = 7;
    */
   avatarUrl?: string;
+
+  /**
+   * When the user was created.
+   *
+   * @generated from field: google.protobuf.Timestamp created_at = 8;
+   */
+  createdAt?: Timestamp;
+
+  /**
+   * When the user was last updated.
+   *
+   * @generated from field: google.protobuf.Timestamp updated_at = 9;
+   */
+  updatedAt?: Timestamp;
+};
+
+/**
+ * Describes the message admiral.api.user.v1.User.
+ * Use `create(UserSchema)` to create a new message.
+ */
+export const UserSchema: GenMessage<User> = /*@__PURE__*/
+  messageDesc(file_admiral_api_user_v1_user, 0);
+
+/**
+ * GetUserRequest is the request message for GetUser.
+ * No parameters are required as the user is identified by the auth token.
+ *
+ * @generated from message admiral.api.user.v1.GetUserRequest
+ */
+export type GetUserRequest = Message<"admiral.api.user.v1.GetUserRequest"> & {
+};
+
+/**
+ * Describes the message admiral.api.user.v1.GetUserRequest.
+ * Use `create(GetUserRequestSchema)` to create a new message.
+ */
+export const GetUserRequestSchema: GenMessage<GetUserRequest> = /*@__PURE__*/
+  messageDesc(file_admiral_api_user_v1_user, 1);
+
+/**
+ * GetUserResponse contains the authenticated user's profile.
+ *
+ * @generated from message admiral.api.user.v1.GetUserResponse
+ */
+export type GetUserResponse = Message<"admiral.api.user.v1.GetUserResponse"> & {
+  /**
+   * The user profile.
+   *
+   * @generated from field: admiral.api.user.v1.User user = 1;
+   */
+  user?: User;
 };
 
 /**
@@ -96,7 +131,7 @@ export type GetUserResponse = Message<"admiral.api.user.v1.GetUserResponse"> & {
  * Use `create(GetUserResponseSchema)` to create a new message.
  */
 export const GetUserResponseSchema: GenMessage<GetUserResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 1);
+  messageDesc(file_admiral_api_user_v1_user, 2);
 
 /**
  * CreatePersonalAccessTokenRequest contains the parameters for creating a new PAT.
@@ -115,6 +150,8 @@ export type CreatePersonalAccessTokenRequest = Message<"admiral.api.user.v1.Crea
 
   /**
    * The scopes to grant this token. Must be valid scopes allowed for PATs.
+   * The server enforces that issued scopes are a subset of the caller's own
+   * scopes — a token cannot grant more access than the user holds.
    *
    * @generated from field: repeated string scopes = 2;
    */
@@ -134,7 +171,7 @@ export type CreatePersonalAccessTokenRequest = Message<"admiral.api.user.v1.Crea
  * Use `create(CreatePersonalAccessTokenRequestSchema)` to create a new message.
  */
 export const CreatePersonalAccessTokenRequestSchema: GenMessage<CreatePersonalAccessTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 2);
+  messageDesc(file_admiral_api_user_v1_user, 3);
 
 /**
  * CreatePersonalAccessTokenResponse contains the newly created PAT.
@@ -163,7 +200,7 @@ export type CreatePersonalAccessTokenResponse = Message<"admiral.api.user.v1.Cre
  * Use `create(CreatePersonalAccessTokenResponseSchema)` to create a new message.
  */
 export const CreatePersonalAccessTokenResponseSchema: GenMessage<CreatePersonalAccessTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 3);
+  messageDesc(file_admiral_api_user_v1_user, 4);
 
 /**
  * ListPersonalAccessTokensRequest contains pagination and filter parameters.
@@ -172,26 +209,26 @@ export const CreatePersonalAccessTokenResponseSchema: GenMessage<CreatePersonalA
  */
 export type ListPersonalAccessTokensRequest = Message<"admiral.api.user.v1.ListPersonalAccessTokensRequest"> & {
   /**
+   * Filter expression using the PEG filter DSL
+   * (e.g., `status == "active"` or `name == "ci-*"`).
+   *
+   * @generated from field: string filter = 1;
+   */
+  filter: string;
+
+  /**
    * Maximum number of tokens to return per page.
    *
-   * @generated from field: int32 page_size = 1;
+   * @generated from field: int32 page_size = 2;
    */
   pageSize: number;
 
   /**
    * Opaque pagination token from a previous response.
    *
-   * @generated from field: string page_token = 2;
+   * @generated from field: string page_token = 3;
    */
   pageToken: string;
-
-  /**
-   * Filter expression using the PEG filter DSL
-   * (e.g., `status = "active"` or `name = "ci-*"`).
-   *
-   * @generated from field: string filter = 3;
-   */
-  filter: string;
 };
 
 /**
@@ -199,7 +236,7 @@ export type ListPersonalAccessTokensRequest = Message<"admiral.api.user.v1.ListP
  * Use `create(ListPersonalAccessTokensRequestSchema)` to create a new message.
  */
 export const ListPersonalAccessTokensRequestSchema: GenMessage<ListPersonalAccessTokensRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 4);
+  messageDesc(file_admiral_api_user_v1_user, 5);
 
 /**
  * ListPersonalAccessTokensResponse contains a page of PAT metadata.
@@ -227,7 +264,7 @@ export type ListPersonalAccessTokensResponse = Message<"admiral.api.user.v1.List
  * Use `create(ListPersonalAccessTokensResponseSchema)` to create a new message.
  */
 export const ListPersonalAccessTokensResponseSchema: GenMessage<ListPersonalAccessTokensResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 5);
+  messageDesc(file_admiral_api_user_v1_user, 6);
 
 /**
  * GetPersonalAccessTokenRequest identifies a PAT to retrieve.
@@ -248,7 +285,7 @@ export type GetPersonalAccessTokenRequest = Message<"admiral.api.user.v1.GetPers
  * Use `create(GetPersonalAccessTokenRequestSchema)` to create a new message.
  */
 export const GetPersonalAccessTokenRequestSchema: GenMessage<GetPersonalAccessTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 6);
+  messageDesc(file_admiral_api_user_v1_user, 7);
 
 /**
  * GetPersonalAccessTokenResponse contains the requested PAT metadata.
@@ -269,7 +306,7 @@ export type GetPersonalAccessTokenResponse = Message<"admiral.api.user.v1.GetPer
  * Use `create(GetPersonalAccessTokenResponseSchema)` to create a new message.
  */
 export const GetPersonalAccessTokenResponseSchema: GenMessage<GetPersonalAccessTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 7);
+  messageDesc(file_admiral_api_user_v1_user, 8);
 
 /**
  * RevokePersonalAccessTokenRequest identifies a PAT to revoke.
@@ -290,7 +327,7 @@ export type RevokePersonalAccessTokenRequest = Message<"admiral.api.user.v1.Revo
  * Use `create(RevokePersonalAccessTokenRequestSchema)` to create a new message.
  */
 export const RevokePersonalAccessTokenRequestSchema: GenMessage<RevokePersonalAccessTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 8);
+  messageDesc(file_admiral_api_user_v1_user, 9);
 
 /**
  * RevokePersonalAccessTokenResponse contains the revoked PAT metadata.
@@ -311,7 +348,7 @@ export type RevokePersonalAccessTokenResponse = Message<"admiral.api.user.v1.Rev
  * Use `create(RevokePersonalAccessTokenResponseSchema)` to create a new message.
  */
 export const RevokePersonalAccessTokenResponseSchema: GenMessage<RevokePersonalAccessTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_user_v1_user, 9);
+  messageDesc(file_admiral_api_user_v1_user, 10);
 
 /**
  * UserAPI provides operations for the currently authenticated user, including

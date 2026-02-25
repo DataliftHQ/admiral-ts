@@ -2,8 +2,8 @@
 // @generated from file admiral/api/variable/v1/variable.proto (package admiral.api.variable.v1, syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
-import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
 import { file_admiral_common_v1_annotations } from "../../../common/v1/annotations_pb";
 import { file_buf_validate_validate } from "../../../../buf/validate/validate_pb";
 import { file_google_api_annotations } from "../../../../google/api/annotations_pb";
@@ -15,12 +15,17 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/variable/v1/variable.proto.
  */
 export const file_admiral_api_variable_v1_variable: GenFile = /*@__PURE__*/
-  fileDesc("CiZhZG1pcmFsL2FwaS92YXJpYWJsZS92MS92YXJpYWJsZS5wcm90bxIXYWRtaXJhbC5hcGkudmFyaWFibGUudjEigAMKCFZhcmlhYmxlEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjcKA2tleRgDIAEoCUIqukgnciUQARj/ATIeXltBLVphLXpfXVtBLVphLXowLTlfXXswLDI1NH0kEg0KBXZhbHVlGAQgASgJEhEKCXNlbnNpdGl2ZRgFIAEoCBIlCg5hcHBsaWNhdGlvbl9pZBgGIAEoCUIIukgFcgOwAQFIAIgBARIlCg5lbnZpcm9ubWVudF9pZBgHIAEoCUIIukgFcgOwAQFIAYgBARISCgpjcmVhdGVkX2J5GAggASgJEi4KCmNyZWF0ZWRfYXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYCiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQhEKD19hcHBsaWNhdGlvbl9pZEIRCg9fZW52aXJvbm1lbnRfaWQi7wEKFUNyZWF0ZVZhcmlhYmxlUmVxdWVzdBI3CgNrZXkYASABKAlCKrpIJ3IlEAEY/wEyHl5bQS1aYS16X11bQS1aYS16MC05X117MCwyNTR9JBIWCgV2YWx1ZRgCIAEoCUIHukgEcgIQARIRCglzZW5zaXRpdmUYAyABKAgSJQoOYXBwbGljYXRpb25faWQYBCABKAlCCLpIBXIDsAEBSACIAQESJQoOZW52aXJvbm1lbnRfaWQYBSABKAlCCLpIBXIDsAEBSAGIAQFCEQoPX2FwcGxpY2F0aW9uX2lkQhEKD19lbnZpcm9ubWVudF9pZCJNChZDcmVhdGVWYXJpYWJsZVJlc3BvbnNlEjMKCHZhcmlhYmxlGAEgASgLMiEuYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVmFyaWFibGUiMwoSR2V0VmFyaWFibGVSZXF1ZXN0Eh0KC3ZhcmlhYmxlX2lkGAEgASgJQgi6SAVyA7ABASJKChNHZXRWYXJpYWJsZVJlc3BvbnNlEjMKCHZhcmlhYmxlGAEgASgLMiEuYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVmFyaWFibGUiwQEKFExpc3RWYXJpYWJsZXNSZXF1ZXN0EiUKDmFwcGxpY2F0aW9uX2lkGAEgASgJQgi6SAVyA7ABAUgAiAEBEiUKDmVudmlyb25tZW50X2lkGAIgASgJQgi6SAVyA7ABAUgBiAEBEg4KBmZpbHRlchgDIAEoCRIRCglwYWdlX3NpemUYBCABKAUSEgoKcGFnZV90b2tlbhgFIAEoCUIRCg9fYXBwbGljYXRpb25faWRCEQoPX2Vudmlyb25tZW50X2lkImYKFUxpc3RWYXJpYWJsZXNSZXNwb25zZRI0Cgl2YXJpYWJsZXMYASADKAsyIS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5WYXJpYWJsZRIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkihQEKFVVwZGF0ZVZhcmlhYmxlUmVxdWVzdBI7Cgh2YXJpYWJsZRgBIAEoCzIhLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlZhcmlhYmxlQga6SAPIAQESLwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrIk0KFlVwZGF0ZVZhcmlhYmxlUmVzcG9uc2USMwoIdmFyaWFibGUYASABKAsyIS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5WYXJpYWJsZSI2ChVEZWxldGVWYXJpYWJsZVJlcXVlc3QSHQoLdmFyaWFibGVfaWQYASABKAlCCLpIBXIDsAEBIhgKFkRlbGV0ZVZhcmlhYmxlUmVzcG9uc2UysQYKC1ZhcmlhYmxlQVBJEpoBCg5DcmVhdGVWYXJpYWJsZRIuLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkNyZWF0ZVZhcmlhYmxlUmVxdWVzdBovLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkNyZWF0ZVZhcmlhYmxlUmVzcG9uc2UiJ6KXJAsKCXZhcjp3cml0ZYLT5JMCEjoBKiINL3YxL3ZhcmlhYmxlcxKbAQoLR2V0VmFyaWFibGUSKy5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5HZXRWYXJpYWJsZVJlcXVlc3QaLC5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5HZXRWYXJpYWJsZVJlc3BvbnNlIjGilyQKCgh2YXI6cmVhZILT5JMCHRIbL3YxL3ZhcmlhYmxlcy97dmFyaWFibGVfaWR9EpMBCg1MaXN0VmFyaWFibGVzEi0uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuTGlzdFZhcmlhYmxlc1JlcXVlc3QaLi5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5MaXN0VmFyaWFibGVzUmVzcG9uc2UiI6KXJAoKCHZhcjpyZWFkgtPkkwIPEg0vdjEvdmFyaWFibGVzEqgBCg5VcGRhdGVWYXJpYWJsZRIuLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlVwZGF0ZVZhcmlhYmxlUmVxdWVzdBovLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlVwZGF0ZVZhcmlhYmxlUmVzcG9uc2UiNaKXJAsKCXZhcjp3cml0ZYLT5JMCIDoBKjIbL3YxL3ZhcmlhYmxlcy97dmFyaWFibGUuaWR9EqUBCg5EZWxldGVWYXJpYWJsZRIuLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkRlbGV0ZVZhcmlhYmxlUmVxdWVzdBovLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkRlbGV0ZVZhcmlhYmxlUmVzcG9uc2UiMqKXJAsKCXZhcjp3cml0ZYLT5JMCHSobL3YxL3ZhcmlhYmxlcy97dmFyaWFibGVfaWR9QucBChtjb20uYWRtaXJhbC5hcGkudmFyaWFibGUudjFCDVZhcmlhYmxlUHJvdG9QAVo6Z28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvdmFyaWFibGUvdjE7dmFyaWFibGV2MaICA0FBVqoCF0FkbWlyYWwuQXBpLlZhcmlhYmxlLlYxygIXQWRtaXJhbFxBcGlcVmFyaWFibGVcVjHiAiNBZG1pcmFsXEFwaVxWYXJpYWJsZVxWMVxHUEJNZXRhZGF0YeoCGkFkbWlyYWw6OkFwaTo6VmFyaWFibGU6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CiZhZG1pcmFsL2FwaS92YXJpYWJsZS92MS92YXJpYWJsZS5wcm90bxIXYWRtaXJhbC5hcGkudmFyaWFibGUudjEi5gMKCFZhcmlhYmxlEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjUKA2tleRgDIAEoCUIoukglciMQARg/Mh1eW0EtWmEtel9dW0EtWmEtejAtOV9dezAsNjJ9JBINCgV2YWx1ZRgEIAEoCRIRCglzZW5zaXRpdmUYBSABKAgSMwoEdHlwZRgGIAEoDjIlLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlZhcmlhYmxlVHlwZRIdCgtkZXNjcmlwdGlvbhgHIAEoCUIIukgFcgMYgAgSJQoOYXBwbGljYXRpb25faWQYCCABKAlCCLpIBXIDsAEBSACIAQESJQoOZW52aXJvbm1lbnRfaWQYCSABKAlCCLpIBXIDsAEBSAGIAQESEgoKY3JlYXRlZF9ieRgKIAEoCRISCgp1cGRhdGVkX2J5GA0gASgJEi4KCmNyZWF0ZWRfYXQYCyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYDCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQhEKD19hcHBsaWNhdGlvbl9pZEIRCg9fZW52aXJvbm1lbnRfaWQiwQIKFUNyZWF0ZVZhcmlhYmxlUmVxdWVzdBI1CgNrZXkYASABKAlCKLpIJXIjEAEYPzIdXltBLVphLXpfXVtBLVphLXowLTlfXXswLDYyfSQSFgoFdmFsdWUYAiABKAlCB7pIBHICEAESEQoJc2Vuc2l0aXZlGAMgASgIEjMKBHR5cGUYBCABKA4yJS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5WYXJpYWJsZVR5cGUSHQoLZGVzY3JpcHRpb24YBSABKAlCCLpIBXIDGIAIEiUKDmFwcGxpY2F0aW9uX2lkGAYgASgJQgi6SAVyA7ABAUgAiAEBEiUKDmVudmlyb25tZW50X2lkGAcgASgJQgi6SAVyA7ABAUgBiAEBQhEKD19hcHBsaWNhdGlvbl9pZEIRCg9fZW52aXJvbm1lbnRfaWQiTQoWQ3JlYXRlVmFyaWFibGVSZXNwb25zZRIzCgh2YXJpYWJsZRgBIAEoCzIhLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlZhcmlhYmxlIjMKEkdldFZhcmlhYmxlUmVxdWVzdBIdCgt2YXJpYWJsZV9pZBgBIAEoCUIIukgFcgOwAQEiSgoTR2V0VmFyaWFibGVSZXNwb25zZRIzCgh2YXJpYWJsZRgBIAEoCzIhLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLlZhcmlhYmxlImIKFExpc3RWYXJpYWJsZXNSZXF1ZXN0EhgKBmZpbHRlchgBIAEoCUIIukgFcgMYgAgSHAoJcGFnZV9zaXplGAIgASgFQgm6SAYaBBhkKAASEgoKcGFnZV90b2tlbhgDIAEoCSJmChVMaXN0VmFyaWFibGVzUmVzcG9uc2USNAoJdmFyaWFibGVzGAEgAygLMiEuYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVmFyaWFibGUSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIoUBChVVcGRhdGVWYXJpYWJsZVJlcXVlc3QSOwoIdmFyaWFibGUYASABKAsyIS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5WYXJpYWJsZUIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJNChZVcGRhdGVWYXJpYWJsZVJlc3BvbnNlEjMKCHZhcmlhYmxlGAEgASgLMiEuYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVmFyaWFibGUiNgoVRGVsZXRlVmFyaWFibGVSZXF1ZXN0Eh0KC3ZhcmlhYmxlX2lkGAEgASgJQgi6SAVyA7ABASIYChZEZWxldGVWYXJpYWJsZVJlc3BvbnNlKpcBCgxWYXJpYWJsZVR5cGUSHQoZVkFSSUFCTEVfVFlQRV9VTlNQRUNJRklFRBAAEhgKFFZBUklBQkxFX1RZUEVfU1RSSU5HEAESGAoUVkFSSUFCTEVfVFlQRV9OVU1CRVIQAhIZChVWQVJJQUJMRV9UWVBFX0JPT0xFQU4QAxIZChVWQVJJQUJMRV9UWVBFX0NPTVBMRVgQBDKxBgoLVmFyaWFibGVBUEkSmgEKDkNyZWF0ZVZhcmlhYmxlEi4uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuQ3JlYXRlVmFyaWFibGVSZXF1ZXN0Gi8uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuQ3JlYXRlVmFyaWFibGVSZXNwb25zZSInopckCwoJdmFyOndyaXRlgtPkkwISOgEqIg0vdjEvdmFyaWFibGVzEpsBCgtHZXRWYXJpYWJsZRIrLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkdldFZhcmlhYmxlUmVxdWVzdBosLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkdldFZhcmlhYmxlUmVzcG9uc2UiMaKXJAoKCHZhcjpyZWFkgtPkkwIdEhsvdjEvdmFyaWFibGVzL3t2YXJpYWJsZV9pZH0SkwEKDUxpc3RWYXJpYWJsZXMSLS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MS5MaXN0VmFyaWFibGVzUmVxdWVzdBouLmFkbWlyYWwuYXBpLnZhcmlhYmxlLnYxLkxpc3RWYXJpYWJsZXNSZXNwb25zZSIjopckCgoIdmFyOnJlYWSC0+STAg8SDS92MS92YXJpYWJsZXMSqAEKDlVwZGF0ZVZhcmlhYmxlEi4uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVXBkYXRlVmFyaWFibGVSZXF1ZXN0Gi8uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuVXBkYXRlVmFyaWFibGVSZXNwb25zZSI1opckCwoJdmFyOndyaXRlgtPkkwIgOgEqMhsvdjEvdmFyaWFibGVzL3t2YXJpYWJsZS5pZH0SpQEKDkRlbGV0ZVZhcmlhYmxlEi4uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuRGVsZXRlVmFyaWFibGVSZXF1ZXN0Gi8uYWRtaXJhbC5hcGkudmFyaWFibGUudjEuRGVsZXRlVmFyaWFibGVSZXNwb25zZSIyopckCwoJdmFyOndyaXRlgtPkkwIdKhsvdjEvdmFyaWFibGVzL3t2YXJpYWJsZV9pZH1C5wEKG2NvbS5hZG1pcmFsLmFwaS52YXJpYWJsZS52MUINVmFyaWFibGVQcm90b1ABWjpnby5hZG1pcmFsLmlvL3Nkay9wcm90by9hZG1pcmFsL2FwaS92YXJpYWJsZS92MTt2YXJpYWJsZXYxogIDQUFWqgIXQWRtaXJhbC5BcGkuVmFyaWFibGUuVjHKAhdBZG1pcmFsXEFwaVxWYXJpYWJsZVxWMeICI0FkbWlyYWxcQXBpXFZhcmlhYmxlXFYxXEdQQk1ldGFkYXRh6gIaQWRtaXJhbDo6QXBpOjpWYXJpYWJsZTo6VjFiBnByb3RvMw", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * Variable represents a configuration key-value pair scoped to a tenant,
  * application, or application+environment. Variables are resolved at deployment
  * time into immutable deployment snapshots.
+ *
+ * Variables are user-managed configuration values, distinct from component
+ * outputs which are system-managed values produced by apply (e.g., Terraform
+ * outputs). Component outputs are resolved at render time and referenced via
+ * a separate namespace ({{ .component.<name>.<output> }}).
  *
  * @generated from message admiral.api.variable.v1.Variable
  */
@@ -41,15 +46,21 @@ export type Variable = Message<"admiral.api.variable.v1.Variable"> & {
 
   /**
    * The variable name. Must be a valid environment variable identifier
-   * (e.g., "DATABASE_URL", "API_KEY"). Uppercase alphanumeric and underscores,
-   * must start with a letter or underscore (max 255 chars).
+   * (e.g., "DATABASE_URL", "API_KEY"). Alphanumeric and underscores
+   * (uppercase conventional but lowercase accepted), must start with a letter
+   * or underscore (max 255 chars).
    *
    * @generated from field: string key = 3;
    */
   key: string;
 
   /**
-   * The variable value. Masked or empty for sensitive variables in responses.
+   * The variable value. Always stored as a string — use `type` to indicate
+   * how to interpret it. Masked or empty for sensitive variables in responses.
+   *
+   * For COMPLEX type, this is a JSON-encoded string (e.g., '["a","b"]' or
+   * '{"key":"value"}'). The rendering engine converts it to the target format
+   * (HCL for Terraform, YAML for Helm).
    *
    * @generated from field: string value = 4;
    */
@@ -63,12 +74,28 @@ export type Variable = Message<"admiral.api.variable.v1.Variable"> & {
   sensitive: boolean;
 
   /**
+   * How the value should be interpreted by the rendering engine and displayed
+   * in the UI. Defaults to STRING if not specified.
+   *
+   * @generated from field: admiral.api.variable.v1.VariableType type = 6;
+   */
+  type: VariableType;
+
+  /**
+   * Optional description of the variable's purpose (e.g., "Maximum replica
+   * count for production scaling" or "RDS instance class per environment").
+   *
+   * @generated from field: string description = 7;
+   */
+  description: string;
+
+  /**
    * The application this variable is scoped to (UUID). When set, the variable
    * is scoped to this application. When both application_id and environment_id
    * are set, the variable is scoped to that specific environment.
    * Absent means the variable is global (tenant-wide).
    *
-   * @generated from field: optional string application_id = 6;
+   * @generated from field: optional string application_id = 8;
    */
   applicationId?: string;
 
@@ -77,28 +104,35 @@ export type Variable = Message<"admiral.api.variable.v1.Variable"> & {
    * When set alongside application_id, the variable applies only to this
    * specific environment within the application.
    *
-   * @generated from field: optional string environment_id = 7;
+   * @generated from field: optional string environment_id = 9;
    */
   environmentId?: string;
 
   /**
-   * User ID who created or last updated the variable.
+   * User ID who created this variable (UUID, server-populated from token).
    *
-   * @generated from field: string created_by = 8;
+   * @generated from field: string created_by = 10;
    */
   createdBy: string;
 
   /**
+   * User ID who last updated this variable (UUID, server-populated from token).
+   *
+   * @generated from field: string updated_by = 13;
+   */
+  updatedBy: string;
+
+  /**
    * When the variable was created.
    *
-   * @generated from field: google.protobuf.Timestamp created_at = 9;
+   * @generated from field: google.protobuf.Timestamp created_at = 11;
    */
   createdAt?: Timestamp;
 
   /**
    * When the variable was last updated.
    *
-   * @generated from field: google.protobuf.Timestamp updated_at = 10;
+   * @generated from field: google.protobuf.Timestamp updated_at = 12;
    */
   updatedAt?: Timestamp;
 };
@@ -128,7 +162,7 @@ export type CreateVariableRequest = Message<"admiral.api.variable.v1.CreateVaria
   key: string;
 
   /**
-   * The variable value.
+   * The variable value. For COMPLEX type, must be valid JSON.
    *
    * @generated from field: string value = 2;
    */
@@ -143,10 +177,24 @@ export type CreateVariableRequest = Message<"admiral.api.variable.v1.CreateVaria
   sensitive: boolean;
 
   /**
+   * How the value should be interpreted. Defaults to STRING if not specified.
+   *
+   * @generated from field: admiral.api.variable.v1.VariableType type = 4;
+   */
+  type: VariableType;
+
+  /**
+   * Optional description of the variable's purpose.
+   *
+   * @generated from field: string description = 5;
+   */
+  description: string;
+
+  /**
    * The application to scope this variable to (UUID). When set without
    * environment_id, the variable applies to all environments in the app.
    *
-   * @generated from field: optional string application_id = 4;
+   * @generated from field: optional string application_id = 6;
    */
   applicationId?: string;
 
@@ -154,7 +202,7 @@ export type CreateVariableRequest = Message<"admiral.api.variable.v1.CreateVaria
    * The environment to scope this variable to (UUID). Requires application_id.
    * When set, the variable applies only to this specific environment.
    *
-   * @generated from field: optional string environment_id = 5;
+   * @generated from field: optional string environment_id = 7;
    */
   environmentId?: string;
 };
@@ -232,48 +280,46 @@ export const GetVariableResponseSchema: GenMessage<GetVariableResponse> = /*@__P
 /**
  * ListVariablesRequest contains filters and pagination parameters.
  *
- * The filters determine which variables are included in the merged view:
- *   - No application_id or environment_id: global variables only.
- *   - application_id only: global + app-level variables merged.
- *   - application_id + environment_id: global + app + environment variables merged.
+ * The filter determines which variables are included in the merged view
+ * based on the presence of `application_id` and `environment_id` fields:
+ *   - Neither field in filter: global variables only.
+ *   - `application_id` in filter: global + app-level variables merged.
+ *   - `application_id` + `environment_id` in filter: global + app + environment
+ *     variables merged.
+ *
+ * When variables with the same key exist at multiple levels, all are returned
+ * so clients can determine precedence.
  *
  * @generated from message admiral.api.variable.v1.ListVariablesRequest
  */
 export type ListVariablesRequest = Message<"admiral.api.variable.v1.ListVariablesRequest"> & {
   /**
-   * Filter to an application (UUID). When set, app-level variables for this
-   * application are included in the merged result alongside global variables.
-   *
-   * @generated from field: optional string application_id = 1;
-   */
-  applicationId?: string;
-
-  /**
-   * Filter to an environment (UUID). Requires application_id. When set,
-   * environment-level variables are included alongside global and app variables.
-   *
-   * @generated from field: optional string environment_id = 2;
-   */
-  environmentId?: string;
-
-  /**
    * Filter expression using the PEG filter DSL.
    *
-   * @generated from field: string filter = 3;
+   * Common filter fields:
+   *   - `application_id` — scope to an application (triggers merge with
+   *     app-level variables alongside global variables).
+   *   - `environment_id` — scope to an environment (requires application_id;
+   *     triggers merge with environment-level variables).
+   *   - `sensitive` — filter by sensitivity.
+   *   - `type` — filter by variable type.
+   *   - `key` — filter by variable key (supports prefix matching).
+   *
+   * @generated from field: string filter = 1;
    */
   filter: string;
 
   /**
    * Maximum number of variables to return per page.
    *
-   * @generated from field: int32 page_size = 4;
+   * @generated from field: int32 page_size = 2;
    */
   pageSize: number;
 
   /**
    * Opaque pagination token from a previous response.
    *
-   * @generated from field: string page_token = 5;
+   * @generated from field: string page_token = 3;
    */
   pageToken: string;
 };
@@ -329,7 +375,7 @@ export type UpdateVariableRequest = Message<"admiral.api.variable.v1.UpdateVaria
 
   /**
    * The set of fields to update. If unset, all mutable fields are updated.
-   * Supported fields: `value`, `sensitive`.
+   * Supported fields: `value`, `sensitive`, `type`, `description`.
    *
    * @generated from field: google.protobuf.FieldMask update_mask = 2;
    */
@@ -399,6 +445,62 @@ export type DeleteVariableResponse = Message<"admiral.api.variable.v1.DeleteVari
  */
 export const DeleteVariableResponseSchema: GenMessage<DeleteVariableResponse> = /*@__PURE__*/
   messageDesc(file_admiral_api_variable_v1_variable, 10);
+
+/**
+ * VariableType indicates how the variable value should be interpreted by the
+ * rendering engine and displayed in the UI. The value is always stored as a
+ * string regardless of type.
+ *
+ * @generated from enum admiral.api.variable.v1.VariableType
+ */
+export enum VariableType {
+  /**
+   * Default value. Must not be used.
+   *
+   * @generated from enum value: VARIABLE_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * Plain text value. Quoted when rendered into Terraform HCL, passed as-is
+   * for Helm and Kustomize. Rendered as a text input in the UI.
+   *
+   * @generated from enum value: VARIABLE_TYPE_STRING = 1;
+   */
+  STRING = 1,
+
+  /**
+   * Numeric value (integer or decimal). Unquoted when rendered into Terraform
+   * HCL. Rendered as a number input in the UI.
+   *
+   * @generated from enum value: VARIABLE_TYPE_NUMBER = 2;
+   */
+  NUMBER = 2,
+
+  /**
+   * Boolean value ("true" or "false"). Unquoted when rendered into Terraform
+   * HCL. Rendered as a toggle in the UI.
+   *
+   * @generated from enum value: VARIABLE_TYPE_BOOLEAN = 3;
+   */
+  BOOLEAN = 3,
+
+  /**
+   * Structured value (lists, maps, objects). Stored as a JSON-encoded string
+   * (e.g., '["us-east-1a","us-east-1b"]' or '{"env":"prod","team":"platform"}').
+   * Rendered as HCL for Terraform, YAML for Helm, or JSON for other consumers.
+   * Rendered as a code editor in the UI.
+   *
+   * @generated from enum value: VARIABLE_TYPE_COMPLEX = 4;
+   */
+  COMPLEX = 4,
+}
+
+/**
+ * Describes the enum admiral.api.variable.v1.VariableType.
+ */
+export const VariableTypeSchema: GenEnum<VariableType> = /*@__PURE__*/
+  enumDesc(file_admiral_api_variable_v1_variable, 0);
 
 /**
  * VariableAPI manages configuration variables within a tenant.

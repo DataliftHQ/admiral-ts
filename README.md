@@ -21,8 +21,14 @@ const client = createClient({
 // Access services via properties
 // await client.application.methodName({ ... });
 // await client.cluster.methodName({ ... });
+// await client.component.methodName({ ... });
+// await client.connection.methodName({ ... });
+// await client.deployment.methodName({ ... });
 // await client.environment.methodName({ ... });
 // await client.healthcheck.methodName({ ... });
+// await client.runner.methodName({ ... });
+// await client.source.methodName({ ... });
+// await client.state.methodName({ ... });
 // await client.user.methodName({ ... });
 // await client.variable.methodName({ ... });
 ```
@@ -33,8 +39,14 @@ const client = createClient({
 |---------|----------|-------------|
 | ApplicationAPI | `client.application` | Application service |
 | ClusterAPI | `client.cluster` | Cluster service |
+| ComponentAPI | `client.component` | Component service |
+| ConnectionAPI | `client.connection` | Connection service |
+| DeploymentAPI | `client.deployment` | Deployment service |
 | EnvironmentAPI | `client.environment` | Environment service |
 | HealthcheckAPI | `client.healthcheck` | Healthcheck service |
+| RunnerAPI | `client.runner` | Runner service |
+| SourceAPI | `client.source` | Source service |
+| StateAPI | `client.state` | State service |
 | UserAPI | `client.user` | User service |
 | VariableAPI | `client.variable` | Variable service |
 
