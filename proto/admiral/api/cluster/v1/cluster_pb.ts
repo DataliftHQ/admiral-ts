@@ -2,8 +2,10 @@
 // @generated from file admiral/api/cluster/v1/cluster.proto (package admiral.api.cluster.v1, syntax proto3)
 /* eslint-disable */
 
-import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
-import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv2";
+import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv2";
+import type { Cluster, ClusterHealthStatus, ClusterStatus, Workload, WorkloadEvent, WorkloadStatus } from "../../../cluster/v1/cluster_pb";
+import { file_admiral_cluster_v1_cluster } from "../../../cluster/v1/cluster_pb";
 import { file_admiral_common_v1_annotations } from "../../../common/v1/annotations_pb";
 import type { AccessToken } from "../../../common/v1/token_pb";
 import { file_admiral_common_v1_token } from "../../../common/v1/token_pb";
@@ -17,525 +19,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/cluster/v1/cluster.proto.
  */
 export const file_admiral_api_cluster_v1_cluster: GenFile = /*@__PURE__*/
-  fileDesc("CiRhZG1pcmFsL2FwaS9jbHVzdGVyL3YxL2NsdXN0ZXIucHJvdG8SFmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEiugMKB0NsdXN0ZXISFAoCaWQYASABKAlCCLpIBXIDsAEBEhsKCXRlbmFudF9pZBgCIAEoCUIIukgFcgOwAQESOAoEbmFtZRgDIAEoCUIqukgnciUYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBI7CgZsYWJlbHMYBSADKAsyKy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNsdXN0ZXIuTGFiZWxzRW50cnkSEwoLY2x1c3Rlcl91aWQYBiABKAkSQgoNaGVhbHRoX3N0YXR1cxgHIAEoDjIrLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlckhlYWx0aFN0YXR1cxIuCgpjcmVhdGVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIpgDCg1DbHVzdGVyU3RhdHVzEhMKC2s4c192ZXJzaW9uGAEgASgJEhIKCm5vZGVfY291bnQYAiABKAUSEwoLbm9kZXNfcmVhZHkYAyABKAUSFAoMcG9kX2NhcGFjaXR5GAQgASgFEhEKCXBvZF9jb3VudBgFIAEoBRIUCgxwb2RzX3J1bm5pbmcYBiABKAUSFAoMcG9kc19wZW5kaW5nGAcgASgFEhMKC3BvZHNfZmFpbGVkGAggASgFEh8KF2NwdV9jYXBhY2l0eV9taWxsaWNvcmVzGAkgASgDEhsKE2NwdV91c2VkX21pbGxpY29yZXMYCiABKAMSHQoVbWVtb3J5X2NhcGFjaXR5X2J5dGVzGAsgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGAwgASgDEhcKD3dvcmtsb2Fkc190b3RhbBgNIAEoBRIZChF3b3JrbG9hZHNfaGVhbHRoeRgOIAEoBRIaChJ3b3JrbG9hZHNfZGVncmFkZWQYDyABKAUSFwoPd29ya2xvYWRzX2Vycm9yGBAgASgFIpYFCghXb3JrbG9hZBIKCgJpZBgBIAEoCRISCgpjbHVzdGVyX2lkGAIgASgJEhEKCW5hbWVzcGFjZRgDIAEoCRIMCgRuYW1lGAQgASgJEgwKBGtpbmQYBSABKAkSPAoGbGFiZWxzGAYgAygLMiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZC5MYWJlbHNFbnRyeRJDCg1oZWFsdGhfc3RhdHVzGAcgASgOMiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZEhlYWx0aFN0YXR1cxIVCg1zdGF0dXNfcmVhc29uGAggASgJEhgKEHJlcGxpY2FzX2Rlc2lyZWQYCSABKAUSFgoOcmVwbGljYXNfcmVhZHkYCiABKAUSGgoScmVwbGljYXNfYXZhaWxhYmxlGAsgASgFEh8KF2NwdV9yZXF1ZXN0c19taWxsaWNvcmVzGAwgASgDEh0KFWNwdV9saW1pdHNfbWlsbGljb3JlcxgNIAEoAxIbChNjcHVfdXNlZF9taWxsaWNvcmVzGA4gASgDEh0KFW1lbW9yeV9yZXF1ZXN0c19ieXRlcxgPIAEoAxIbChNtZW1vcnlfbGltaXRzX2J5dGVzGBAgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGBEgASgDEjsKCmNvbnRhaW5lcnMYEiADKAsyJy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNvbnRhaW5lclN0YXR1cxIzCg9sYXN0X3VwZGF0ZWRfYXQYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiYwoPQ29udGFpbmVyU3RhdHVzEgwKBG5hbWUYASABKAkSDQoFaW1hZ2UYAiABKAkSFQoNcmVzdGFydF9jb3VudBgDIAEoBRINCgVzdGF0ZRgEIAEoCRINCgVyZWFkeRgFIAEoCCJACg9PYmplY3RSZWZlcmVuY2USDAoEa2luZBgBIAEoCRIRCgluYW1lc3BhY2UYAiABKAkSDAoEbmFtZRgDIAEoCSL1AQoNV29ya2xvYWRFdmVudBILCgN1aWQYASABKAkSDAoEdHlwZRgCIAEoCRIOCgZyZWFzb24YAyABKAkSOgoJcmVnYXJkaW5nGAQgASgLMicuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5PYmplY3RSZWZlcmVuY2USDwoHbWVzc2FnZRgFIAEoCRIuCgpmaXJzdF9zZWVuGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCglsYXN0X3NlZW4YByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg0KBWNvdW50GAggASgFIugBChRDcmVhdGVDbHVzdGVyUmVxdWVzdBI4CgRuYW1lGAEgASgJQiq6SCdyJRg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyQSHQoLZGVzY3JpcHRpb24YAiABKAlCCLpIBXIDGIAIEkgKBmxhYmVscxgDIAMoCzI4LmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ3JlYXRlQ2x1c3RlclJlcXVlc3QuTGFiZWxzRW50cnkaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJjChVDcmVhdGVDbHVzdGVyUmVzcG9uc2USMAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlchIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIjEKEUdldENsdXN0ZXJSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBIkYKEkdldENsdXN0ZXJSZXNwb25zZRIwCgdjbHVzdGVyGAEgASgLMh8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVyIkwKE0xpc3RDbHVzdGVyc1JlcXVlc3QSDgoGZmlsdGVyGAEgASgJEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJImIKFExpc3RDbHVzdGVyc1Jlc3BvbnNlEjEKCGNsdXN0ZXJzGAEgAygLMh8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVyEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKBAQoUVXBkYXRlQ2x1c3RlclJlcXVlc3QSOAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlckIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJJChVVcGRhdGVDbHVzdGVyUmVzcG9uc2USMAoHY2x1c3RlchgBIAEoCzIfLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlciI0ChREZWxldGVDbHVzdGVyUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABASIXChVEZWxldGVDbHVzdGVyUmVzcG9uc2UiNwoXR2V0Q2x1c3RlclN0YXR1c1JlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQEixgEKGEdldENsdXN0ZXJTdGF0dXNSZXNwb25zZRJCCg1oZWFsdGhfc3RhdHVzGAEgASgOMisuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DbHVzdGVySGVhbHRoU3RhdHVzEjUKBnN0YXR1cxgCIAEoCzIlLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlclN0YXR1cxIvCgtyZXBvcnRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAinAIKGlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEj0KBnN0YXR1cxgCIAEoCzIlLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuQ2x1c3RlclN0YXR1c0IGukgDyAEBEjkKCXdvcmtsb2FkcxgDIAMoCzImLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuV29ya2xvYWRTdGF0dXMSNQoGZXZlbnRzGAQgAygLMiUuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5Xb3JrbG9hZEV2ZW50Ei8KC3JlcG9ydGVkX2F0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCK2BAoOV29ya2xvYWRTdGF0dXMSEQoJbmFtZXNwYWNlGAEgASgJEgwKBG5hbWUYAiABKAkSDAoEa2luZBgDIAEoCRJCCgZsYWJlbHMYBCADKAsyMi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkU3RhdHVzLkxhYmVsc0VudHJ5EhgKEHJlcGxpY2FzX2Rlc2lyZWQYBSABKAUSFgoOcmVwbGljYXNfcmVhZHkYBiABKAUSGgoScmVwbGljYXNfYXZhaWxhYmxlGAcgASgFEh8KF2NwdV9yZXF1ZXN0c19taWxsaWNvcmVzGAggASgDEh0KFWNwdV9saW1pdHNfbWlsbGljb3JlcxgJIAEoAxIbChNjcHVfdXNlZF9taWxsaWNvcmVzGAogASgDEh0KFW1lbW9yeV9yZXF1ZXN0c19ieXRlcxgLIAEoAxIbChNtZW1vcnlfbGltaXRzX2J5dGVzGAwgASgDEhkKEW1lbW9yeV91c2VkX2J5dGVzGA0gASgDEkMKDWhlYWx0aF9zdGF0dXMYDiABKA4yLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkSGVhbHRoU3RhdHVzEjsKCmNvbnRhaW5lcnMYDyADKAsyJy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNvbnRhaW5lclN0YXR1cxotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIkUKG1JlcG9ydENsdXN0ZXJTdGF0dXNSZXNwb25zZRILCgNhY2sYASABKAgSGQoRbmV4dF9wdXNoX3NlY29uZHMYAiABKAUiawoUTGlzdFdvcmtsb2Fkc1JlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESDgoGZmlsdGVyGAIgASgJEhEKCXBhZ2Vfc2l6ZRgDIAEoBRISCgpwYWdlX3Rva2VuGAQgASgJImUKFUxpc3RXb3JrbG9hZHNSZXNwb25zZRIzCgl3b3JrbG9hZHMYASADKAsyIC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLldvcmtsb2FkEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKnAQobUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEjkKCXdvcmtsb2FkcxgCIAMoCzImLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuV29ya2xvYWRTdGF0dXMSLwoLcmVwb3J0ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIisKHFJlcG9ydFdvcmtsb2FkU3RhdHVzUmVzcG9uc2USCwoDYWNrGAEgASgIIqYBChlDcmVhdGVDbHVzdGVyVG9rZW5SZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEjsKBG5hbWUYAiABKAlCLbpIKnIoEAEY/wEyIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIuCgpleHBpcmVzX2F0GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJsChpDcmVhdGVDbHVzdGVyVG9rZW5SZXNwb25zZRI0CgxhY2Nlc3NfdG9rZW4YASABKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIYChBwbGFpbl90ZXh0X3Rva2VuGAIgASgJIm8KGExpc3RDbHVzdGVyVG9rZW5zUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiawoZTGlzdENsdXN0ZXJUb2tlbnNSZXNwb25zZRI1Cg1hY2Nlc3NfdG9rZW5zGAEgAygLMh4uYWRtaXJhbC5jb21tb24udjEuQWNjZXNzVG9rZW4SFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIlIKFkdldENsdXN0ZXJUb2tlblJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESGgoIdG9rZW5faWQYAiABKAlCCLpIBXIDsAEBIk8KF0dldENsdXN0ZXJUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuIlUKGVJldm9rZUNsdXN0ZXJUb2tlblJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESGgoIdG9rZW5faWQYAiABKAlCCLpIBXIDsAEBIlIKGlJldm9rZUNsdXN0ZXJUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuKu4BChNDbHVzdGVySGVhbHRoU3RhdHVzEiUKIUNMVVNURVJfSEVBTFRIX1NUQVRVU19VTlNQRUNJRklFRBAAEiEKHUNMVVNURVJfSEVBTFRIX1NUQVRVU19QRU5ESU5HEAESIQodQ0xVU1RFUl9IRUFMVEhfU1RBVFVTX0hFQUxUSFkQAhIiCh5DTFVTVEVSX0hFQUxUSF9TVEFUVVNfREVHUkFERUQQAxIfChtDTFVTVEVSX0hFQUxUSF9TVEFUVVNfRVJST1IQBBIlCiFDTFVTVEVSX0hFQUxUSF9TVEFUVVNfVU5SRUFDSEFCTEUQBSqpAQoUV29ya2xvYWRIZWFsdGhTdGF0dXMSJgoiV09SS0xPQURfSEVBTFRIX1NUQVRVU19VTlNQRUNJRklFRBAAEiIKHldPUktMT0FEX0hFQUxUSF9TVEFUVVNfSEVBTFRIWRABEiMKH1dPUktMT0FEX0hFQUxUSF9TVEFUVVNfREVHUkFERUQQAhIgChxXT1JLTE9BRF9IRUFMVEhfU1RBVFVTX0VSUk9SEAMyoRIKCkNsdXN0ZXJBUEkSmAEKDUNyZWF0ZUNsdXN0ZXISLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNyZWF0ZUNsdXN0ZXJSZXF1ZXN0Gi0uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyUmVzcG9uc2UiKqKXJA8KDWNsdXN0ZXI6d3JpdGWC0+STAhE6ASoiDC92MS9jbHVzdGVycxKYAQoKR2V0Q2x1c3RlchIpLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclJlcXVlc3QaKi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkdldENsdXN0ZXJSZXNwb25zZSIzopckDgoMY2x1c3RlcjpyZWFkgtPkkwIbEhkvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9ErEBChBHZXRDbHVzdGVyU3RhdHVzEi8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5HZXRDbHVzdGVyU3RhdHVzUmVxdWVzdBowLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclN0YXR1c1Jlc3BvbnNlIjqilyQOCgxjbHVzdGVyOnJlYWSC0+STAiISIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEpEBCgxMaXN0Q2x1c3RlcnMSKy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1JlcXVlc3QaLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1Jlc3BvbnNlIiailyQOCgxjbHVzdGVyOnJlYWSC0+STAg4SDC92MS9jbHVzdGVycxKlAQoNVXBkYXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuVXBkYXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlVwZGF0ZUNsdXN0ZXJSZXNwb25zZSI3opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCHjoBKjIZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyLmlkfRKiAQoNRGVsZXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuRGVsZXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkRlbGV0ZUNsdXN0ZXJSZXNwb25zZSI0opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCGyoZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfRK7AQoSQ3JlYXRlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXNwb25zZSI+opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCJToBKiIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMStAEKEUxpc3RDbHVzdGVyVG9rZW5zEjAuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0Q2x1c3RlclRva2Vuc1JlcXVlc3QaMS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyVG9rZW5zUmVzcG9uc2UiOqKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCIhIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMSuQEKD0dldENsdXN0ZXJUb2tlbhIuLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVxdWVzdBovLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVzcG9uc2UiRaKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCLRIrL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfRLNAQoSUmV2b2tlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXNwb25zZSJQopckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCNzoBKiIyL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfS9yZXZva2USxAEKE1JlcG9ydENsdXN0ZXJTdGF0dXMSMi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0GjMuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRDbHVzdGVyU3RhdHVzUmVzcG9uc2UiRKKXJBUKDmNsdXN0ZXI6c3RhdHVzEgNhZ3SC0+STAiU6ASoiIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEqsBCg1MaXN0V29ya2xvYWRzEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0V29ya2xvYWRzUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuTGlzdFdvcmtsb2Fkc1Jlc3BvbnNlIj2ilyQOCgxjbHVzdGVyOnJlYWSC0+STAiUSIy92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vd29ya2xvYWRzEtEBChRSZXBvcnRXb3JrbG9hZFN0YXR1cxIzLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0GjQuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRXb3JrbG9hZFN0YXR1c1Jlc3BvbnNlIk6ilyQVCg5jbHVzdGVyOnN0YXR1cxIDYWd0gtPkkwIvOgEqIiovdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3dvcmtsb2Fkcy9zdGF0dXNC3wEKGmNvbS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxQgxDbHVzdGVyUHJvdG9QAVo4Z28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvY2x1c3Rlci92MTtjbHVzdGVydjGiAgNBQUOqAhZBZG1pcmFsLkFwaS5DbHVzdGVyLlYxygIWQWRtaXJhbFxBcGlcQ2x1c3RlclxWMeICIkFkbWlyYWxcQXBpXENsdXN0ZXJcVjFcR1BCTWV0YWRhdGHqAhlBZG1pcmFsOjpBcGk6OkNsdXN0ZXI6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
-
-/**
- * Cluster represents a registered Kubernetes cluster within a tenant.
- *
- * @generated from message admiral.api.cluster.v1.Cluster
- */
-export type Cluster = Message<"admiral.api.cluster.v1.Cluster"> & {
-  /**
-   * Unique identifier for the cluster (UUID).
-   *
-   * @generated from field: string id = 1;
-   */
-  id: string;
-
-  /**
-   * Tenant this cluster belongs to (UUID).
-   *
-   * @generated from field: string tenant_id = 2;
-   */
-  tenantId: string;
-
-  /**
-   * URL-safe, human-readable identifier (e.g., "prod-us-east-1"). Unique
-   * within the tenant. Lowercase alphanumeric and hyphens only, must start
-   * with a letter and end with an alphanumeric character (1-63 chars).
-   *
-   * @generated from field: string name = 3;
-   */
-  name: string;
-
-  /**
-   * Optional longer-form description of the cluster's purpose
-   * (e.g., "Primary production cluster serving US East traffic").
-   *
-   * @generated from field: string description = 4;
-   */
-  description: string;
-
-  /**
-   * Arbitrary key-value labels for organizing and filtering clusters
-   * (e.g., `{"region": "us-east-1", "cloud": "aws"}`).
-   *
-   * @generated from field: map<string, string> labels = 5;
-   */
-  labels: { [key: string]: string };
-
-  /**
-   * The Kubernetes kube-system namespace UID, bound at agent registration
-   * using a first-write-wins strategy. Used to detect when a token is
-   * accidentally deployed to a different physical cluster.
-   *
-   * @generated from field: string cluster_uid = 6;
-   */
-  clusterUid: string;
-
-  /**
-   * Derived health status based on agent connectivity and workload state.
-   *
-   * @generated from field: admiral.api.cluster.v1.ClusterHealthStatus health_status = 7;
-   */
-  healthStatus: ClusterHealthStatus;
-
-  /**
-   * When the cluster record was created.
-   *
-   * @generated from field: google.protobuf.Timestamp created_at = 8;
-   */
-  createdAt?: Timestamp;
-
-  /**
-   * When the cluster record was last updated.
-   *
-   * @generated from field: google.protobuf.Timestamp updated_at = 9;
-   */
-  updatedAt?: Timestamp;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.Cluster.
- * Use `create(ClusterSchema)` to create a new message.
- */
-export const ClusterSchema: GenMessage<Cluster> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 0);
-
-/**
- * ClusterStatus contains the raw telemetry metrics for a cluster, as reported
- * by the K8s agent. This message is used in both the push payload
- * (ReportClusterStatusRequest) and the read response (GetClusterStatusResponse).
- *
- * Server-derived fields (health_status, agent connectivity) are NOT included
- * here — they live on the Cluster and Agent records respectively, and are
- * returned alongside this message in GetClusterStatusResponse.
- *
- * @generated from message admiral.api.cluster.v1.ClusterStatus
- */
-export type ClusterStatus = Message<"admiral.api.cluster.v1.ClusterStatus"> & {
-  /**
-   * Kubernetes version reported by the agent (e.g., "1.29.2").
-   *
-   * @generated from field: string k8s_version = 1;
-   */
-  k8sVersion: string;
-
-  /**
-   * Total number of nodes in the cluster.
-   *
-   * @generated from field: int32 node_count = 2;
-   */
-  nodeCount: number;
-
-  /**
-   * Number of nodes in Ready condition.
-   *
-   * @generated from field: int32 nodes_ready = 3;
-   */
-  nodesReady: number;
-
-  /**
-   * Maximum number of pods the cluster can schedule.
-   *
-   * @generated from field: int32 pod_capacity = 4;
-   */
-  podCapacity: number;
-
-  /**
-   * Total number of pods across all namespaces.
-   *
-   * @generated from field: int32 pod_count = 5;
-   */
-  podCount: number;
-
-  /**
-   * Number of pods in Running phase.
-   *
-   * @generated from field: int32 pods_running = 6;
-   */
-  podsRunning: number;
-
-  /**
-   * Number of pods in Pending phase.
-   *
-   * @generated from field: int32 pods_pending = 7;
-   */
-  podsPending: number;
-
-  /**
-   * Number of pods in Failed phase.
-   *
-   * @generated from field: int32 pods_failed = 8;
-   */
-  podsFailed: number;
-
-  /**
-   * Total CPU capacity across all nodes, in millicores.
-   *
-   * @generated from field: int64 cpu_capacity_millicores = 9;
-   */
-  cpuCapacityMillicores: bigint;
-
-  /**
-   * Current CPU usage across all nodes, in millicores.
-   *
-   * @generated from field: int64 cpu_used_millicores = 10;
-   */
-  cpuUsedMillicores: bigint;
-
-  /**
-   * Total memory capacity across all nodes, in bytes.
-   *
-   * @generated from field: int64 memory_capacity_bytes = 11;
-   */
-  memoryCapacityBytes: bigint;
-
-  /**
-   * Current memory usage across all nodes, in bytes.
-   *
-   * @generated from field: int64 memory_used_bytes = 12;
-   */
-  memoryUsedBytes: bigint;
-
-  /**
-   * Total number of tracked workloads.
-   *
-   * @generated from field: int32 workloads_total = 13;
-   */
-  workloadsTotal: number;
-
-  /**
-   * Number of workloads in healthy state.
-   *
-   * @generated from field: int32 workloads_healthy = 14;
-   */
-  workloadsHealthy: number;
-
-  /**
-   * Number of workloads in degraded state.
-   *
-   * @generated from field: int32 workloads_degraded = 15;
-   */
-  workloadsDegraded: number;
-
-  /**
-   * Number of workloads in error state.
-   *
-   * @generated from field: int32 workloads_error = 16;
-   */
-  workloadsError: number;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.ClusterStatus.
- * Use `create(ClusterStatusSchema)` to create a new message.
- */
-export const ClusterStatusSchema: GenMessage<ClusterStatus> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 1);
-
-/**
- * Workload represents a Kubernetes workload (Deployment, StatefulSet,
- * DaemonSet, etc.) as observed by the agent.
- *
- * @generated from message admiral.api.cluster.v1.Workload
- */
-export type Workload = Message<"admiral.api.cluster.v1.Workload"> & {
-  /**
-   * Unique identifier for the workload within Admiral (UUID).
-   *
-   * @generated from field: string id = 1;
-   */
-  id: string;
-
-  /**
-   * The cluster this workload belongs to (UUID).
-   *
-   * @generated from field: string cluster_id = 2;
-   */
-  clusterId: string;
-
-  /**
-   * Kubernetes namespace.
-   *
-   * @generated from field: string namespace = 3;
-   */
-  namespace: string;
-
-  /**
-   * Workload name.
-   *
-   * @generated from field: string name = 4;
-   */
-  name: string;
-
-  /**
-   * Kubernetes resource kind (e.g., "Deployment", "StatefulSet", "DaemonSet").
-   *
-   * @generated from field: string kind = 5;
-   */
-  kind: string;
-
-  /**
-   * Kubernetes labels on the workload.
-   *
-   * @generated from field: map<string, string> labels = 6;
-   */
-  labels: { [key: string]: string };
-
-  /**
-   * Derived health status.
-   *
-   * @generated from field: admiral.api.cluster.v1.WorkloadHealthStatus health_status = 7;
-   */
-  healthStatus: WorkloadHealthStatus;
-
-  /**
-   * Human-readable reason for the current status (e.g., "MinimumReplicasUnavailable").
-   *
-   * @generated from field: string status_reason = 8;
-   */
-  statusReason: string;
-
-  /**
-   * Number of desired replicas.
-   *
-   * @generated from field: int32 replicas_desired = 9;
-   */
-  replicasDesired: number;
-
-  /**
-   * Number of ready replicas.
-   *
-   * @generated from field: int32 replicas_ready = 10;
-   */
-  replicasReady: number;
-
-  /**
-   * Number of available replicas.
-   *
-   * @generated from field: int32 replicas_available = 11;
-   */
-  replicasAvailable: number;
-
-  /**
-   * CPU requests across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_requests_millicores = 12;
-   */
-  cpuRequestsMillicores: bigint;
-
-  /**
-   * CPU limits across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_limits_millicores = 13;
-   */
-  cpuLimitsMillicores: bigint;
-
-  /**
-   * Current CPU usage across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_used_millicores = 14;
-   */
-  cpuUsedMillicores: bigint;
-
-  /**
-   * Memory requests across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_requests_bytes = 15;
-   */
-  memoryRequestsBytes: bigint;
-
-  /**
-   * Memory limits across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_limits_bytes = 16;
-   */
-  memoryLimitsBytes: bigint;
-
-  /**
-   * Current memory usage across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_used_bytes = 17;
-   */
-  memoryUsedBytes: bigint;
-
-  /**
-   * Status of individual containers in this workload.
-   *
-   * @generated from field: repeated admiral.api.cluster.v1.ContainerStatus containers = 18;
-   */
-  containers: ContainerStatus[];
-
-  /**
-   * When this workload's status was last updated.
-   *
-   * @generated from field: google.protobuf.Timestamp last_updated_at = 19;
-   */
-  lastUpdatedAt?: Timestamp;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.Workload.
- * Use `create(WorkloadSchema)` to create a new message.
- */
-export const WorkloadSchema: GenMessage<Workload> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 2);
-
-/**
- * ContainerStatus describes the current state of a single container.
- *
- * @generated from message admiral.api.cluster.v1.ContainerStatus
- */
-export type ContainerStatus = Message<"admiral.api.cluster.v1.ContainerStatus"> & {
-  /**
-   * Container name within the pod spec.
-   *
-   * @generated from field: string name = 1;
-   */
-  name: string;
-
-  /**
-   * Container image reference (e.g., "registry.example.com/api:v2.1.4").
-   *
-   * @generated from field: string image = 2;
-   */
-  image: string;
-
-  /**
-   * Cumulative number of container restarts.
-   *
-   * @generated from field: int32 restart_count = 3;
-   */
-  restartCount: number;
-
-  /**
-   * Current container state (e.g., "running", "waiting", "terminated").
-   *
-   * @generated from field: string state = 4;
-   */
-  state: string;
-
-  /**
-   * Whether the container's readiness probe is passing.
-   *
-   * @generated from field: bool ready = 5;
-   */
-  ready: boolean;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.ContainerStatus.
- * Use `create(ContainerStatusSchema)` to create a new message.
- */
-export const ContainerStatusSchema: GenMessage<ContainerStatus> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 3);
-
-/**
- * ObjectReference is a lightweight reference to a Kubernetes object.
- *
- * @generated from message admiral.api.cluster.v1.ObjectReference
- */
-export type ObjectReference = Message<"admiral.api.cluster.v1.ObjectReference"> & {
-  /**
-   * Kubernetes resource kind (e.g., "Pod", "ReplicaSet").
-   *
-   * @generated from field: string kind = 1;
-   */
-  kind: string;
-
-  /**
-   * Kubernetes namespace.
-   *
-   * @generated from field: string namespace = 2;
-   */
-  namespace: string;
-
-  /**
-   * Object name.
-   *
-   * @generated from field: string name = 3;
-   */
-  name: string;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.ObjectReference.
- * Use `create(ObjectReferenceSchema)` to create a new message.
- */
-export const ObjectReferenceSchema: GenMessage<ObjectReference> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 4);
-
-/**
- * WorkloadEvent represents a Kubernetes event related to a workload or its
- * child objects (pods, replicasets). Events are deduplicated by their K8s UID.
- *
- * @generated from message admiral.api.cluster.v1.WorkloadEvent
- */
-export type WorkloadEvent = Message<"admiral.api.cluster.v1.WorkloadEvent"> & {
-  /**
-   * Kubernetes event UID, used for deduplication.
-   *
-   * @generated from field: string uid = 1;
-   */
-  uid: string;
-
-  /**
-   * Event type: "Normal" or "Warning".
-   *
-   * @generated from field: string type = 2;
-   */
-  type: string;
-
-  /**
-   * Short machine-readable reason (e.g., "BackOff", "FailedScheduling").
-   *
-   * @generated from field: string reason = 3;
-   */
-  reason: string;
-
-  /**
-   * The Kubernetes object this event is about.
-   *
-   * @generated from field: admiral.api.cluster.v1.ObjectReference regarding = 4;
-   */
-  regarding?: ObjectReference;
-
-  /**
-   * Human-readable event message.
-   *
-   * @generated from field: string message = 5;
-   */
-  message: string;
-
-  /**
-   * When this event was first observed.
-   *
-   * @generated from field: google.protobuf.Timestamp first_seen = 6;
-   */
-  firstSeen?: Timestamp;
-
-  /**
-   * When this event was most recently observed.
-   *
-   * @generated from field: google.protobuf.Timestamp last_seen = 7;
-   */
-  lastSeen?: Timestamp;
-
-  /**
-   * Number of times this event has occurred.
-   *
-   * @generated from field: int32 count = 8;
-   */
-  count: number;
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.WorkloadEvent.
- * Use `create(WorkloadEventSchema)` to create a new message.
- */
-export const WorkloadEventSchema: GenMessage<WorkloadEvent> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 5);
+  fileDesc("CiRhZG1pcmFsL2FwaS9jbHVzdGVyL3YxL2NsdXN0ZXIucHJvdG8SFmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEi6AEKFENyZWF0ZUNsdXN0ZXJSZXF1ZXN0EjgKBG5hbWUYASABKAlCKrpIJ3IlGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgCIAEoCUIIukgFcgMYgAgSSAoGbGFiZWxzGAMgAygLMjguYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyUmVxdWVzdC5MYWJlbHNFbnRyeRotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIl8KFUNyZWF0ZUNsdXN0ZXJSZXNwb25zZRIsCgdjbHVzdGVyGAEgASgLMhsuYWRtaXJhbC5jbHVzdGVyLnYxLkNsdXN0ZXISGAoQcGxhaW5fdGV4dF90b2tlbhgCIAEoCSIxChFHZXRDbHVzdGVyUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABASJCChJHZXRDbHVzdGVyUmVzcG9uc2USLAoHY2x1c3RlchgBIAEoCzIbLmFkbWlyYWwuY2x1c3Rlci52MS5DbHVzdGVyIkwKE0xpc3RDbHVzdGVyc1JlcXVlc3QSDgoGZmlsdGVyGAEgASgJEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJIl4KFExpc3RDbHVzdGVyc1Jlc3BvbnNlEi0KCGNsdXN0ZXJzGAEgAygLMhsuYWRtaXJhbC5jbHVzdGVyLnYxLkNsdXN0ZXISFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIn0KFFVwZGF0ZUNsdXN0ZXJSZXF1ZXN0EjQKB2NsdXN0ZXIYASABKAsyGy5hZG1pcmFsLmNsdXN0ZXIudjEuQ2x1c3RlckIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJFChVVcGRhdGVDbHVzdGVyUmVzcG9uc2USLAoHY2x1c3RlchgBIAEoCzIbLmFkbWlyYWwuY2x1c3Rlci52MS5DbHVzdGVyIjQKFERlbGV0ZUNsdXN0ZXJSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBIhcKFURlbGV0ZUNsdXN0ZXJSZXNwb25zZSI3ChdHZXRDbHVzdGVyU3RhdHVzUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABASK+AQoYR2V0Q2x1c3RlclN0YXR1c1Jlc3BvbnNlEj4KDWhlYWx0aF9zdGF0dXMYASABKA4yJy5hZG1pcmFsLmNsdXN0ZXIudjEuQ2x1c3RlckhlYWx0aFN0YXR1cxIxCgZzdGF0dXMYAiABKAsyIS5hZG1pcmFsLmNsdXN0ZXIudjEuQ2x1c3RlclN0YXR1cxIvCgtyZXBvcnRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAikAIKGlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEjkKBnN0YXR1cxgCIAEoCzIhLmFkbWlyYWwuY2x1c3Rlci52MS5DbHVzdGVyU3RhdHVzQga6SAPIAQESNQoJd29ya2xvYWRzGAMgAygLMiIuYWRtaXJhbC5jbHVzdGVyLnYxLldvcmtsb2FkU3RhdHVzEjEKBmV2ZW50cxgEIAMoCzIhLmFkbWlyYWwuY2x1c3Rlci52MS5Xb3JrbG9hZEV2ZW50Ei8KC3JlcG9ydGVkX2F0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJFChtSZXBvcnRDbHVzdGVyU3RhdHVzUmVzcG9uc2USCwoDYWNrGAEgASgIEhkKEW5leHRfcHVzaF9zZWNvbmRzGAIgASgFImsKFExpc3RXb3JrbG9hZHNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEg4KBmZpbHRlchgCIAEoCRIRCglwYWdlX3NpemUYAyABKAUSEgoKcGFnZV90b2tlbhgEIAEoCSJhChVMaXN0V29ya2xvYWRzUmVzcG9uc2USLwoJd29ya2xvYWRzGAEgAygLMhwuYWRtaXJhbC5jbHVzdGVyLnYxLldvcmtsb2FkEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKjAQobUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEjUKCXdvcmtsb2FkcxgCIAMoCzIiLmFkbWlyYWwuY2x1c3Rlci52MS5Xb3JrbG9hZFN0YXR1cxIvCgtyZXBvcnRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiKwocUmVwb3J0V29ya2xvYWRTdGF0dXNSZXNwb25zZRILCgNhY2sYASABKAgipgEKGUNyZWF0ZUNsdXN0ZXJUb2tlblJlcXVlc3QSHAoKY2x1c3Rlcl9pZBgBIAEoCUIIukgFcgOwAQESOwoEbmFtZRgCIAEoCUItukgqcigQARj/ATIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEi4KCmV4cGlyZXNfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wImwKGkNyZWF0ZUNsdXN0ZXJUb2tlblJlc3BvbnNlEjQKDGFjY2Vzc190b2tlbhgBIAEoCzIeLmFkbWlyYWwuY29tbW9uLnYxLkFjY2Vzc1Rva2VuEhgKEHBsYWluX3RleHRfdG9rZW4YAiABKAkibwoYTGlzdENsdXN0ZXJUb2tlbnNSZXF1ZXN0EhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJEg4KBmZpbHRlchgEIAEoCSJrChlMaXN0Q2x1c3RlclRva2Vuc1Jlc3BvbnNlEjUKDWFjY2Vzc190b2tlbnMYASADKAsyHi5hZG1pcmFsLmNvbW1vbi52MS5BY2Nlc3NUb2tlbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiUgoWR2V0Q2x1c3RlclRva2VuUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIaCgh0b2tlbl9pZBgCIAEoCUIIukgFcgOwAQEiTwoXR2V0Q2x1c3RlclRva2VuUmVzcG9uc2USNAoMYWNjZXNzX3Rva2VuGAEgASgLMh4uYWRtaXJhbC5jb21tb24udjEuQWNjZXNzVG9rZW4iVQoZUmV2b2tlQ2x1c3RlclRva2VuUmVxdWVzdBIcCgpjbHVzdGVyX2lkGAEgASgJQgi6SAVyA7ABARIaCgh0b2tlbl9pZBgCIAEoCUIIukgFcgOwAQEiUgoaUmV2b2tlQ2x1c3RlclRva2VuUmVzcG9uc2USNAoMYWNjZXNzX3Rva2VuGAEgASgLMh4uYWRtaXJhbC5jb21tb24udjEuQWNjZXNzVG9rZW4yoRIKCkNsdXN0ZXJBUEkSmAEKDUNyZWF0ZUNsdXN0ZXISLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkNyZWF0ZUNsdXN0ZXJSZXF1ZXN0Gi0uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyUmVzcG9uc2UiKqKXJA8KDWNsdXN0ZXI6d3JpdGWC0+STAhE6ASoiDC92MS9jbHVzdGVycxKYAQoKR2V0Q2x1c3RlchIpLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclJlcXVlc3QaKi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkdldENsdXN0ZXJSZXNwb25zZSIzopckDgoMY2x1c3RlcjpyZWFkgtPkkwIbEhkvdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9ErEBChBHZXRDbHVzdGVyU3RhdHVzEi8uYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5HZXRDbHVzdGVyU3RhdHVzUmVxdWVzdBowLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclN0YXR1c1Jlc3BvbnNlIjqilyQOCgxjbHVzdGVyOnJlYWSC0+STAiISIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEpEBCgxMaXN0Q2x1c3RlcnMSKy5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1JlcXVlc3QaLC5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyc1Jlc3BvbnNlIiailyQOCgxjbHVzdGVyOnJlYWSC0+STAg4SDC92MS9jbHVzdGVycxKlAQoNVXBkYXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuVXBkYXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlVwZGF0ZUNsdXN0ZXJSZXNwb25zZSI3opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCHjoBKjIZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyLmlkfRKiAQoNRGVsZXRlQ2x1c3RlchIsLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuRGVsZXRlQ2x1c3RlclJlcXVlc3QaLS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkRlbGV0ZUNsdXN0ZXJSZXNwb25zZSI0opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCGyoZL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfRK7AQoSQ3JlYXRlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5DcmVhdGVDbHVzdGVyVG9rZW5SZXNwb25zZSI+opckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCJToBKiIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMStAEKEUxpc3RDbHVzdGVyVG9rZW5zEjAuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0Q2x1c3RlclRva2Vuc1JlcXVlc3QaMS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLkxpc3RDbHVzdGVyVG9rZW5zUmVzcG9uc2UiOqKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCIhIgL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMSuQEKD0dldENsdXN0ZXJUb2tlbhIuLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVxdWVzdBovLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuR2V0Q2x1c3RlclRva2VuUmVzcG9uc2UiRaKXJA4KDGNsdXN0ZXI6cmVhZILT5JMCLRIrL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfRLNAQoSUmV2b2tlQ2x1c3RlclRva2VuEjEuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXZva2VDbHVzdGVyVG9rZW5SZXNwb25zZSJQopckDwoNY2x1c3Rlcjp3cml0ZYLT5JMCNzoBKiIyL3YxL2NsdXN0ZXJzL3tjbHVzdGVyX2lkfS90b2tlbnMve3Rva2VuX2lkfS9yZXZva2USxAEKE1JlcG9ydENsdXN0ZXJTdGF0dXMSMi5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxLlJlcG9ydENsdXN0ZXJTdGF0dXNSZXF1ZXN0GjMuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRDbHVzdGVyU3RhdHVzUmVzcG9uc2UiRKKXJBUKDmNsdXN0ZXI6c3RhdHVzEgNhZ3SC0+STAiU6ASoiIC92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vc3RhdHVzEqsBCg1MaXN0V29ya2xvYWRzEiwuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5MaXN0V29ya2xvYWRzUmVxdWVzdBotLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuTGlzdFdvcmtsb2Fkc1Jlc3BvbnNlIj2ilyQOCgxjbHVzdGVyOnJlYWSC0+STAiUSIy92MS9jbHVzdGVycy97Y2x1c3Rlcl9pZH0vd29ya2xvYWRzEtEBChRSZXBvcnRXb3JrbG9hZFN0YXR1cxIzLmFkbWlyYWwuYXBpLmNsdXN0ZXIudjEuUmVwb3J0V29ya2xvYWRTdGF0dXNSZXF1ZXN0GjQuYWRtaXJhbC5hcGkuY2x1c3Rlci52MS5SZXBvcnRXb3JrbG9hZFN0YXR1c1Jlc3BvbnNlIk6ilyQVCg5jbHVzdGVyOnN0YXR1cxIDYWd0gtPkkwIvOgEqIiovdjEvY2x1c3RlcnMve2NsdXN0ZXJfaWR9L3dvcmtsb2Fkcy9zdGF0dXNC3wEKGmNvbS5hZG1pcmFsLmFwaS5jbHVzdGVyLnYxQgxDbHVzdGVyUHJvdG9QAVo4Z28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvY2x1c3Rlci92MTtjbHVzdGVydjGiAgNBQUOqAhZBZG1pcmFsLkFwaS5DbHVzdGVyLlYxygIWQWRtaXJhbFxBcGlcQ2x1c3RlclxWMeICIkFkbWlyYWxcQXBpXENsdXN0ZXJcVjFcR1BCTWV0YWRhdGHqAhlBZG1pcmFsOjpBcGk6OkNsdXN0ZXI6OlYxYgZwcm90bzM", [file_admiral_cluster_v1_cluster, file_admiral_common_v1_annotations, file_admiral_common_v1_token, file_buf_validate_validate, file_google_api_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * CreateClusterRequest contains the parameters for creating a new cluster.
@@ -572,7 +56,7 @@ export type CreateClusterRequest = Message<"admiral.api.cluster.v1.CreateCluster
  * Use `create(CreateClusterRequestSchema)` to create a new message.
  */
 export const CreateClusterRequestSchema: GenMessage<CreateClusterRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 6);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 0);
 
 /**
  * CreateClusterResponse contains the newly created cluster and its initial
@@ -585,7 +69,7 @@ export type CreateClusterResponse = Message<"admiral.api.cluster.v1.CreateCluste
    * The created cluster. Health status will be PENDING until an agent connects
    * and calls AgentAPI.RegisterAgent.
    *
-   * @generated from field: admiral.api.cluster.v1.Cluster cluster = 1;
+   * @generated from field: admiral.cluster.v1.Cluster cluster = 1;
    */
   cluster?: Cluster;
 
@@ -595,7 +79,7 @@ export type CreateClusterResponse = Message<"admiral.api.cluster.v1.CreateCluste
    * the K8s agent for authentication.
    *
    * To create additional tokens (e.g., for rotation), use
-   * AccessTokenAPI.CreateAgentToken.
+   * CreateClusterToken.
    *
    * @generated from field: string plain_text_token = 2;
    */
@@ -607,7 +91,7 @@ export type CreateClusterResponse = Message<"admiral.api.cluster.v1.CreateCluste
  * Use `create(CreateClusterResponseSchema)` to create a new message.
  */
 export const CreateClusterResponseSchema: GenMessage<CreateClusterResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 7);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 1);
 
 /**
  * GetClusterRequest identifies a cluster to retrieve.
@@ -628,7 +112,7 @@ export type GetClusterRequest = Message<"admiral.api.cluster.v1.GetClusterReques
  * Use `create(GetClusterRequestSchema)` to create a new message.
  */
 export const GetClusterRequestSchema: GenMessage<GetClusterRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 8);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 2);
 
 /**
  * GetClusterResponse contains the cluster record.
@@ -639,7 +123,7 @@ export type GetClusterResponse = Message<"admiral.api.cluster.v1.GetClusterRespo
   /**
    * The cluster record, including server-derived health_status.
    *
-   * @generated from field: admiral.api.cluster.v1.Cluster cluster = 1;
+   * @generated from field: admiral.cluster.v1.Cluster cluster = 1;
    */
   cluster?: Cluster;
 };
@@ -649,7 +133,7 @@ export type GetClusterResponse = Message<"admiral.api.cluster.v1.GetClusterRespo
  * Use `create(GetClusterResponseSchema)` to create a new message.
  */
 export const GetClusterResponseSchema: GenMessage<GetClusterResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 9);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 3);
 
 /**
  * ListClustersRequest contains pagination and filter parameters.
@@ -658,7 +142,7 @@ export const GetClusterResponseSchema: GenMessage<GetClusterResponse> = /*@__PUR
  */
 export type ListClustersRequest = Message<"admiral.api.cluster.v1.ListClustersRequest"> & {
   /**
-   * Filter expression using the PEG filter DSL
+   * Filter expression using the PEG filter DSL.
    *
    * @generated from field: string filter = 1;
    */
@@ -684,7 +168,7 @@ export type ListClustersRequest = Message<"admiral.api.cluster.v1.ListClustersRe
  * Use `create(ListClustersRequestSchema)` to create a new message.
  */
 export const ListClustersRequestSchema: GenMessage<ListClustersRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 10);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 4);
 
 /**
  * ListClustersResponse contains a page of clusters.
@@ -695,7 +179,7 @@ export type ListClustersResponse = Message<"admiral.api.cluster.v1.ListClustersR
   /**
    * The list of clusters.
    *
-   * @generated from field: repeated admiral.api.cluster.v1.Cluster clusters = 1;
+   * @generated from field: repeated admiral.cluster.v1.Cluster clusters = 1;
    */
   clusters: Cluster[];
 
@@ -712,7 +196,7 @@ export type ListClustersResponse = Message<"admiral.api.cluster.v1.ListClustersR
  * Use `create(ListClustersResponseSchema)` to create a new message.
  */
 export const ListClustersResponseSchema: GenMessage<ListClustersResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 11);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 5);
 
 /**
  * UpdateClusterRequest contains the cluster fields to update.
@@ -724,7 +208,7 @@ export type UpdateClusterRequest = Message<"admiral.api.cluster.v1.UpdateCluster
    * The cluster with updated fields. The `id` field is required.
    * Only fields specified in `update_mask` are updated.
    *
-   * @generated from field: admiral.api.cluster.v1.Cluster cluster = 1;
+   * @generated from field: admiral.cluster.v1.Cluster cluster = 1;
    */
   cluster?: Cluster;
 
@@ -742,7 +226,7 @@ export type UpdateClusterRequest = Message<"admiral.api.cluster.v1.UpdateCluster
  * Use `create(UpdateClusterRequestSchema)` to create a new message.
  */
 export const UpdateClusterRequestSchema: GenMessage<UpdateClusterRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 12);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 6);
 
 /**
  * UpdateClusterResponse contains the updated cluster.
@@ -753,7 +237,7 @@ export type UpdateClusterResponse = Message<"admiral.api.cluster.v1.UpdateCluste
   /**
    * The updated cluster.
    *
-   * @generated from field: admiral.api.cluster.v1.Cluster cluster = 1;
+   * @generated from field: admiral.cluster.v1.Cluster cluster = 1;
    */
   cluster?: Cluster;
 };
@@ -763,7 +247,7 @@ export type UpdateClusterResponse = Message<"admiral.api.cluster.v1.UpdateCluste
  * Use `create(UpdateClusterResponseSchema)` to create a new message.
  */
 export const UpdateClusterResponseSchema: GenMessage<UpdateClusterResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 13);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 7);
 
 /**
  * DeleteClusterRequest identifies a cluster to delete.
@@ -785,7 +269,7 @@ export type DeleteClusterRequest = Message<"admiral.api.cluster.v1.DeleteCluster
  * Use `create(DeleteClusterRequestSchema)` to create a new message.
  */
 export const DeleteClusterRequestSchema: GenMessage<DeleteClusterRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 14);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 8);
 
 /**
  * DeleteClusterResponse is empty on success.
@@ -800,7 +284,7 @@ export type DeleteClusterResponse = Message<"admiral.api.cluster.v1.DeleteCluste
  * Use `create(DeleteClusterResponseSchema)` to create a new message.
  */
 export const DeleteClusterResponseSchema: GenMessage<DeleteClusterResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 15);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 9);
 
 /**
  * GetClusterStatusRequest identifies a cluster whose telemetry status to retrieve.
@@ -821,7 +305,7 @@ export type GetClusterStatusRequest = Message<"admiral.api.cluster.v1.GetCluster
  * Use `create(GetClusterStatusRequestSchema)` to create a new message.
  */
 export const GetClusterStatusRequestSchema: GenMessage<GetClusterStatusRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 16);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 10);
 
 /**
  * GetClusterStatusResponse contains the server-derived health status and the
@@ -835,7 +319,7 @@ export type GetClusterStatusResponse = Message<"admiral.api.cluster.v1.GetCluste
    * Server-derived health status based on agent connectivity, node readiness,
    * and workload health.
    *
-   * @generated from field: admiral.api.cluster.v1.ClusterHealthStatus health_status = 1;
+   * @generated from field: admiral.cluster.v1.ClusterHealthStatus health_status = 1;
    */
   healthStatus: ClusterHealthStatus;
 
@@ -843,7 +327,7 @@ export type GetClusterStatusResponse = Message<"admiral.api.cluster.v1.GetCluste
    * Latest telemetry snapshot from the agent. Absent if no telemetry has
    * been reported yet.
    *
-   * @generated from field: admiral.api.cluster.v1.ClusterStatus status = 2;
+   * @generated from field: admiral.cluster.v1.ClusterStatus status = 2;
    */
   status?: ClusterStatus;
 
@@ -860,7 +344,7 @@ export type GetClusterStatusResponse = Message<"admiral.api.cluster.v1.GetCluste
  * Use `create(GetClusterStatusResponseSchema)` to create a new message.
  */
 export const GetClusterStatusResponseSchema: GenMessage<GetClusterStatusResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 17);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 11);
 
 /**
  * ReportClusterStatusRequest contains a combined telemetry payload from a K8s agent.
@@ -880,21 +364,21 @@ export type ReportClusterStatusRequest = Message<"admiral.api.cluster.v1.ReportC
   /**
    * Cluster-level telemetry snapshot.
    *
-   * @generated from field: admiral.api.cluster.v1.ClusterStatus status = 2;
+   * @generated from field: admiral.cluster.v1.ClusterStatus status = 2;
    */
   status?: ClusterStatus;
 
   /**
    * Per-workload status snapshots.
    *
-   * @generated from field: repeated admiral.api.cluster.v1.WorkloadStatus workloads = 3;
+   * @generated from field: repeated admiral.cluster.v1.WorkloadStatus workloads = 3;
    */
   workloads: WorkloadStatus[];
 
   /**
    * Kubernetes events observed since the last push.
    *
-   * @generated from field: repeated admiral.api.cluster.v1.WorkloadEvent events = 4;
+   * @generated from field: repeated admiral.cluster.v1.WorkloadEvent events = 4;
    */
   events: WorkloadEvent[];
 
@@ -911,127 +395,7 @@ export type ReportClusterStatusRequest = Message<"admiral.api.cluster.v1.ReportC
  * Use `create(ReportClusterStatusRequestSchema)` to create a new message.
  */
 export const ReportClusterStatusRequestSchema: GenMessage<ReportClusterStatusRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 18);
-
-/**
- * WorkloadStatus is the agent-reported status for a single workload within
- * a telemetry push payload.
- *
- * @generated from message admiral.api.cluster.v1.WorkloadStatus
- */
-export type WorkloadStatus = Message<"admiral.api.cluster.v1.WorkloadStatus"> & {
-  /**
-   * Kubernetes namespace.
-   *
-   * @generated from field: string namespace = 1;
-   */
-  namespace: string;
-
-  /**
-   * Workload name.
-   *
-   * @generated from field: string name = 2;
-   */
-  name: string;
-
-  /**
-   * Kubernetes resource kind (e.g., "Deployment", "StatefulSet").
-   *
-   * @generated from field: string kind = 3;
-   */
-  kind: string;
-
-  /**
-   * Kubernetes labels on the workload.
-   *
-   * @generated from field: map<string, string> labels = 4;
-   */
-  labels: { [key: string]: string };
-
-  /**
-   * Number of desired replicas.
-   *
-   * @generated from field: int32 replicas_desired = 5;
-   */
-  replicasDesired: number;
-
-  /**
-   * Number of ready replicas.
-   *
-   * @generated from field: int32 replicas_ready = 6;
-   */
-  replicasReady: number;
-
-  /**
-   * Number of available replicas.
-   *
-   * @generated from field: int32 replicas_available = 7;
-   */
-  replicasAvailable: number;
-
-  /**
-   * CPU requests across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_requests_millicores = 8;
-   */
-  cpuRequestsMillicores: bigint;
-
-  /**
-   * CPU limits across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_limits_millicores = 9;
-   */
-  cpuLimitsMillicores: bigint;
-
-  /**
-   * Current CPU usage across all containers, in millicores.
-   *
-   * @generated from field: int64 cpu_used_millicores = 10;
-   */
-  cpuUsedMillicores: bigint;
-
-  /**
-   * Memory requests across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_requests_bytes = 11;
-   */
-  memoryRequestsBytes: bigint;
-
-  /**
-   * Memory limits across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_limits_bytes = 12;
-   */
-  memoryLimitsBytes: bigint;
-
-  /**
-   * Current memory usage across all containers, in bytes.
-   *
-   * @generated from field: int64 memory_used_bytes = 13;
-   */
-  memoryUsedBytes: bigint;
-
-  /**
-   * Derived health status.
-   *
-   * @generated from field: admiral.api.cluster.v1.WorkloadHealthStatus health_status = 14;
-   */
-  healthStatus: WorkloadHealthStatus;
-
-  /**
-   * Status of individual containers.
-   *
-   * @generated from field: repeated admiral.api.cluster.v1.ContainerStatus containers = 15;
-   */
-  containers: ContainerStatus[];
-};
-
-/**
- * Describes the message admiral.api.cluster.v1.WorkloadStatus.
- * Use `create(WorkloadStatusSchema)` to create a new message.
- */
-export const WorkloadStatusSchema: GenMessage<WorkloadStatus> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 19);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 12);
 
 /**
  * ReportClusterStatusResponse acknowledges a telemetry push.
@@ -1060,7 +424,7 @@ export type ReportClusterStatusResponse = Message<"admiral.api.cluster.v1.Report
  * Use `create(ReportClusterStatusResponseSchema)` to create a new message.
  */
 export const ReportClusterStatusResponseSchema: GenMessage<ReportClusterStatusResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 20);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 13);
 
 /**
  * ListWorkloadsRequest contains pagination and filter parameters for listing
@@ -1077,7 +441,7 @@ export type ListWorkloadsRequest = Message<"admiral.api.cluster.v1.ListWorkloads
   clusterId: string;
 
   /**
-   * Filter expression using the PEG filter DSL
+   * Filter expression using the PEG filter DSL.
    *
    * @generated from field: string filter = 2;
    */
@@ -1103,7 +467,7 @@ export type ListWorkloadsRequest = Message<"admiral.api.cluster.v1.ListWorkloads
  * Use `create(ListWorkloadsRequestSchema)` to create a new message.
  */
 export const ListWorkloadsRequestSchema: GenMessage<ListWorkloadsRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 21);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 14);
 
 /**
  * ListWorkloadsResponse contains a page of workloads.
@@ -1114,7 +478,7 @@ export type ListWorkloadsResponse = Message<"admiral.api.cluster.v1.ListWorkload
   /**
    * The list of workloads.
    *
-   * @generated from field: repeated admiral.api.cluster.v1.Workload workloads = 1;
+   * @generated from field: repeated admiral.cluster.v1.Workload workloads = 1;
    */
   workloads: Workload[];
 
@@ -1131,7 +495,7 @@ export type ListWorkloadsResponse = Message<"admiral.api.cluster.v1.ListWorkload
  * Use `create(ListWorkloadsResponseSchema)` to create a new message.
  */
 export const ListWorkloadsResponseSchema: GenMessage<ListWorkloadsResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 22);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 15);
 
 /**
  * ReportWorkloadStatusRequest contains incremental workload telemetry from a K8s agent.
@@ -1149,7 +513,7 @@ export type ReportWorkloadStatusRequest = Message<"admiral.api.cluster.v1.Report
   /**
    * Per-workload status snapshots.
    *
-   * @generated from field: repeated admiral.api.cluster.v1.WorkloadStatus workloads = 2;
+   * @generated from field: repeated admiral.cluster.v1.WorkloadStatus workloads = 2;
    */
   workloads: WorkloadStatus[];
 
@@ -1166,7 +530,7 @@ export type ReportWorkloadStatusRequest = Message<"admiral.api.cluster.v1.Report
  * Use `create(ReportWorkloadStatusRequestSchema)` to create a new message.
  */
 export const ReportWorkloadStatusRequestSchema: GenMessage<ReportWorkloadStatusRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 23);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 16);
 
 /**
  * ReportWorkloadStatusResponse acknowledges a workload telemetry push.
@@ -1187,7 +551,7 @@ export type ReportWorkloadStatusResponse = Message<"admiral.api.cluster.v1.Repor
  * Use `create(ReportWorkloadStatusResponseSchema)` to create a new message.
  */
 export const ReportWorkloadStatusResponseSchema: GenMessage<ReportWorkloadStatusResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 24);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 17);
 
 /**
  * CreateClusterTokenRequest contains the parameters for creating a new AGT
@@ -1225,7 +589,7 @@ export type CreateClusterTokenRequest = Message<"admiral.api.cluster.v1.CreateCl
  * Use `create(CreateClusterTokenRequestSchema)` to create a new message.
  */
 export const CreateClusterTokenRequestSchema: GenMessage<CreateClusterTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 25);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 18);
 
 /**
  * CreateClusterTokenResponse contains the newly created AGT.
@@ -1254,7 +618,7 @@ export type CreateClusterTokenResponse = Message<"admiral.api.cluster.v1.CreateC
  * Use `create(CreateClusterTokenResponseSchema)` to create a new message.
  */
 export const CreateClusterTokenResponseSchema: GenMessage<CreateClusterTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 26);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 19);
 
 /**
  * ListClusterTokensRequest contains pagination and filter parameters.
@@ -1296,7 +660,7 @@ export type ListClusterTokensRequest = Message<"admiral.api.cluster.v1.ListClust
  * Use `create(ListClusterTokensRequestSchema)` to create a new message.
  */
 export const ListClusterTokensRequestSchema: GenMessage<ListClusterTokensRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 27);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 20);
 
 /**
  * ListClusterTokensResponse contains a page of cluster AGT metadata.
@@ -1324,7 +688,7 @@ export type ListClusterTokensResponse = Message<"admiral.api.cluster.v1.ListClus
  * Use `create(ListClusterTokensResponseSchema)` to create a new message.
  */
 export const ListClusterTokensResponseSchema: GenMessage<ListClusterTokensResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 28);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 21);
 
 /**
  * GetClusterTokenRequest identifies a cluster AGT to retrieve.
@@ -1352,7 +716,7 @@ export type GetClusterTokenRequest = Message<"admiral.api.cluster.v1.GetClusterT
  * Use `create(GetClusterTokenRequestSchema)` to create a new message.
  */
 export const GetClusterTokenRequestSchema: GenMessage<GetClusterTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 29);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 22);
 
 /**
  * GetClusterTokenResponse contains the requested cluster AGT metadata.
@@ -1373,7 +737,7 @@ export type GetClusterTokenResponse = Message<"admiral.api.cluster.v1.GetCluster
  * Use `create(GetClusterTokenResponseSchema)` to create a new message.
  */
 export const GetClusterTokenResponseSchema: GenMessage<GetClusterTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 30);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 23);
 
 /**
  * RevokeClusterTokenRequest identifies a cluster AGT to revoke.
@@ -1401,7 +765,7 @@ export type RevokeClusterTokenRequest = Message<"admiral.api.cluster.v1.RevokeCl
  * Use `create(RevokeClusterTokenRequestSchema)` to create a new message.
  */
 export const RevokeClusterTokenRequestSchema: GenMessage<RevokeClusterTokenRequest> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 31);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 24);
 
 /**
  * RevokeClusterTokenResponse contains the revoked cluster AGT metadata.
@@ -1422,104 +786,7 @@ export type RevokeClusterTokenResponse = Message<"admiral.api.cluster.v1.RevokeC
  * Use `create(RevokeClusterTokenResponseSchema)` to create a new message.
  */
 export const RevokeClusterTokenResponseSchema: GenMessage<RevokeClusterTokenResponse> = /*@__PURE__*/
-  messageDesc(file_admiral_api_cluster_v1_cluster, 32);
-
-/**
- * ClusterHealthStatus represents the derived health state of a cluster.
- * The status is computed from agent connectivity, node readiness, and workload health.
- *
- * @generated from enum admiral.api.cluster.v1.ClusterHealthStatus
- */
-export enum ClusterHealthStatus {
-  /**
-   * Default value. Must not be used.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_UNSPECIFIED = 0;
-   */
-  UNSPECIFIED = 0,
-
-  /**
-   * Cluster record exists but no agent has registered yet.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_PENDING = 1;
-   */
-  PENDING = 1,
-
-  /**
-   * Agent connected, all nodes ready, less than 10% workloads degraded.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_HEALTHY = 2;
-   */
-  HEALTHY = 2,
-
-  /**
-   * Agent connected, some nodes not ready or workloads in error/degraded state.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_DEGRADED = 3;
-   */
-  DEGRADED = 3,
-
-  /**
-   * Agent connected, more than 25% nodes not ready or workloads in error state.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_ERROR = 4;
-   */
-  ERROR = 4,
-
-  /**
-   * No heartbeat received within 3x the heartbeat interval.
-   *
-   * @generated from enum value: CLUSTER_HEALTH_STATUS_UNREACHABLE = 5;
-   */
-  UNREACHABLE = 5,
-}
-
-/**
- * Describes the enum admiral.api.cluster.v1.ClusterHealthStatus.
- */
-export const ClusterHealthStatusSchema: GenEnum<ClusterHealthStatus> = /*@__PURE__*/
-  enumDesc(file_admiral_api_cluster_v1_cluster, 0);
-
-/**
- * WorkloadHealthStatus represents the derived health state of a single workload.
- *
- * @generated from enum admiral.api.cluster.v1.WorkloadHealthStatus
- */
-export enum WorkloadHealthStatus {
-  /**
-   * Default value. Must not be used.
-   *
-   * @generated from enum value: WORKLOAD_HEALTH_STATUS_UNSPECIFIED = 0;
-   */
-  UNSPECIFIED = 0,
-
-  /**
-   * All desired replicas ready, no CrashLoopBackOff, restarts stable.
-   *
-   * @generated from enum value: WORKLOAD_HEALTH_STATUS_HEALTHY = 1;
-   */
-  HEALTHY = 1,
-
-  /**
-   * Some replicas not ready, restarts increasing, or pods pending over 5 minutes.
-   *
-   * @generated from enum value: WORKLOAD_HEALTH_STATUS_DEGRADED = 2;
-   */
-  DEGRADED = 2,
-
-  /**
-   * Zero ready replicas, all containers CrashLoopBackOff, or deployment stuck.
-   *
-   * @generated from enum value: WORKLOAD_HEALTH_STATUS_ERROR = 3;
-   */
-  ERROR = 3,
-}
-
-/**
- * Describes the enum admiral.api.cluster.v1.WorkloadHealthStatus.
- */
-export const WorkloadHealthStatusSchema: GenEnum<WorkloadHealthStatus> = /*@__PURE__*/
-  enumDesc(file_admiral_api_cluster_v1_cluster, 1);
+  messageDesc(file_admiral_api_cluster_v1_cluster, 25);
 
 /**
  * ClusterAPI manages Kubernetes clusters and their workload telemetry.
@@ -1540,7 +807,7 @@ export const ClusterAPI: GenService<{
    * generates an initial Agent Token (AGT) for the K8s agent. The cluster
    * starts in PENDING status until an agent registers against it.
    *
-   * The response includes a `plain_text_token` — the raw AGT secret shown
+   * The response includes a `plain_text_token` -- the raw AGT secret shown
    * exactly once. Deploy this token to the K8s agent (e.g., via Helm values
    * or a Kubernetes Secret). The agent uses it to authenticate with
    * AgentAPI.RegisterAgent on first boot.
@@ -1659,7 +926,7 @@ export const ClusterAPI: GenService<{
   },
   /**
    * GetClusterToken retrieves a single AGT by ID.
-   * Returns metadata only — the token secret is never included.
+   * Returns metadata only -- the token secret is never included.
    *
    * Scope: `cluster:read`
    *

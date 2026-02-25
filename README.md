@@ -19,11 +19,17 @@ const client = createClient({
 });
 
 // Access services via properties
-// await client.application.methodName({ ... });
 // await client.cluster.methodName({ ... });
+// await client.runner.methodName({ ... });
+// await client.user.methodName({ ... });
+// await client.application.methodName({ ... });
+// await client.component.methodName({ ... });
+// await client.connection.methodName({ ... });
+// await client.deployment.methodName({ ... });
 // await client.environment.methodName({ ... });
 // await client.healthcheck.methodName({ ... });
-// await client.user.methodName({ ... });
+// await client.source.methodName({ ... });
+// await client.state.methodName({ ... });
 // await client.variable.methodName({ ... });
 ```
 
@@ -31,11 +37,17 @@ const client = createClient({
 
 | Service | Property | Description |
 |---------|----------|-------------|
-| ApplicationAPI | `client.application` | Application service |
 | ClusterAPI | `client.cluster` | Cluster service |
+| RunnerAPI | `client.runner` | Runner service |
+| UserAPI | `client.user` | User service |
+| ApplicationAPI | `client.application` | Application service |
+| ComponentAPI | `client.component` | Component service |
+| ConnectionAPI | `client.connection` | Connection service |
+| DeploymentAPI | `client.deployment` | Deployment service |
 | EnvironmentAPI | `client.environment` | Environment service |
 | HealthcheckAPI | `client.healthcheck` | Healthcheck service |
-| UserAPI | `client.user` | User service |
+| SourceAPI | `client.source` | Source service |
+| StateAPI | `client.state` | State service |
 | VariableAPI | `client.variable` | Variable service |
 
 ## Example
@@ -57,7 +69,7 @@ async function main() {
 
   // Call a service method
   try {
-    const response = await client.application.listMethod({});
+    const response = await client.cluster.listMethod({});
     console.log(response);
   } catch (err) {
     console.error("Request failed:", err);
