@@ -888,6 +888,10 @@ export const DeleteStateResponseSchema: GenMessage<DeleteStateResponse> = /*@__P
  * Runner-facing routes use /v1/runner/jobs/{job_id}/state (job-scoped —
  * the server resolves the component and environment from the job).
  *
+ * All operations delegate to the platform StateAPI. The facade resolves the
+ * caller's identity and calls ResolveJobState for runner-facing RPCs to map
+ * job_id → state_id before forwarding state operations.
+ *
  * ---------------------------------------------------------------------------
  * Runner-facing (AGT-only)
  * ---------------------------------------------------------------------------

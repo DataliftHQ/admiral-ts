@@ -1730,6 +1730,9 @@ export const WorkloadHealthStatusSchema: GenEnum<WorkloadHealthStatus> = /*@__PU
  * The telemetry model has three tiers: current snapshot (upserted per push),
  * time-series metrics (rolling 48-hour window), and events (rolling 7-day window).
  *
+ * All operations delegate to the platform ClusterAPI. The facade resolves the
+ * caller's identity (user JWT or AGT → cluster_id) and forwards.
+ *
  * @generated from service admiral.api.cluster.v1.ClusterAPI
  */
 export const ClusterAPI: GenService<{

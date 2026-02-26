@@ -1516,6 +1516,9 @@ export const JobPhaseSchema: GenEnum<JobPhase> = /*@__PURE__*/
  * Runner-facing routes use /v1/runner/... (singular, no ID — derived from
  * the AGT binding), matching the cluster agent pattern.
  *
+ * All operations delegate to the platform RunnerAPI. The facade resolves the
+ * caller's identity (user JWT or AGT → runner_id) and forwards.
+ *
  * ---------------------------------------------------------------------------
  * Admin CRUD
  * ---------------------------------------------------------------------------

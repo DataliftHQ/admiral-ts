@@ -1278,7 +1278,9 @@ export const SourceTypeSchema: GenEnum<SourceType> = /*@__PURE__*/
  * The API includes discovery operations (ListSourceVersions, GetSourceInputs,
  * GetSourceOutputs) that query external systems in real time. These are
  * primarily used by the UI for interactive workflows (version dropdowns, input
- * forms) but are exposed in the public API for CLI and automation use.
+ * forms) but are exposed in the public API for CLI and automation use. The
+ * facade delegates discovery to the platform SourceAPI, which handles
+ * credential resolution and external fetching centrally.
  *
  * @generated from service admiral.api.source.v1.SourceAPI
  */
