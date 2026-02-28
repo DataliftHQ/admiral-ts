@@ -77,7 +77,7 @@ export type State = Message<"admiral.api.state.v1.State"> & {
   md5: string;
 
   /**
-   * Terraform state lineage — a UUID generated on first init. All
+   * Terraform state lineage -- a UUID generated on first init. All
    * subsequent writes must match this lineage to prevent cross-state
    * contamination.
    *
@@ -226,7 +226,7 @@ export type StateLock = Message<"admiral.api.state.v1.StateLock"> & {
   operation: string;
 
   /**
-   * Identifier of who holds the lock. Populated by Terraform — typically
+   * Identifier of who holds the lock. Populated by Terraform -- typically
    * the format "username@hostname" (e.g., "deploy@prod-runner-01").
    * This field is informational only; its format is controlled by Terraform.
    *
@@ -295,7 +295,7 @@ export type StateVersion = Message<"admiral.api.state.v1.StateVersion"> & {
 
   /**
    * The job that produced this state version (UUID). Absent for state that
-   * was written outside the normal job lifecycle — for example, state
+   * was written outside the normal job lifecycle -- for example, state
    * uploaded directly via an admin migration tool, or state that existed
    * before Admiral began managing the component.
    *
@@ -348,7 +348,7 @@ export const GetStateRequestSchema: GenMessage<GetStateRequest> = /*@__PURE__*/
 export type GetStateResponse = Message<"admiral.api.state.v1.GetStateResponse"> & {
   /**
    * The raw Terraform state data (JSON-encoded). Empty if no state exists
-   * yet (fresh init — Terraform handles this gracefully).
+   * yet (fresh init -- Terraform handles this gracefully).
    *
    * @generated from field: bytes data = 1;
    */
@@ -587,9 +587,9 @@ export type ListStatesRequest = Message<"admiral.api.state.v1.ListStatesRequest"
    * Filter expression using the PEG filter DSL.
    *
    * Common filter fields:
-   *   - `component_id` — states for a specific component (UUID).
-   *   - `environment_id` — states for a specific environment (UUID).
-   *   - `application_id` — states for all components belonging to an
+   *   - `component_id` -- states for a specific component (UUID).
+   *   - `environment_id` -- states for a specific environment (UUID).
+   *   - `application_id` -- states for all components belonging to an
    *     application (UUID). The server resolves the application's components
    *     and returns states for all of them. Can be combined with
    *     `environment_id`.
@@ -742,7 +742,7 @@ export const GetStateVersionRequestSchema: GenMessage<GetStateVersionRequest> = 
 
 /**
  * GetStateVersionResponse contains the full state data at a historical serial.
- * Returns both the version metadata and the raw data separately — the
+ * Returns both the version metadata and the raw data separately -- the
  * StateVersion message intentionally omits data to keep ListStateVersions
  * lightweight.
  *
@@ -823,7 +823,7 @@ export const ForceUnlockStateResponseSchema: GenMessage<ForceUnlockStateResponse
 export type DeleteStateRequest = Message<"admiral.api.state.v1.DeleteStateRequest"> & {
   /**
    * The unique identifier of the state record to delete (UUID).
-   * Fails if the state is currently locked — force-unlock first.
+   * Fails if the state is currently locked -- force-unlock first.
    *
    * @generated from field: string id = 1;
    */
@@ -856,16 +856,16 @@ export const DeleteStateResponseSchema: GenMessage<DeleteStateResponse> = /*@__P
  * StateAPI manages Terraform state for infrastructure components within a
  * tenant.
  *
- * State is scoped to **component + environment** — each infrastructure
+ * State is scoped to **component + environment** -- each infrastructure
  * component (e.g., "rds", "vpc") has exactly one state record per
  * environment (e.g., dev, staging, prod). This state persists for the
  * entire lifetime of that component in that environment, spanning many
  * deployments and jobs. Locks protect the state record itself, not any
- * individual job — if a job crashes while holding a lock, the lock remains
+ * individual job -- if a job crashes while holding a lock, the lock remains
  * on the state until released or force-unlocked.
  *
  * Admiral acts as the state backend for all Terraform-backed components.
- * You do not need to configure a separate backend (S3, GCS, etc.) —
+ * You do not need to configure a separate backend (S3, GCS, etc.) --
  * Admiral stores and versions state automatically.
  *
  * Most callers only need the admin-facing RPCs: GetCurrentState, ListStates,
@@ -875,7 +875,7 @@ export const DeleteStateResponseSchema: GenMessage<DeleteStateResponse> = /*@__P
  *
  * Runner-facing RPCs (GetState, PushState, LockState, UnlockState) are
  * called by Admiral's runner binary during job execution. These endpoints
- * use job_id as an access path — the server resolves the job's component
+ * use job_id as an access path -- the server resolves the job's component
  * and environment to locate the underlying state record. The runner
  * configures Terraform's HTTP backend with per-job state URLs and injects
  * its AGT as a bearer token. These endpoints are not intended for direct
@@ -886,7 +886,7 @@ export const DeleteStateResponseSchema: GenMessage<DeleteStateResponse> = /*@__P
  *   PushState → UnlockState → ReportJobResult
  *
  * Admin routes use /v1/states/... (plural, with state_id).
- * Runner-facing routes use /v1/runner/jobs/{job_id}/state (job-scoped —
+ * Runner-facing routes use /v1/runner/jobs/{job_id}/state (job-scoped --
  * the server resolves the component and environment from the job).
  *
  * All operations delegate to the platform StateAPI. The facade resolves the
@@ -902,7 +902,7 @@ export const DeleteStateResponseSchema: GenMessage<DeleteStateResponse> = /*@__P
 export const StateAPI: GenService<{
   /**
    * GetState fetches the current state for a job's component + environment.
-   * Returns empty data if no state exists yet (fresh init — Terraform
+   * Returns empty data if no state exists yet (fresh init -- Terraform
    * handles this gracefully).
    *
    * The server validates that the AGT's runner binding matches the runner
@@ -1003,7 +1003,7 @@ export const StateAPI: GenService<{
   /**
    * ListStates returns a paginated list of state records within the caller's
    * tenant. Use filters to scope by component, environment, or application.
-   * Returns metadata only — use GetCurrentState to fetch full state data.
+   * Returns metadata only -- use GetCurrentState to fetch full state data.
    *
    * Scope: `state:read`
    *
@@ -1016,7 +1016,7 @@ export const StateAPI: GenService<{
   },
   /**
    * ListStateVersions returns a paginated history of state versions for a
-   * state record. Returns metadata only (serial, md5, size) — use
+   * state record. Returns metadata only (serial, md5, size) -- use
    * GetStateVersion to fetch the full state data at a specific serial.
    *
    * Returns NOT_FOUND if the state record does not exist.
@@ -1066,7 +1066,7 @@ export const StateAPI: GenService<{
   },
   /**
    * DeleteState permanently deletes a state record and all its version
-   * history. Fails if the state is currently locked — force-unlock first.
+   * history. Fails if the state is currently locked -- force-unlock first.
    * This action cannot be undone.
    *
    * Returns NOT_FOUND if the state record does not exist.

@@ -16,7 +16,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/application/v1/application.proto.
  */
 export const file_admiral_api_application_v1_application: GenFile = /*@__PURE__*/
-  fileDesc("CixhZG1pcmFsL2FwaS9hcHBsaWNhdGlvbi92MS9hcHBsaWNhdGlvbi5wcm90bxIaYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEisAMKC0FwcGxpY2F0aW9uEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAyABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBJcCgZsYWJlbHMYBSADKAsyMy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbi5MYWJlbHNFbnRyeUIXukgUmgEREEAiBnIEEAEYPyoFcgMYgAISEgoKY3JlYXRlZF9ieRgIIAEoCRISCgp1cGRhdGVkX2J5GAkgASgJEi4KCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEipAIKGENyZWF0ZUFwcGxpY2F0aW9uUmVxdWVzdBI6CgRuYW1lGAEgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIiCgtkZXNjcmlwdGlvbhgCIAEoCUIIukgFcgMYgAhIAIgBARJpCgZsYWJlbHMYAyADKAsyQC5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5DcmVhdGVBcHBsaWNhdGlvblJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDgoMX2Rlc2NyaXB0aW9uIlkKGUNyZWF0ZUFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiJ7ChVHZXRBcHBsaWNhdGlvblJlcXVlc3QSFgoCaWQYASABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgCIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIAEIMCgppZGVudGlmaWVyIlYKFkdldEFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiJlChdMaXN0QXBwbGljYXRpb25zUmVxdWVzdBIYCgZmaWx0ZXIYASABKAlCCLpIBXIDGIAIEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkicgoYTGlzdEFwcGxpY2F0aW9uc1Jlc3BvbnNlEj0KDGFwcGxpY2F0aW9ucxgBIAMoCzInLmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkFwcGxpY2F0aW9uEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSL1AQoYVXBkYXRlQXBwbGljYXRpb25SZXF1ZXN0EkQKC2FwcGxpY2F0aW9uGAEgASgLMicuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuQXBwbGljYXRpb25CBrpIA8gBARIvCgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2sSFgoCaWQYAyABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgEIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIAEIMCgppZGVudGlmaWVyIlkKGVVwZGF0ZUFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiJ+ChhEZWxldGVBcHBsaWNhdGlvblJlcXVlc3QSFgoCaWQYASABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgCIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIAEIMCgppZGVudGlmaWVyIhsKGURlbGV0ZUFwcGxpY2F0aW9uUmVzcG9uc2UynAkKDkFwcGxpY2F0aW9uQVBJEtQBChFDcmVhdGVBcHBsaWNhdGlvbhI0LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkNyZWF0ZUFwcGxpY2F0aW9uUmVxdWVzdBo1LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkNyZWF0ZUFwcGxpY2F0aW9uUmVzcG9uc2UiUrpHJQoMQXBwbGljYXRpb25zEhVDcmVhdGUgYW4gYXBwbGljYXRpb26ilyQLCglhcHA6d3JpdGWC0+STAhU6ASoiEC92MS9hcHBsaWNhdGlvbnMS7gEKDkdldEFwcGxpY2F0aW9uEjEuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuR2V0QXBwbGljYXRpb25SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuR2V0QXBwbGljYXRpb25SZXNwb25zZSJ1ukcnCgxBcHBsaWNhdGlvbnMSF1JldHJpZXZlIGFuIGFwcGxpY2F0aW9uopckCgoIYXBwOnJlYWSC0+STAjdaHhIcL3YxL2FwcGxpY2F0aW9ucy9uYW1lL3tuYW1lfRIVL3YxL2FwcGxpY2F0aW9ucy97aWR9EskBChBMaXN0QXBwbGljYXRpb25zEjMuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuTGlzdEFwcGxpY2F0aW9uc1JlcXVlc3QaNC5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5MaXN0QXBwbGljYXRpb25zUmVzcG9uc2UiSrpHIQoMQXBwbGljYXRpb25zEhFMaXN0IGFwcGxpY2F0aW9uc6KXJAoKCGFwcDpyZWFkgtPkkwISEhAvdjEvYXBwbGljYXRpb25zEvwBChFVcGRhdGVBcHBsaWNhdGlvbhI0LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLlVwZGF0ZUFwcGxpY2F0aW9uUmVxdWVzdBo1LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLlVwZGF0ZUFwcGxpY2F0aW9uUmVzcG9uc2UierpHJQoMQXBwbGljYXRpb25zEhVVcGRhdGUgYW4gYXBwbGljYXRpb26ilyQLCglhcHA6d3JpdGWC0+STAj06ASpaIToBKjIcL3YxL2FwcGxpY2F0aW9ucy9uYW1lL3tuYW1lfTIVL3YxL2FwcGxpY2F0aW9ucy97aWR9EvYBChFEZWxldGVBcHBsaWNhdGlvbhI0LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkRlbGV0ZUFwcGxpY2F0aW9uUmVxdWVzdBo1LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkRlbGV0ZUFwcGxpY2F0aW9uUmVzcG9uc2UidLpHJQoMQXBwbGljYXRpb25zEhVEZWxldGUgYW4gYXBwbGljYXRpb26ilyQLCglhcHA6d3JpdGWC0+STAjdaHiocL3YxL2FwcGxpY2F0aW9ucy9uYW1lL3tuYW1lfSoVL3YxL2FwcGxpY2F0aW9ucy97aWR9Qv8BCh5jb20uYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjFCEEFwcGxpY2F0aW9uUHJvdG9QAVpAZ28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvYXBwbGljYXRpb24vdjE7YXBwbGljYXRpb252MaICA0FBQaoCGkFkbWlyYWwuQXBpLkFwcGxpY2F0aW9uLlYxygIaQWRtaXJhbFxBcGlcQXBwbGljYXRpb25cVjHiAiZBZG1pcmFsXEFwaVxBcHBsaWNhdGlvblxWMVxHUEJNZXRhZGF0YeoCHUFkbWlyYWw6OkFwaTo6QXBwbGljYXRpb246OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CixhZG1pcmFsL2FwaS9hcHBsaWNhdGlvbi92MS9hcHBsaWNhdGlvbi5wcm90bxIaYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEisAMKC0FwcGxpY2F0aW9uEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAyABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBJcCgZsYWJlbHMYBSADKAsyMy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbi5MYWJlbHNFbnRyeUIXukgUmgEREEAiBnIEEAEYPyoFcgMYgAISEgoKY3JlYXRlZF9ieRgIIAEoCRISCgp1cGRhdGVkX2J5GAkgASgJEi4KCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEipAIKGENyZWF0ZUFwcGxpY2F0aW9uUmVxdWVzdBI6CgRuYW1lGAEgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIiCgtkZXNjcmlwdGlvbhgCIAEoCUIIukgFcgMYgAhIAIgBARJpCgZsYWJlbHMYAyADKAsyQC5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5DcmVhdGVBcHBsaWNhdGlvblJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDgoMX2Rlc2NyaXB0aW9uIlkKGUNyZWF0ZUFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiI5ChVHZXRBcHBsaWNhdGlvblJlcXVlc3QSIAoOYXBwbGljYXRpb25faWQYASABKAlCCLpIBXIDsAEBIlYKFkdldEFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiJlChdMaXN0QXBwbGljYXRpb25zUmVxdWVzdBIYCgZmaWx0ZXIYASABKAlCCLpIBXIDGIAIEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkicgoYTGlzdEFwcGxpY2F0aW9uc1Jlc3BvbnNlEj0KDGFwcGxpY2F0aW9ucxgBIAMoCzInLmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkFwcGxpY2F0aW9uEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSKzAQoYVXBkYXRlQXBwbGljYXRpb25SZXF1ZXN0EkQKC2FwcGxpY2F0aW9uGAEgASgLMicuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuQXBwbGljYXRpb25CBrpIA8gBARIvCgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2sSIAoOYXBwbGljYXRpb25faWQYAyABKAlCCLpIBXIDsAEBIlkKGVVwZGF0ZUFwcGxpY2F0aW9uUmVzcG9uc2USPAoLYXBwbGljYXRpb24YASABKAsyJy5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5BcHBsaWNhdGlvbiI8ChhEZWxldGVBcHBsaWNhdGlvblJlcXVlc3QSIAoOYXBwbGljYXRpb25faWQYASABKAlCCLpIBXIDsAEBIhsKGURlbGV0ZUFwcGxpY2F0aW9uUmVzcG9uc2Uy3QgKDkFwcGxpY2F0aW9uQVBJEtQBChFDcmVhdGVBcHBsaWNhdGlvbhI0LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkNyZWF0ZUFwcGxpY2F0aW9uUmVxdWVzdBo1LmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkNyZWF0ZUFwcGxpY2F0aW9uUmVzcG9uc2UiUrpHJQoMQXBwbGljYXRpb25zEhVDcmVhdGUgYW4gYXBwbGljYXRpb26ilyQLCglhcHA6d3JpdGWC0+STAhU6ASoiEC92MS9hcHBsaWNhdGlvbnMS2gEKDkdldEFwcGxpY2F0aW9uEjEuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuR2V0QXBwbGljYXRpb25SZXF1ZXN0GjIuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuR2V0QXBwbGljYXRpb25SZXNwb25zZSJhukcnCgxBcHBsaWNhdGlvbnMSF1JldHJpZXZlIGFuIGFwcGxpY2F0aW9uopckCgoIYXBwOnJlYWSC0+STAiMSIS92MS9hcHBsaWNhdGlvbnMve2FwcGxpY2F0aW9uX2lkfRLJAQoQTGlzdEFwcGxpY2F0aW9ucxIzLmFkbWlyYWwuYXBpLmFwcGxpY2F0aW9uLnYxLkxpc3RBcHBsaWNhdGlvbnNSZXF1ZXN0GjQuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuTGlzdEFwcGxpY2F0aW9uc1Jlc3BvbnNlIkq6RyEKDEFwcGxpY2F0aW9ucxIRTGlzdCBhcHBsaWNhdGlvbnOilyQKCghhcHA6cmVhZILT5JMCEhIQL3YxL2FwcGxpY2F0aW9ucxLlAQoRVXBkYXRlQXBwbGljYXRpb24SNC5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5VcGRhdGVBcHBsaWNhdGlvblJlcXVlc3QaNS5hZG1pcmFsLmFwaS5hcHBsaWNhdGlvbi52MS5VcGRhdGVBcHBsaWNhdGlvblJlc3BvbnNlImO6RyUKDEFwcGxpY2F0aW9ucxIVVXBkYXRlIGFuIGFwcGxpY2F0aW9uopckCwoJYXBwOndyaXRlgtPkkwImOgEqMiEvdjEvYXBwbGljYXRpb25zL3thcHBsaWNhdGlvbl9pZH0S4gEKEURlbGV0ZUFwcGxpY2F0aW9uEjQuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuRGVsZXRlQXBwbGljYXRpb25SZXF1ZXN0GjUuYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjEuRGVsZXRlQXBwbGljYXRpb25SZXNwb25zZSJgukclCgxBcHBsaWNhdGlvbnMSFURlbGV0ZSBhbiBhcHBsaWNhdGlvbqKXJAsKCWFwcDp3cml0ZYLT5JMCIyohL3YxL2FwcGxpY2F0aW9ucy97YXBwbGljYXRpb25faWR9Qv8BCh5jb20uYWRtaXJhbC5hcGkuYXBwbGljYXRpb24udjFCEEFwcGxpY2F0aW9uUHJvdG9QAVpAZ28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvYXBwbGljYXRpb24vdjE7YXBwbGljYXRpb252MaICA0FBQaoCGkFkbWlyYWwuQXBpLkFwcGxpY2F0aW9uLlYxygIaQWRtaXJhbFxBcGlcQXBwbGljYXRpb25cVjHiAiZBZG1pcmFsXEFwaVxBcHBsaWNhdGlvblxWMVxHUEJNZXRhZGF0YeoCHUFkbWlyYWw6OkFwaTo6QXBwbGljYXRpb246OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * Application represents a deployable unit within a tenant. An application
@@ -41,7 +41,7 @@ export type Application = Message<"admiral.api.application.v1.Application"> & {
   tenantId: string;
 
   /**
-   * URL-safe, human-readable identifier (e.g., "billing-api"). Unique within
+   * URL-safe, human-readable identifier (e.g., "inventory-api"). Unique within
    * the tenant. Lowercase alphanumeric and hyphens only, must start with a
    * letter and end with an alphanumeric character (1-63 chars).
    *
@@ -51,7 +51,7 @@ export type Application = Message<"admiral.api.application.v1.Application"> & {
 
   /**
    * Optional longer-form description of the application's purpose
-   * (e.g., "Handles invoice generation and payment processing").
+   * (e.g., "Core inventory service tracking warehouse stock and fulfillment").
    *
    * @generated from field: string description = 4;
    */
@@ -59,7 +59,7 @@ export type Application = Message<"admiral.api.application.v1.Application"> & {
 
   /**
    * Arbitrary key-value labels for organizing and filtering applications
-   * (e.g., `{"team": "payments", "tier": "critical"}`).
+   * (e.g., `{"team": "logistics", "tier": "critical"}`).
    *
    * @generated from field: map<string, string> labels = 5;
    */
@@ -108,7 +108,7 @@ export const ApplicationSchema: GenMessage<Application> = /*@__PURE__*/
  */
 export type CreateApplicationRequest = Message<"admiral.api.application.v1.CreateApplicationRequest"> & {
   /**
-   * URL-safe, human-readable identifier (e.g., "billing-api"). Must be unique
+   * URL-safe, human-readable identifier (e.g., "inventory-api"). Must be unique
    * within the tenant. Lowercase alphanumeric and hyphens only.
    *
    * @generated from field: string name = 1;
@@ -159,31 +159,17 @@ export const CreateApplicationResponseSchema: GenMessage<CreateApplicationRespon
   messageDesc(file_admiral_api_application_v1_application, 2);
 
 /**
- * GetApplicationRequest identifies an application to retrieve by ID or name.
+ * GetApplicationRequest identifies an application to retrieve.
  *
  * @generated from message admiral.api.application.v1.GetApplicationRequest
  */
 export type GetApplicationRequest = Message<"admiral.api.application.v1.GetApplicationRequest"> & {
   /**
-   * @generated from oneof admiral.api.application.v1.GetApplicationRequest.identifier
+   * The unique identifier of the application (UUID).
+   *
+   * @generated from field: string application_id = 1;
    */
-  identifier: {
-    /**
-     * The unique identifier of the application (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the application (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  applicationId: string;
 };
 
 /**
@@ -221,7 +207,17 @@ export const GetApplicationResponseSchema: GenMessage<GetApplicationResponse> = 
  */
 export type ListApplicationsRequest = Message<"admiral.api.application.v1.ListApplicationsRequest"> & {
   /**
-   * Filter expression using the PEG filter DSL.
+   * Filter expression to narrow results. Uses the Admiral filter DSL.
+   *
+   * Syntax: `field['name'] = 'value'` with AND/OR/NOT, comparison operators
+   * (=, !=, <, >, <=, >=, ~=), and predicates (IN, BETWEEN, CONTAINS,
+   * STARTS_WITH, ENDS_WITH, IS NULL, EXISTS).
+   *
+   * Filterable fields:
+   *   - `name` -- filter by application name.
+   *   - `labels.key` -- filter by label key.
+   *
+   * Example: `field['name'] = 'inventory-api' AND field['labels.team'] = 'logistics'`
    *
    * @generated from field: string filter = 1;
    */
@@ -300,25 +296,11 @@ export type UpdateApplicationRequest = Message<"admiral.api.application.v1.Updat
   updateMask?: FieldMask;
 
   /**
-   * @generated from oneof admiral.api.application.v1.UpdateApplicationRequest.identifier
+   * The unique identifier of the application (UUID).
+   *
+   * @generated from field: string application_id = 3;
    */
-  identifier: {
-    /**
-     * The unique identifier of the application (UUID).
-     *
-     * @generated from field: string id = 3;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the application (DNS label).
-     *
-     * @generated from field: string name = 4;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  applicationId: string;
 };
 
 /**
@@ -350,31 +332,17 @@ export const UpdateApplicationResponseSchema: GenMessage<UpdateApplicationRespon
   messageDesc(file_admiral_api_application_v1_application, 8);
 
 /**
- * DeleteApplicationRequest identifies an application to delete by ID or name.
+ * DeleteApplicationRequest identifies an application to delete.
  *
  * @generated from message admiral.api.application.v1.DeleteApplicationRequest
  */
 export type DeleteApplicationRequest = Message<"admiral.api.application.v1.DeleteApplicationRequest"> & {
   /**
-   * @generated from oneof admiral.api.application.v1.DeleteApplicationRequest.identifier
+   * The unique identifier of the application to delete (UUID).
+   *
+   * @generated from field: string application_id = 1;
    */
-  identifier: {
-    /**
-     * The unique identifier of the application to delete (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the application (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  applicationId: string;
 };
 
 /**
@@ -424,7 +392,7 @@ export const ApplicationAPI: GenService<{
     output: typeof CreateApplicationResponseSchema;
   },
   /**
-   * GetApplication retrieves an application by ID or name.
+   * GetApplication retrieves an application by ID.
    *
    * Scope: `app:read`
    *

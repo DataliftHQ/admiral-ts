@@ -16,7 +16,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/source/v1/source.proto.
  */
 export const file_admiral_api_source_v1_source: GenFile = /*@__PURE__*/
-  fileDesc("CiJhZG1pcmFsL2FwaS9zb3VyY2UvdjEvc291cmNlLnByb3RvEhVhZG1pcmFsLmFwaS5zb3VyY2UudjEibAoXVGVycmFmb3JtUmVnaXN0cnlDb25maWcSGgoJbmFtZXNwYWNlGAEgASgJQge6SARyAhABEhwKC21vZHVsZV9uYW1lGAIgASgJQge6SARyAhABEhcKBnN5c3RlbRgDIAEoCUIHukgEcgIQASI3ChJUZXJyYWZvcm1HaXRDb25maWcSDAoEcGF0aBgBIAEoCRITCgtkZWZhdWx0X3JlZhgCIAEoCSIzChRIZWxtUmVwb3NpdG9yeUNvbmZpZxIbCgpjaGFydF9uYW1lGAEgASgJQge6SARyAhABIiwKDUhlbG1PQ0lDb25maWcSGwoKcmVwb3NpdG9yeRgBIAEoCUIHukgEcgIQASI7Cg1IZWxtR2l0Q29uZmlnEhUKBHBhdGgYASABKAlCB7pIBHICEAESEwoLZGVmYXVsdF9yZWYYAiABKAkiQAoSS3VzdG9taXplR2l0Q29uZmlnEhUKBHBhdGgYASABKAlCB7pIBHICEAESEwoLZGVmYXVsdF9yZWYYAiABKAkiUgoRTWFuaWZlc3RHaXRDb25maWcSFQoEcGF0aBgBIAEoCUIHukgEcgIQARIRCglyZWN1cnNpdmUYAiABKAgSEwoLZGVmYXVsdF9yZWYYAyABKAkiLwoNQXJjaGl2ZUNvbmZpZxIMCgRwYXRoGAEgASgJEhAKCGNoZWNrc3VtGAIgASgJImcKDVNvdXJjZVZlcnNpb24SDwoHdmVyc2lvbhgBIAEoCRIwCgxwdWJsaXNoZWRfYXQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhMKC2Rlc2NyaXB0aW9uGAMgASgJIpEBCgtTb3VyY2VJbnB1dBIMCgRuYW1lGAEgASgJEgwKBHR5cGUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSGgoNZGVmYXVsdF92YWx1ZRgEIAEoCUgAiAEBEhAKCHJlcXVpcmVkGAUgASgIEhEKCXNlbnNpdGl2ZRgGIAEoCEIQCg5fZGVmYXVsdF92YWx1ZSJSCgxTb3VyY2VPdXRwdXQSDAoEbmFtZRgBIAEoCRIMCgR0eXBlGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEhEKCXNlbnNpdGl2ZRgEIAEoCCKDCQoGU291cmNlEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAyABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBIvCgR0eXBlGAUgASgOMiEuYWRtaXJhbC5hcGkuc291cmNlLnYxLlNvdXJjZVR5cGUSFAoDdXJsGAYgASgJQge6SARyAhABEiQKDWNvbm5lY3Rpb25faWQYByABKAlCCLpIBXIDsAEBSAGIAQESDwoHY2F0YWxvZxgIIAEoCBJMChJ0ZXJyYWZvcm1fcmVnaXN0cnkYCSABKAsyLi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuVGVycmFmb3JtUmVnaXN0cnlDb25maWdIABJCCg10ZXJyYWZvcm1fZ2l0GAogASgLMikuYWRtaXJhbC5hcGkuc291cmNlLnYxLlRlcnJhZm9ybUdpdENvbmZpZ0gAEkYKD2hlbG1fcmVwb3NpdG9yeRgLIAEoCzIrLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtUmVwb3NpdG9yeUNvbmZpZ0gAEjgKCGhlbG1fb2NpGAwgASgLMiQuYWRtaXJhbC5hcGkuc291cmNlLnYxLkhlbG1PQ0lDb25maWdIABI4CghoZWxtX2dpdBgNIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtR2l0Q29uZmlnSAASQgoNa3VzdG9taXplX2dpdBgOIAEoCzIpLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5LdXN0b21pemVHaXRDb25maWdIABJACgxtYW5pZmVzdF9naXQYDyABKAsyKC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuTWFuaWZlc3RHaXRDb25maWdIABI3CgdhcmNoaXZlGBAgASgLMiQuYWRtaXJhbC5hcGkuc291cmNlLnYxLkFyY2hpdmVDb25maWdIABJSCgZsYWJlbHMYESADKAsyKS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlLkxhYmVsc0VudHJ5Qhe6SBSaAREQQCIGcgQQARg/KgVyAxiAAhISCgpjcmVhdGVkX2J5GBUgASgJEhIKCnVwZGF0ZWRfYnkYFiABKAkSMgoObGFzdF9zeW5jZWRfYXQYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCmNyZWF0ZWRfYXQYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDwoNc291cmNlX2NvbmZpZ0IQCg5fY29ubmVjdGlvbl9pZCK6BwoTQ3JlYXRlU291cmNlUmVxdWVzdBI6CgRuYW1lGAEgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgCIAEoCUIIukgFcgMYgAgSOwoEdHlwZRgDIAEoDjIhLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2VUeXBlQgq6SAeCAQQQASAAEhQKA3VybBgEIAEoCUIHukgEcgIQARIkCg1jb25uZWN0aW9uX2lkGAUgASgJQgi6SAVyA7ABAUgBiAEBEg8KB2NhdGFsb2cYBiABKAgSTAoSdGVycmFmb3JtX3JlZ2lzdHJ5GAcgASgLMi4uYWRtaXJhbC5hcGkuc291cmNlLnYxLlRlcnJhZm9ybVJlZ2lzdHJ5Q29uZmlnSAASQgoNdGVycmFmb3JtX2dpdBgIIAEoCzIpLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5UZXJyYWZvcm1HaXRDb25maWdIABJGCg9oZWxtX3JlcG9zaXRvcnkYCSABKAsyKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuSGVsbVJlcG9zaXRvcnlDb25maWdIABI4CghoZWxtX29jaRgKIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtT0NJQ29uZmlnSAASOAoIaGVsbV9naXQYCyABKAsyJC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuSGVsbUdpdENvbmZpZ0gAEkIKDWt1c3RvbWl6ZV9naXQYDCABKAsyKS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuS3VzdG9taXplR2l0Q29uZmlnSAASQAoMbWFuaWZlc3RfZ2l0GA0gASgLMiguYWRtaXJhbC5hcGkuc291cmNlLnYxLk1hbmlmZXN0R2l0Q29uZmlnSAASNwoHYXJjaGl2ZRgOIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5BcmNoaXZlQ29uZmlnSAASXwoGbGFiZWxzGA8gAygLMjYuYWRtaXJhbC5hcGkuc291cmNlLnYxLkNyZWF0ZVNvdXJjZVJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDwoNc291cmNlX2NvbmZpZ0IQCg5fY29ubmVjdGlvbl9pZCJFChRDcmVhdGVTb3VyY2VSZXNwb25zZRItCgZzb3VyY2UYASABKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlInYKEEdldFNvdXJjZVJlcXVlc3QSFgoCaWQYASABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgCIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIAEIMCgppZGVudGlmaWVyIkIKEUdldFNvdXJjZVJlc3BvbnNlEi0KBnNvdXJjZRgBIAEoCzIdLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2UiYAoSTGlzdFNvdXJjZXNSZXF1ZXN0EhgKBmZpbHRlchgBIAEoCUIIukgFcgMYgAgSHAoJcGFnZV9zaXplGAIgASgFQgm6SAYaBBhkKAASEgoKcGFnZV90b2tlbhgDIAEoCSJeChNMaXN0U291cmNlc1Jlc3BvbnNlEi4KB3NvdXJjZXMYASADKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSLhAQoTVXBkYXRlU291cmNlUmVxdWVzdBI1CgZzb3VyY2UYASABKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlQga6SAPIAQESLwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrEhYKAmlkGAMgASgJQgi6SAVyA7ABAUgAEjwKBG5hbWUYBCABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kSABCDAoKaWRlbnRpZmllciJFChRVcGRhdGVTb3VyY2VSZXNwb25zZRItCgZzb3VyY2UYASABKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlInkKE0RlbGV0ZVNvdXJjZVJlcXVlc3QSFgoCaWQYASABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgCIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIAEIMCgppZGVudGlmaWVyIhYKFERlbGV0ZVNvdXJjZVJlc3BvbnNlImMKGUxpc3RTb3VyY2VWZXJzaW9uc1JlcXVlc3QSFAoCaWQYASABKAlCCLpIBXIDsAEBEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkibQoaTGlzdFNvdXJjZVZlcnNpb25zUmVzcG9uc2USNgoIdmVyc2lvbnMYASADKAsyJC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlVmVyc2lvbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiSAoWR2V0U291cmNlSW5wdXRzUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQESGAoHdmVyc2lvbhgCIAEoCUIHukgEcgIQASJnChdHZXRTb3VyY2VJbnB1dHNSZXNwb25zZRIyCgZpbnB1dHMYASADKAsyIi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlSW5wdXQSGAoQcmVzb2x2ZWRfdmVyc2lvbhgCIAEoCSJJChdHZXRTb3VyY2VPdXRwdXRzUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQESGAoHdmVyc2lvbhgCIAEoCUIHukgEcgIQASJqChhHZXRTb3VyY2VPdXRwdXRzUmVzcG9uc2USNAoHb3V0cHV0cxgBIAMoCzIjLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2VPdXRwdXQSGAoQcmVzb2x2ZWRfdmVyc2lvbhgCIAEoCSIpChFTeW5jU291cmNlUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQEiQwoSU3luY1NvdXJjZVJlc3BvbnNlEi0KBnNvdXJjZRgBIAEoCzIdLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2UqlwIKClNvdXJjZVR5cGUSGwoXU09VUkNFX1RZUEVfVU5TUEVDSUZJRUQQABIiCh5TT1VSQ0VfVFlQRV9URVJSQUZPUk1fUkVHSVNUUlkQARIdChlTT1VSQ0VfVFlQRV9URVJSQUZPUk1fR0lUEAISHwobU09VUkNFX1RZUEVfSEVMTV9SRVBPU0lUT1JZEAMSGAoUU09VUkNFX1RZUEVfSEVMTV9PQ0kQBBIYChRTT1VSQ0VfVFlQRV9IRUxNX0dJVBAFEh0KGVNPVVJDRV9UWVBFX0tVU1RPTUlaRV9HSVQQBhIcChhTT1VSQ0VfVFlQRV9NQU5JRkVTVF9HSVQQBxIXChNTT1VSQ0VfVFlQRV9BUkNISVZFEAgy5w0KCVNvdXJjZUFQSRKuAQoMQ3JlYXRlU291cmNlEiouYWRtaXJhbC5hcGkuc291cmNlLnYxLkNyZWF0ZVNvdXJjZVJlcXVlc3QaKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuQ3JlYXRlU291cmNlUmVzcG9uc2UiRbpHGgoHU291cmNlcxIPQ3JlYXRlIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIQOgEqIgsvdjEvc291cmNlcxLDAQoJR2V0U291cmNlEicuYWRtaXJhbC5hcGkuc291cmNlLnYxLkdldFNvdXJjZVJlcXVlc3QaKC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuR2V0U291cmNlUmVzcG9uc2UiY7pHHAoHU291cmNlcxIRUmV0cmlldmUgYSBzb3VyY2WilyQNCgtzb3VyY2U6cmVhZILT5JMCLVoZEhcvdjEvc291cmNlcy9uYW1lL3tuYW1lfRIQL3YxL3NvdXJjZXMve2lkfRKkAQoLTGlzdFNvdXJjZXMSKS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuTGlzdFNvdXJjZXNSZXF1ZXN0GiouYWRtaXJhbC5hcGkuc291cmNlLnYxLkxpc3RTb3VyY2VzUmVzcG9uc2UiPrpHFwoHU291cmNlcxIMTGlzdCBzb3VyY2VzopckDQoLc291cmNlOnJlYWSC0+STAg0SCy92MS9zb3VyY2VzEtEBCgxVcGRhdGVTb3VyY2USKi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuVXBkYXRlU291cmNlUmVxdWVzdBorLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5VcGRhdGVTb3VyY2VSZXNwb25zZSJoukcaCgdTb3VyY2VzEg9VcGRhdGUgYSBzb3VyY2WilyQOCgxzb3VyY2U6d3JpdGWC0+STAjM6ASpaHDoBKjIXL3YxL3NvdXJjZXMvbmFtZS97bmFtZX0yEC92MS9zb3VyY2VzL3tpZH0SywEKDERlbGV0ZVNvdXJjZRIqLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5EZWxldGVTb3VyY2VSZXF1ZXN0GisuYWRtaXJhbC5hcGkuc291cmNlLnYxLkRlbGV0ZVNvdXJjZVJlc3BvbnNlImK6RxoKB1NvdXJjZXMSD0RlbGV0ZSBhIHNvdXJjZaKXJA4KDHNvdXJjZTp3cml0ZYLT5JMCLVoZKhcvdjEvc291cmNlcy9uYW1lL3tuYW1lfSoQL3YxL3NvdXJjZXMve2lkfRLPAQoSTGlzdFNvdXJjZVZlcnNpb25zEjAuYWRtaXJhbC5hcGkuc291cmNlLnYxLkxpc3RTb3VyY2VWZXJzaW9uc1JlcXVlc3QaMS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuTGlzdFNvdXJjZVZlcnNpb25zUmVzcG9uc2UiVLpHHwoHU291cmNlcxIUTGlzdCBzb3VyY2UgdmVyc2lvbnOilyQNCgtzb3VyY2U6cmVhZILT5JMCGxIZL3YxL3NvdXJjZXMve2lkfS92ZXJzaW9ucxLGAQoPR2V0U291cmNlSW5wdXRzEi0uYWRtaXJhbC5hcGkuc291cmNlLnYxLkdldFNvdXJjZUlucHV0c1JlcXVlc3QaLi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuR2V0U291cmNlSW5wdXRzUmVzcG9uc2UiVLpHIQoHU291cmNlcxIWUmV0cmlldmUgc291cmNlIGlucHV0c6KXJA0KC3NvdXJjZTpyZWFkgtPkkwIZEhcvdjEvc291cmNlcy97aWR9L2lucHV0cxLLAQoQR2V0U291cmNlT3V0cHV0cxIuLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5HZXRTb3VyY2VPdXRwdXRzUmVxdWVzdBovLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5HZXRTb3VyY2VPdXRwdXRzUmVzcG9uc2UiVrpHIgoHU291cmNlcxIXUmV0cmlldmUgc291cmNlIG91dHB1dHOilyQNCgtzb3VyY2U6cmVhZILT5JMCGhIYL3YxL3NvdXJjZXMve2lkfS9vdXRwdXRzErABCgpTeW5jU291cmNlEiguYWRtaXJhbC5hcGkuc291cmNlLnYxLlN5bmNTb3VyY2VSZXF1ZXN0GikuYWRtaXJhbC5hcGkuc291cmNlLnYxLlN5bmNTb3VyY2VSZXNwb25zZSJNukcYCgdTb3VyY2VzEg1TeW5jIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIaOgEqIhUvdjEvc291cmNlcy97aWR9L3N5bmNC1wEKGWNvbS5hZG1pcmFsLmFwaS5zb3VyY2UudjFCC1NvdXJjZVByb3RvUAFaNmdvLmFkbWlyYWwuaW8vc2RrL3Byb3RvL2FkbWlyYWwvYXBpL3NvdXJjZS92MTtzb3VyY2V2MaICA0FBU6oCFUFkbWlyYWwuQXBpLlNvdXJjZS5WMcoCFUFkbWlyYWxcQXBpXFNvdXJjZVxWMeICIUFkbWlyYWxcQXBpXFNvdXJjZVxWMVxHUEJNZXRhZGF0YeoCGEFkbWlyYWw6OkFwaTo6U291cmNlOjpWMWIGcHJvdG8z", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CiJhZG1pcmFsL2FwaS9zb3VyY2UvdjEvc291cmNlLnByb3RvEhVhZG1pcmFsLmFwaS5zb3VyY2UudjEibAoXVGVycmFmb3JtUmVnaXN0cnlDb25maWcSGgoJbmFtZXNwYWNlGAEgASgJQge6SARyAhABEhwKC21vZHVsZV9uYW1lGAIgASgJQge6SARyAhABEhcKBnN5c3RlbRgDIAEoCUIHukgEcgIQASI3ChJUZXJyYWZvcm1HaXRDb25maWcSDAoEcGF0aBgBIAEoCRITCgtkZWZhdWx0X3JlZhgCIAEoCSIzChRIZWxtUmVwb3NpdG9yeUNvbmZpZxIbCgpjaGFydF9uYW1lGAEgASgJQge6SARyAhABIiwKDUhlbG1PQ0lDb25maWcSGwoKcmVwb3NpdG9yeRgBIAEoCUIHukgEcgIQASI7Cg1IZWxtR2l0Q29uZmlnEhUKBHBhdGgYASABKAlCB7pIBHICEAESEwoLZGVmYXVsdF9yZWYYAiABKAkiQAoSS3VzdG9taXplR2l0Q29uZmlnEhUKBHBhdGgYASABKAlCB7pIBHICEAESEwoLZGVmYXVsdF9yZWYYAiABKAkiUgoRTWFuaWZlc3RHaXRDb25maWcSFQoEcGF0aBgBIAEoCUIHukgEcgIQARIRCglyZWN1cnNpdmUYAiABKAgSEwoLZGVmYXVsdF9yZWYYAyABKAkiLwoNQXJjaGl2ZUNvbmZpZxIMCgRwYXRoGAEgASgJEhAKCGNoZWNrc3VtGAIgASgJImcKDVNvdXJjZVZlcnNpb24SDwoHdmVyc2lvbhgBIAEoCRIwCgxwdWJsaXNoZWRfYXQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhMKC2Rlc2NyaXB0aW9uGAMgASgJIpEBCgtTb3VyY2VJbnB1dBIMCgRuYW1lGAEgASgJEgwKBHR5cGUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSGgoNZGVmYXVsdF92YWx1ZRgEIAEoCUgAiAEBEhAKCHJlcXVpcmVkGAUgASgIEhEKCXNlbnNpdGl2ZRgGIAEoCEIQCg5fZGVmYXVsdF92YWx1ZSJSCgxTb3VyY2VPdXRwdXQSDAoEbmFtZRgBIAEoCRIMCgR0eXBlGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEhEKCXNlbnNpdGl2ZRgEIAEoCCKDCQoGU291cmNlEhQKAmlkGAEgASgJQgi6SAVyA7ABARIbCgl0ZW5hbnRfaWQYAiABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAyABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAQgASgJQgi6SAVyAxiACBIvCgR0eXBlGAUgASgOMiEuYWRtaXJhbC5hcGkuc291cmNlLnYxLlNvdXJjZVR5cGUSFAoDdXJsGAYgASgJQge6SARyAhABEiQKDWNvbm5lY3Rpb25faWQYByABKAlCCLpIBXIDsAEBSAGIAQESDwoHY2F0YWxvZxgIIAEoCBJMChJ0ZXJyYWZvcm1fcmVnaXN0cnkYCSABKAsyLi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuVGVycmFmb3JtUmVnaXN0cnlDb25maWdIABJCCg10ZXJyYWZvcm1fZ2l0GAogASgLMikuYWRtaXJhbC5hcGkuc291cmNlLnYxLlRlcnJhZm9ybUdpdENvbmZpZ0gAEkYKD2hlbG1fcmVwb3NpdG9yeRgLIAEoCzIrLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtUmVwb3NpdG9yeUNvbmZpZ0gAEjgKCGhlbG1fb2NpGAwgASgLMiQuYWRtaXJhbC5hcGkuc291cmNlLnYxLkhlbG1PQ0lDb25maWdIABI4CghoZWxtX2dpdBgNIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtR2l0Q29uZmlnSAASQgoNa3VzdG9taXplX2dpdBgOIAEoCzIpLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5LdXN0b21pemVHaXRDb25maWdIABJACgxtYW5pZmVzdF9naXQYDyABKAsyKC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuTWFuaWZlc3RHaXRDb25maWdIABI3CgdhcmNoaXZlGBAgASgLMiQuYWRtaXJhbC5hcGkuc291cmNlLnYxLkFyY2hpdmVDb25maWdIABJSCgZsYWJlbHMYESADKAsyKS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlLkxhYmVsc0VudHJ5Qhe6SBSaAREQQCIGcgQQARg/KgVyAxiAAhISCgpjcmVhdGVkX2J5GBUgASgJEhIKCnVwZGF0ZWRfYnkYFiABKAkSMgoObGFzdF9zeW5jZWRfYXQYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCmNyZWF0ZWRfYXQYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZWRfYXQYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDwoNc291cmNlX2NvbmZpZ0IQCg5fY29ubmVjdGlvbl9pZCK6BwoTQ3JlYXRlU291cmNlUmVxdWVzdBI6CgRuYW1lGAEgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgCIAEoCUIIukgFcgMYgAgSOwoEdHlwZRgDIAEoDjIhLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2VUeXBlQgq6SAeCAQQQASAAEhQKA3VybBgEIAEoCUIHukgEcgIQARIkCg1jb25uZWN0aW9uX2lkGAUgASgJQgi6SAVyA7ABAUgBiAEBEg8KB2NhdGFsb2cYBiABKAgSTAoSdGVycmFmb3JtX3JlZ2lzdHJ5GAcgASgLMi4uYWRtaXJhbC5hcGkuc291cmNlLnYxLlRlcnJhZm9ybVJlZ2lzdHJ5Q29uZmlnSAASQgoNdGVycmFmb3JtX2dpdBgIIAEoCzIpLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5UZXJyYWZvcm1HaXRDb25maWdIABJGCg9oZWxtX3JlcG9zaXRvcnkYCSABKAsyKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuSGVsbVJlcG9zaXRvcnlDb25maWdIABI4CghoZWxtX29jaRgKIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5IZWxtT0NJQ29uZmlnSAASOAoIaGVsbV9naXQYCyABKAsyJC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuSGVsbUdpdENvbmZpZ0gAEkIKDWt1c3RvbWl6ZV9naXQYDCABKAsyKS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuS3VzdG9taXplR2l0Q29uZmlnSAASQAoMbWFuaWZlc3RfZ2l0GA0gASgLMiguYWRtaXJhbC5hcGkuc291cmNlLnYxLk1hbmlmZXN0R2l0Q29uZmlnSAASNwoHYXJjaGl2ZRgOIAEoCzIkLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5BcmNoaXZlQ29uZmlnSAASXwoGbGFiZWxzGA8gAygLMjYuYWRtaXJhbC5hcGkuc291cmNlLnYxLkNyZWF0ZVNvdXJjZVJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDwoNc291cmNlX2NvbmZpZ0IQCg5fY29ubmVjdGlvbl9pZCJFChRDcmVhdGVTb3VyY2VSZXNwb25zZRItCgZzb3VyY2UYASABKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlIi8KEEdldFNvdXJjZVJlcXVlc3QSGwoJc291cmNlX2lkGAEgASgJQgi6SAVyA7ABASJCChFHZXRTb3VyY2VSZXNwb25zZRItCgZzb3VyY2UYASABKAsyHS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlImAKEkxpc3RTb3VyY2VzUmVxdWVzdBIYCgZmaWx0ZXIYASABKAlCCLpIBXIDGIAIEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkiXgoTTGlzdFNvdXJjZXNSZXNwb25zZRIuCgdzb3VyY2VzGAEgAygLMh0uYWRtaXJhbC5hcGkuc291cmNlLnYxLlNvdXJjZRIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkimgEKE1VwZGF0ZVNvdXJjZVJlcXVlc3QSNQoGc291cmNlGAEgASgLMh0uYWRtaXJhbC5hcGkuc291cmNlLnYxLlNvdXJjZUIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzaxIbCglzb3VyY2VfaWQYAyABKAlCCLpIBXIDsAEBIkUKFFVwZGF0ZVNvdXJjZVJlc3BvbnNlEi0KBnNvdXJjZRgBIAEoCzIdLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2UiMgoTRGVsZXRlU291cmNlUmVxdWVzdBIbCglzb3VyY2VfaWQYASABKAlCCLpIBXIDsAEBIhYKFERlbGV0ZVNvdXJjZVJlc3BvbnNlImMKGUxpc3RTb3VyY2VWZXJzaW9uc1JlcXVlc3QSFAoCaWQYASABKAlCCLpIBXIDsAEBEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkibQoaTGlzdFNvdXJjZVZlcnNpb25zUmVzcG9uc2USNgoIdmVyc2lvbnMYASADKAsyJC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlVmVyc2lvbhIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiSAoWR2V0U291cmNlSW5wdXRzUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQESGAoHdmVyc2lvbhgCIAEoCUIHukgEcgIQASJnChdHZXRTb3VyY2VJbnB1dHNSZXNwb25zZRIyCgZpbnB1dHMYASADKAsyIi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuU291cmNlSW5wdXQSGAoQcmVzb2x2ZWRfdmVyc2lvbhgCIAEoCSJJChdHZXRTb3VyY2VPdXRwdXRzUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQESGAoHdmVyc2lvbhgCIAEoCUIHukgEcgIQASJqChhHZXRTb3VyY2VPdXRwdXRzUmVzcG9uc2USNAoHb3V0cHV0cxgBIAMoCzIjLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2VPdXRwdXQSGAoQcmVzb2x2ZWRfdmVyc2lvbhgCIAEoCSIpChFTeW5jU291cmNlUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQEiQwoSU3luY1NvdXJjZVJlc3BvbnNlEi0KBnNvdXJjZRgBIAEoCzIdLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5Tb3VyY2UqlwIKClNvdXJjZVR5cGUSGwoXU09VUkNFX1RZUEVfVU5TUEVDSUZJRUQQABIiCh5TT1VSQ0VfVFlQRV9URVJSQUZPUk1fUkVHSVNUUlkQARIdChlTT1VSQ0VfVFlQRV9URVJSQUZPUk1fR0lUEAISHwobU09VUkNFX1RZUEVfSEVMTV9SRVBPU0lUT1JZEAMSGAoUU09VUkNFX1RZUEVfSEVMTV9PQ0kQBBIYChRTT1VSQ0VfVFlQRV9IRUxNX0dJVBAFEh0KGVNPVVJDRV9UWVBFX0tVU1RPTUlaRV9HSVQQBhIcChhTT1VSQ0VfVFlQRV9NQU5JRkVTVF9HSVQQBxIXChNTT1VSQ0VfVFlQRV9BUkNISVZFEAgyqA0KCVNvdXJjZUFQSRKuAQoMQ3JlYXRlU291cmNlEiouYWRtaXJhbC5hcGkuc291cmNlLnYxLkNyZWF0ZVNvdXJjZVJlcXVlc3QaKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuQ3JlYXRlU291cmNlUmVzcG9uc2UiRbpHGgoHU291cmNlcxIPQ3JlYXRlIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIQOgEqIgsvdjEvc291cmNlcxKvAQoJR2V0U291cmNlEicuYWRtaXJhbC5hcGkuc291cmNlLnYxLkdldFNvdXJjZVJlcXVlc3QaKC5hZG1pcmFsLmFwaS5zb3VyY2UudjEuR2V0U291cmNlUmVzcG9uc2UiT7pHHAoHU291cmNlcxIRUmV0cmlldmUgYSBzb3VyY2WilyQNCgtzb3VyY2U6cmVhZILT5JMCGRIXL3YxL3NvdXJjZXMve3NvdXJjZV9pZH0SpAEKC0xpc3RTb3VyY2VzEikuYWRtaXJhbC5hcGkuc291cmNlLnYxLkxpc3RTb3VyY2VzUmVxdWVzdBoqLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5MaXN0U291cmNlc1Jlc3BvbnNlIj66RxcKB1NvdXJjZXMSDExpc3Qgc291cmNlc6KXJA0KC3NvdXJjZTpyZWFkgtPkkwINEgsvdjEvc291cmNlcxK6AQoMVXBkYXRlU291cmNlEiouYWRtaXJhbC5hcGkuc291cmNlLnYxLlVwZGF0ZVNvdXJjZVJlcXVlc3QaKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuVXBkYXRlU291cmNlUmVzcG9uc2UiUbpHGgoHU291cmNlcxIPVXBkYXRlIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIcOgEqMhcvdjEvc291cmNlcy97c291cmNlX2lkfRK3AQoMRGVsZXRlU291cmNlEiouYWRtaXJhbC5hcGkuc291cmNlLnYxLkRlbGV0ZVNvdXJjZVJlcXVlc3QaKy5hZG1pcmFsLmFwaS5zb3VyY2UudjEuRGVsZXRlU291cmNlUmVzcG9uc2UiTrpHGgoHU291cmNlcxIPRGVsZXRlIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIZKhcvdjEvc291cmNlcy97c291cmNlX2lkfRLPAQoSTGlzdFNvdXJjZVZlcnNpb25zEjAuYWRtaXJhbC5hcGkuc291cmNlLnYxLkxpc3RTb3VyY2VWZXJzaW9uc1JlcXVlc3QaMS5hZG1pcmFsLmFwaS5zb3VyY2UudjEuTGlzdFNvdXJjZVZlcnNpb25zUmVzcG9uc2UiVLpHHwoHU291cmNlcxIUTGlzdCBzb3VyY2UgdmVyc2lvbnOilyQNCgtzb3VyY2U6cmVhZILT5JMCGxIZL3YxL3NvdXJjZXMve2lkfS92ZXJzaW9ucxLGAQoPR2V0U291cmNlSW5wdXRzEi0uYWRtaXJhbC5hcGkuc291cmNlLnYxLkdldFNvdXJjZUlucHV0c1JlcXVlc3QaLi5hZG1pcmFsLmFwaS5zb3VyY2UudjEuR2V0U291cmNlSW5wdXRzUmVzcG9uc2UiVLpHIQoHU291cmNlcxIWUmV0cmlldmUgc291cmNlIGlucHV0c6KXJA0KC3NvdXJjZTpyZWFkgtPkkwIZEhcvdjEvc291cmNlcy97aWR9L2lucHV0cxLLAQoQR2V0U291cmNlT3V0cHV0cxIuLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5HZXRTb3VyY2VPdXRwdXRzUmVxdWVzdBovLmFkbWlyYWwuYXBpLnNvdXJjZS52MS5HZXRTb3VyY2VPdXRwdXRzUmVzcG9uc2UiVrpHIgoHU291cmNlcxIXUmV0cmlldmUgc291cmNlIG91dHB1dHOilyQNCgtzb3VyY2U6cmVhZILT5JMCGhIYL3YxL3NvdXJjZXMve2lkfS9vdXRwdXRzErABCgpTeW5jU291cmNlEiguYWRtaXJhbC5hcGkuc291cmNlLnYxLlN5bmNTb3VyY2VSZXF1ZXN0GikuYWRtaXJhbC5hcGkuc291cmNlLnYxLlN5bmNTb3VyY2VSZXNwb25zZSJNukcYCgdTb3VyY2VzEg1TeW5jIGEgc291cmNlopckDgoMc291cmNlOndyaXRlgtPkkwIaOgEqIhUvdjEvc291cmNlcy97aWR9L3N5bmNC1wEKGWNvbS5hZG1pcmFsLmFwaS5zb3VyY2UudjFCC1NvdXJjZVByb3RvUAFaNmdvLmFkbWlyYWwuaW8vc2RrL3Byb3RvL2FkbWlyYWwvYXBpL3NvdXJjZS92MTtzb3VyY2V2MaICA0FBU6oCFUFkbWlyYWwuQXBpLlNvdXJjZS5WMcoCFUFkbWlyYWxcQXBpXFNvdXJjZVxWMeICIUFkbWlyYWxcQXBpXFNvdXJjZVxWMVxHUEJNZXRhZGF0YeoCGEFkbWlyYWw6OkFwaTo6U291cmNlOjpWMWIGcHJvdG8z", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * TerraformRegistryConfig provides additional parameters for Terraform module
@@ -370,7 +370,7 @@ export const SourceInputSchema: GenMessage<SourceInput> = /*@__PURE__*/
 /**
  * SourceOutput represents a value produced by the source after apply. Only
  * meaningful for Terraform modules, which declare formal output blocks.
- * Workload sources (Helm, Kustomize, manifests) do not have formal outputs —
+ * Workload sources (Helm, Kustomize, manifests) do not have formal outputs --
  * workload component outputs are user-declared at the component level, not
  * discovered from the source.
  *
@@ -414,7 +414,7 @@ export const SourceOutputSchema: GenMessage<SourceOutput> = /*@__PURE__*/
   messageDesc(file_admiral_api_source_v1_source, 10);
 
 /**
- * Source represents a fetchable artifact definition — a pointer to an external
+ * Source represents a fetchable artifact definition -- a pointer to an external
  * module, chart, or manifest set that Admiral can fetch, inspect, and render
  * into deployment snapshots.
  *
@@ -476,7 +476,7 @@ export type Source = Message<"admiral.api.source.v1.Source"> & {
 
   /**
    * Reference to the connection providing credentials for this source (UUID).
-   * Optional — null for public sources that require no authentication
+   * Optional -- null for public sources that require no authentication
    * (e.g., public Terraform registry, public Helm repos).
    *
    * @generated from field: optional string connection_id = 7;
@@ -759,31 +759,17 @@ export const CreateSourceResponseSchema: GenMessage<CreateSourceResponse> = /*@_
   messageDesc(file_admiral_api_source_v1_source, 13);
 
 /**
- * GetSourceRequest identifies a source to retrieve by ID or name.
+ * GetSourceRequest identifies a source to retrieve.
  *
  * @generated from message admiral.api.source.v1.GetSourceRequest
  */
 export type GetSourceRequest = Message<"admiral.api.source.v1.GetSourceRequest"> & {
   /**
-   * @generated from oneof admiral.api.source.v1.GetSourceRequest.identifier
+   * Unique identifier of the source (UUID).
+   *
+   * @generated from field: string source_id = 1;
    */
-  identifier: {
-    /**
-     * Unique identifier of the source (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the source (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  sourceId: string;
 };
 
 /**
@@ -821,7 +807,19 @@ export const GetSourceResponseSchema: GenMessage<GetSourceResponse> = /*@__PURE_
  */
 export type ListSourcesRequest = Message<"admiral.api.source.v1.ListSourcesRequest"> & {
   /**
-   * Filter expression using the PEG filter DSL.
+   * Filter expression to narrow results. Uses the Admiral filter DSL.
+   *
+   * Syntax: `field['name'] = 'value'` with AND/OR/NOT, comparison operators
+   * (=, !=, <, >, <=, >=, ~=), and predicates (IN, BETWEEN, CONTAINS,
+   * STARTS_WITH, ENDS_WITH, IS NULL, EXISTS).
+   *
+   * Filterable fields:
+   *   - `name` -- filter by source name.
+   *   - `type` -- filter by source type (TERRAFORM_REGISTRY, HELM_OCI, etc.).
+   *   - `catalog` -- filter by catalog status (true/false).
+   *   - `labels.key` -- filter by label key.
+   *
+   * Example: `field['type'] = 'TERRAFORM_REGISTRY' AND field['catalog'] = 'true'`
    *
    * @generated from field: string filter = 1;
    */
@@ -901,25 +899,11 @@ export type UpdateSourceRequest = Message<"admiral.api.source.v1.UpdateSourceReq
   updateMask?: FieldMask;
 
   /**
-   * @generated from oneof admiral.api.source.v1.UpdateSourceRequest.identifier
+   * Unique identifier of the source to update (UUID).
+   *
+   * @generated from field: string source_id = 3;
    */
-  identifier: {
-    /**
-     * Unique identifier of the source to update (UUID).
-     *
-     * @generated from field: string id = 3;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the source (DNS label).
-     *
-     * @generated from field: string name = 4;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  sourceId: string;
 };
 
 /**
@@ -951,32 +935,18 @@ export const UpdateSourceResponseSchema: GenMessage<UpdateSourceResponse> = /*@_
   messageDesc(file_admiral_api_source_v1_source, 19);
 
 /**
- * DeleteSourceRequest identifies a source to delete by ID or name.
+ * DeleteSourceRequest identifies a source to delete.
  *
  * @generated from message admiral.api.source.v1.DeleteSourceRequest
  */
 export type DeleteSourceRequest = Message<"admiral.api.source.v1.DeleteSourceRequest"> & {
   /**
-   * @generated from oneof admiral.api.source.v1.DeleteSourceRequest.identifier
+   * Unique identifier of the source to delete (UUID).
+   * Fails if any application components still reference this source.
+   *
+   * @generated from field: string source_id = 1;
    */
-  identifier: {
-    /**
-     * Unique identifier of the source to delete (UUID).
-     * Fails if any application components still reference this source.
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the source (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
+  sourceId: string;
 };
 
 /**
@@ -1111,7 +1081,7 @@ export type GetSourceInputsResponse = Message<"admiral.api.source.v1.GetSourceIn
 
   /**
    * The version that was actually inspected (resolved from the requested
-   * version — e.g., a branch name resolved to a commit SHA).
+   * version -- e.g., a branch name resolved to a commit SHA).
    *
    * @generated from field: string resolved_version = 2;
    */
@@ -1163,7 +1133,7 @@ export const GetSourceOutputsRequestSchema: GenMessage<GetSourceOutputsRequest> 
 export type GetSourceOutputsResponse = Message<"admiral.api.source.v1.GetSourceOutputsResponse"> & {
   /**
    * Discovered output definitions. Only populated for Terraform module sources.
-   * Workload sources (Helm, Kustomize, manifests) do not have formal outputs —
+   * Workload sources (Helm, Kustomize, manifests) do not have formal outputs --
    * workload component outputs are user-declared at the component level.
    *
    * @generated from field: repeated admiral.api.source.v1.SourceOutput outputs = 1;
@@ -1312,7 +1282,7 @@ export const SourceTypeSchema: GenEnum<SourceType> = /*@__PURE__*/
   enumDesc(file_admiral_api_source_v1_source, 0);
 
 /**
- * SourceAPI manages source definitions — pointers to external artifacts that
+ * SourceAPI manages source definitions -- pointers to external artifacts that
  * Admiral fetches, inspects, and renders into immutable deployment snapshots.
  *
  * A source represents a fetchable artifact at a specific location: a Terraform
@@ -1338,7 +1308,7 @@ export const SourceAPI: GenService<{
   /**
    * CreateSource creates a new source definition within the caller's tenant.
    *
-   * The source type and source_config must match — for example, a
+   * The source type and source_config must match -- for example, a
    * TERRAFORM_REGISTRY source requires a TerraformRegistryConfig.
    *
    * Scope: `source:write`
@@ -1351,7 +1321,7 @@ export const SourceAPI: GenService<{
     output: typeof CreateSourceResponseSchema;
   },
   /**
-   * GetSource retrieves a source by ID or name.
+   * GetSource retrieves a source by ID.
    *
    * Scope: `source:read`
    *
@@ -1390,7 +1360,7 @@ export const SourceAPI: GenService<{
   },
   /**
    * DeleteSource permanently deletes a source definition. Fails if any
-   * application components still reference this source — remove or reassign
+   * application components still reference this source -- remove or reassign
    * those components first. This action cannot be undone.
    *
    * Scope: `source:write`
@@ -1449,7 +1419,7 @@ export const SourceAPI: GenService<{
    * parses its outputs (values produced after apply).
    *
    * Only meaningful for Terraform modules, which declare formal output blocks.
-   * Helm charts, Kustomize, and raw manifests do not have formal outputs —
+   * Helm charts, Kustomize, and raw manifests do not have formal outputs --
    * workload component outputs are user-declared, not discovered.
    *
    * This operation queries the external system in real time and may take
@@ -1465,7 +1435,7 @@ export const SourceAPI: GenService<{
     output: typeof GetSourceOutputsResponseSchema;
   },
   /**
-   * SyncSource triggers a refresh of the source's cached metadata — version
+   * SyncSource triggers a refresh of the source's cached metadata -- version
    * list, discovered inputs/outputs, and connectivity status.
    *
    * Use this after updating credentials on the referenced connection, or to

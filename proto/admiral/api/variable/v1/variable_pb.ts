@@ -56,7 +56,7 @@ export type Variable = Message<"admiral.api.variable.v1.Variable"> & {
   key: string;
 
   /**
-   * The variable value. Always stored as a string — use `type` to indicate
+   * The variable value. Always stored as a string -- use `type` to indicate
    * how to interpret it. Masked or empty for sensitive variables in responses.
    *
    * For COMPLEX type, this is a JSON-encoded string (e.g., '["a","b"]' or
@@ -298,13 +298,13 @@ export type ListVariablesRequest = Message<"admiral.api.variable.v1.ListVariable
    * Filter expression using the PEG filter DSL.
    *
    * Common filter fields:
-   *   - `application_id` — scope to an application (triggers merge with
+   *   - `application_id` -- scope to an application (triggers merge with
    *     app-level variables alongside global variables).
-   *   - `environment_id` — scope to an environment (requires application_id;
+   *   - `environment_id` -- scope to an environment (requires application_id;
    *     triggers merge with environment-level variables).
-   *   - `sensitive` — filter by sensitivity.
-   *   - `type` — filter by variable type.
-   *   - `key` — filter by variable key (supports prefix matching).
+   *   - `sensitive` -- filter by sensitivity.
+   *   - `type` -- filter by variable type.
+   *   - `key` -- filter by variable key (supports prefix matching).
    *
    * @generated from field: string filter = 1;
    */
@@ -577,7 +577,7 @@ export const VariableAPI: GenService<{
   /**
    * UpdateVariable updates a variable's mutable fields.
    * Use the `update_mask` to specify which fields to update.
-   * Only `value` and `sensitive` are mutable — key is immutable.
+   * Only `value` and `sensitive` are mutable -- key is immutable.
    *
    * Scope: `var:write`
    *

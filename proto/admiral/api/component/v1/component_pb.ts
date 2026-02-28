@@ -16,13 +16,13 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/component/v1/component.proto.
  */
 export const file_admiral_api_component_v1_component: GenFile = /*@__PURE__*/
-  fileDesc("CihhZG1pcmFsL2FwaS9jb21wb25lbnQvdjEvY29tcG9uZW50LnByb3RvEhhhZG1pcmFsLmFwaS5jb21wb25lbnQudjEihQEKD0NvbXBvbmVudE91dHB1dBIvCgRuYW1lGAEgASgJQiG6SB5yHBABGD8yFl5bYS16XVthLXowLTlfXXswLDYyfSQSIgoOdmFsdWVfdGVtcGxhdGUYAiABKAlCCrpIB3IFEAEYgCASHQoLZGVzY3JpcHRpb24YAyABKAlCCLpIBXIDGIAIIscECglDb21wb25lbnQSFAoCaWQYASABKAlCCLpIBXIDsAEBEiAKDmFwcGxpY2F0aW9uX2lkGAIgASgJQgi6SAVyA7ABARI6CgRuYW1lGAMgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgEIAEoCUIIukgFcgMYgAgSPQoIY2F0ZWdvcnkYBSABKA4yKy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50Q2F0ZWdvcnkSGwoJc291cmNlX2lkGAYgASgJQgi6SAVyA7ABARIYCgd2ZXJzaW9uGAcgASgJQge6SARyAhABEiIKD3ZhbHVlc190ZW1wbGF0ZRgIIAEoCUIJukgGcgQYgIAEEiEKCmRlcGVuZHNfb24YCSADKAlCDbpICpIBByIFcgOwAQESOgoHb3V0cHV0cxgKIAMoCzIpLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdXRwdXQSEAoIZGlzYWJsZWQYCyABKAgSFAoMaGFzX292ZXJyaWRlGAwgASgIEhIKCmNyZWF0ZWRfYnkYDyABKAkSEgoKdXBkYXRlZF9ieRgQIAEoCRIuCgpjcmVhdGVkX2F0GA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GA4gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCLSAwoRQ29tcG9uZW50T3ZlcnJpZGUSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABARIgCg5lbnZpcm9ubWVudF9pZBgCIAEoCUIIukgFcgOwAQESEAoIZGlzYWJsZWQYAyABKAgSIAoJc291cmNlX2lkGAQgASgJQgi6SAVyA7ABAUgAiAEBEhQKB3ZlcnNpb24YBSABKAlIAYgBARIcCg92YWx1ZXNfdGVtcGxhdGUYBiABKAlIAogBARIhCgpkZXBlbmRzX29uGAcgAygJQg26SAqSAQciBXIDsAEBEjoKB291dHB1dHMYCCADKAsyKS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50T3V0cHV0EhIKCmNyZWF0ZWRfYnkYCyABKAkSEgoKdXBkYXRlZF9ieRgMIAEoCRIuCgpjcmVhdGVkX2F0GAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIMCgpfc291cmNlX2lkQgoKCF92ZXJzaW9uQhIKEF92YWx1ZXNfdGVtcGxhdGUizwIKFkNyZWF0ZUNvbXBvbmVudFJlcXVlc3QSIAoOYXBwbGljYXRpb25faWQYASABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAiABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAMgASgJQgi6SAVyAxiACBIbCglzb3VyY2VfaWQYBCABKAlCCLpIBXIDsAEBEhgKB3ZlcnNpb24YBSABKAlCB7pIBHICEAESIgoPdmFsdWVzX3RlbXBsYXRlGAYgASgJQgm6SAZyBBiAgAQSIQoKZGVwZW5kc19vbhgHIAMoCUINukgKkgEHIgVyA7ABARI6CgdvdXRwdXRzGAggAygLMikuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudE91dHB1dCJRChdDcmVhdGVDb21wb25lbnRSZXNwb25zZRI2Cgljb21wb25lbnQYASABKAsyIy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50Io4BChNHZXRDb21wb25lbnRSZXF1ZXN0EhYKAmlkGAEgASgJQgi6SAVyA7ABAUgAEjwKBG5hbWUYAiABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kSAASEwoLYXBwbGljYXRpb24YAyABKAlCDAoKaWRlbnRpZmllciJOChRHZXRDb21wb25lbnRSZXNwb25zZRI2Cgljb21wb25lbnQYASABKAsyIy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50ImMKFUxpc3RDb21wb25lbnRzUmVxdWVzdBIYCgZmaWx0ZXIYASABKAlCCLpIBXIDGIAIEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkiagoWTGlzdENvbXBvbmVudHNSZXNwb25zZRI3Cgpjb21wb25lbnRzGAEgAygLMiMuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiggIKFlVwZGF0ZUNvbXBvbmVudFJlcXVlc3QSPgoJY29tcG9uZW50GAEgASgLMiMuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudEIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzaxIWCgJpZBgDIAEoCUIIukgFcgOwAQFIABI8CgRuYW1lGAQgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JEgAEhMKC2FwcGxpY2F0aW9uGAUgASgJQgwKCmlkZW50aWZpZXIiUQoXVXBkYXRlQ29tcG9uZW50UmVzcG9uc2USNgoJY29tcG9uZW50GAEgASgLMiMuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudCKRAQoWRGVsZXRlQ29tcG9uZW50UmVxdWVzdBIWCgJpZBgBIAEoCUIIukgFcgOwAQFIABI8CgRuYW1lGAIgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JEgAEhMKC2FwcGxpY2F0aW9uGAMgASgJQgwKCmlkZW50aWZpZXIiGQoXRGVsZXRlQ29tcG9uZW50UmVzcG9uc2Ui3wIKG1NldENvbXBvbmVudE92ZXJyaWRlUmVxdWVzdBIeCgxjb21wb25lbnRfaWQYASABKAlCCLpIBXIDsAEBEiAKDmVudmlyb25tZW50X2lkGAIgASgJQgi6SAVyA7ABARIQCghkaXNhYmxlZBgDIAEoCBIgCglzb3VyY2VfaWQYBCABKAlCCLpIBXIDsAEBSACIAQESFAoHdmVyc2lvbhgFIAEoCUgBiAEBEicKD3ZhbHVlc190ZW1wbGF0ZRgGIAEoCUIJukgGcgQYgIAESAKIAQESIQoKZGVwZW5kc19vbhgHIAMoCUINukgKkgEHIgVyA7ABARI6CgdvdXRwdXRzGAggAygLMikuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudE91dHB1dEIMCgpfc291cmNlX2lkQgoKCF92ZXJzaW9uQhIKEF92YWx1ZXNfdGVtcGxhdGUiXQocU2V0Q29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZRI9CghvdmVycmlkZRgBIAEoCzIrLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdmVycmlkZSJfChtHZXRDb21wb25lbnRPdmVycmlkZVJlcXVlc3QSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABARIgCg5lbnZpcm9ubWVudF9pZBgCIAEoCUIIukgFcgOwAQEiXQocR2V0Q29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZRI9CghvdmVycmlkZRgBIAEoCzIrLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdmVycmlkZSJnCh1MaXN0Q29tcG9uZW50T3ZlcnJpZGVzUmVxdWVzdBIUCgJpZBgBIAEoCUIIukgFcgOwAQESHAoJcGFnZV9zaXplGAIgASgFQgm6SAYaBBhkKAASEgoKcGFnZV90b2tlbhgDIAEoCSJ5Ch5MaXN0Q29tcG9uZW50T3ZlcnJpZGVzUmVzcG9uc2USPgoJb3ZlcnJpZGVzGAEgAygLMisuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudE92ZXJyaWRlEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCSJiCh5EZWxldGVDb21wb25lbnRPdmVycmlkZVJlcXVlc3QSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABARIgCg5lbnZpcm9ubWVudF9pZBgCIAEoCUIIukgFcgOwAQEiIQofRGVsZXRlQ29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZSp/ChFDb21wb25lbnRDYXRlZ29yeRIiCh5DT01QT05FTlRfQ0FURUdPUllfVU5TUEVDSUZJRUQQABIlCiFDT01QT05FTlRfQ0FURUdPUllfSU5GUkFTVFJVQ1RVUkUQARIfChtDT01QT05FTlRfQ0FURUdPUllfV09SS0xPQUQQAjLFEAoMQ29tcG9uZW50QVBJEsMBCg9DcmVhdGVDb21wb25lbnQSMC5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ3JlYXRlQ29tcG9uZW50UmVxdWVzdBoxLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5DcmVhdGVDb21wb25lbnRSZXNwb25zZSJLukcgCgpDb21wb25lbnRzEhJDcmVhdGUgYSBjb21wb25lbnSilyQLCglhcHA6d3JpdGWC0+STAhM6ASoiDi92MS9jb21wb25lbnRzEtsBCgxHZXRDb21wb25lbnQSLS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuR2V0Q29tcG9uZW50UmVxdWVzdBouLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5HZXRDb21wb25lbnRSZXNwb25zZSJsukciCgpDb21wb25lbnRzEhRSZXRyaWV2ZSBhIGNvbXBvbmVudKKXJAoKCGFwcDpyZWFkgtPkkwIzWhwSGi92MS9jb21wb25lbnRzL25hbWUve25hbWV9EhMvdjEvY29tcG9uZW50cy97aWR9ErkBCg5MaXN0Q29tcG9uZW50cxIvLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5MaXN0Q29tcG9uZW50c1JlcXVlc3QaMC5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuTGlzdENvbXBvbmVudHNSZXNwb25zZSJEukcdCgpDb21wb25lbnRzEg9MaXN0IGNvbXBvbmVudHOilyQKCghhcHA6cmVhZILT5JMCEBIOL3YxL2NvbXBvbmVudHMS6QEKD1VwZGF0ZUNvbXBvbmVudBIwLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5VcGRhdGVDb21wb25lbnRSZXF1ZXN0GjEuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLlVwZGF0ZUNvbXBvbmVudFJlc3BvbnNlInG6RyAKCkNvbXBvbmVudHMSElVwZGF0ZSBhIGNvbXBvbmVudKKXJAsKCWFwcDp3cml0ZYLT5JMCOToBKlofOgEqMhovdjEvY29tcG9uZW50cy9uYW1lL3tuYW1lfTITL3YxL2NvbXBvbmVudHMve2lkfRLjAQoPRGVsZXRlQ29tcG9uZW50EjAuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkRlbGV0ZUNvbXBvbmVudFJlcXVlc3QaMS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuRGVsZXRlQ29tcG9uZW50UmVzcG9uc2Uia7pHIAoKQ29tcG9uZW50cxISRGVsZXRlIGEgY29tcG9uZW50opckCwoJYXBwOndyaXRlgtPkkwIzWhwqGi92MS9jb21wb25lbnRzL25hbWUve25hbWV9KhMvdjEvY29tcG9uZW50cy97aWR9EoICChRTZXRDb21wb25lbnRPdmVycmlkZRI1LmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5TZXRDb21wb25lbnRPdmVycmlkZVJlcXVlc3QaNi5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuU2V0Q29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZSJ7ukcmCgpDb21wb25lbnRzEhhTZXQgYSBjb21wb25lbnQgb3ZlcnJpZGWilyQLCgllbnY6d3JpdGWC0+STAj06ASoaOC92MS9jb21wb25lbnRzL3tjb21wb25lbnRfaWR9L292ZXJyaWRlcy97ZW52aXJvbm1lbnRfaWR9EoMCChRHZXRDb21wb25lbnRPdmVycmlkZRI1LmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5HZXRDb21wb25lbnRPdmVycmlkZVJlcXVlc3QaNi5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuR2V0Q29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZSJ8ukcrCgpDb21wb25lbnRzEh1SZXRyaWV2ZSBhIGNvbXBvbmVudCBvdmVycmlkZaKXJAoKCGVudjpyZWFkgtPkkwI6EjgvdjEvY29tcG9uZW50cy97Y29tcG9uZW50X2lkfS9vdmVycmlkZXMve2Vudmlyb25tZW50X2lkfRLpAQoWTGlzdENvbXBvbmVudE92ZXJyaWRlcxI3LmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5MaXN0Q29tcG9uZW50T3ZlcnJpZGVzUmVxdWVzdBo4LmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5MaXN0Q29tcG9uZW50T3ZlcnJpZGVzUmVzcG9uc2UiXLpHJgoKQ29tcG9uZW50cxIYTGlzdCBjb21wb25lbnQgb3ZlcnJpZGVzopckCgoIZW52OnJlYWSC0+STAh8SHS92MS9jb21wb25lbnRzL3tpZH0vb3ZlcnJpZGVzEosCChdEZWxldGVDb21wb25lbnRPdmVycmlkZRI4LmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5EZWxldGVDb21wb25lbnRPdmVycmlkZVJlcXVlc3QaOS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuRGVsZXRlQ29tcG9uZW50T3ZlcnJpZGVSZXNwb25zZSJ7ukcpCgpDb21wb25lbnRzEhtEZWxldGUgYSBjb21wb25lbnQgb3ZlcnJpZGWilyQLCgllbnY6d3JpdGWC0+STAjoqOC92MS9jb21wb25lbnRzL3tjb21wb25lbnRfaWR9L292ZXJyaWRlcy97ZW52aXJvbm1lbnRfaWR9Qu8BChxjb20uYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxQg5Db21wb25lbnRQcm90b1ABWjxnby5hZG1pcmFsLmlvL3Nkay9wcm90by9hZG1pcmFsL2FwaS9jb21wb25lbnQvdjE7Y29tcG9uZW50djGiAgNBQUOqAhhBZG1pcmFsLkFwaS5Db21wb25lbnQuVjHKAhhBZG1pcmFsXEFwaVxDb21wb25lbnRcVjHiAiRBZG1pcmFsXEFwaVxDb21wb25lbnRcVjFcR1BCTWV0YWRhdGHqAhtBZG1pcmFsOjpBcGk6OkNvbXBvbmVudDo6VjFiBnByb3RvMw", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CihhZG1pcmFsL2FwaS9jb21wb25lbnQvdjEvY29tcG9uZW50LnByb3RvEhhhZG1pcmFsLmFwaS5jb21wb25lbnQudjEihQEKD0NvbXBvbmVudE91dHB1dBIvCgRuYW1lGAEgASgJQiG6SB5yHBABGD8yFl5bYS16XVthLXowLTlfXXswLDYyfSQSIgoOdmFsdWVfdGVtcGxhdGUYAiABKAlCCrpIB3IFEAEYgCASHQoLZGVzY3JpcHRpb24YAyABKAlCCLpIBXIDGIAIIscECglDb21wb25lbnQSFAoCaWQYASABKAlCCLpIBXIDsAEBEiAKDmFwcGxpY2F0aW9uX2lkGAIgASgJQgi6SAVyA7ABARI6CgRuYW1lGAMgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgEIAEoCUIIukgFcgMYgAgSPQoIY2F0ZWdvcnkYBSABKA4yKy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50Q2F0ZWdvcnkSGwoJc291cmNlX2lkGAYgASgJQgi6SAVyA7ABARIYCgd2ZXJzaW9uGAcgASgJQge6SARyAhABEiIKD3ZhbHVlc190ZW1wbGF0ZRgIIAEoCUIJukgGcgQYgIAEEiEKCmRlcGVuZHNfb24YCSADKAlCDbpICpIBByIFcgOwAQESOgoHb3V0cHV0cxgKIAMoCzIpLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdXRwdXQSEAoIZGlzYWJsZWQYCyABKAgSFAoMaGFzX292ZXJyaWRlGAwgASgIEhIKCmNyZWF0ZWRfYnkYDyABKAkSEgoKdXBkYXRlZF9ieRgQIAEoCRIuCgpjcmVhdGVkX2F0GA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GA4gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCLSAwoRQ29tcG9uZW50T3ZlcnJpZGUSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABARIgCg5lbnZpcm9ubWVudF9pZBgCIAEoCUIIukgFcgOwAQESEAoIZGlzYWJsZWQYAyABKAgSIAoJc291cmNlX2lkGAQgASgJQgi6SAVyA7ABAUgAiAEBEhQKB3ZlcnNpb24YBSABKAlIAYgBARIcCg92YWx1ZXNfdGVtcGxhdGUYBiABKAlIAogBARIhCgpkZXBlbmRzX29uGAcgAygJQg26SAqSAQciBXIDsAEBEjoKB291dHB1dHMYCCADKAsyKS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50T3V0cHV0EhIKCmNyZWF0ZWRfYnkYCyABKAkSEgoKdXBkYXRlZF9ieRgMIAEoCRIuCgpjcmVhdGVkX2F0GAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIMCgpfc291cmNlX2lkQgoKCF92ZXJzaW9uQhIKEF92YWx1ZXNfdGVtcGxhdGUizwIKFkNyZWF0ZUNvbXBvbmVudFJlcXVlc3QSIAoOYXBwbGljYXRpb25faWQYASABKAlCCLpIBXIDsAEBEjoKBG5hbWUYAiABKAlCLLpIKXInEAEYPzIhXlthLXpdKFthLXowLTktXXswLDYxfVthLXowLTldKT8kEh0KC2Rlc2NyaXB0aW9uGAMgASgJQgi6SAVyAxiACBIbCglzb3VyY2VfaWQYBCABKAlCCLpIBXIDsAEBEhgKB3ZlcnNpb24YBSABKAlCB7pIBHICEAESIgoPdmFsdWVzX3RlbXBsYXRlGAYgASgJQgm6SAZyBBiAgAQSIQoKZGVwZW5kc19vbhgHIAMoCUINukgKkgEHIgVyA7ABARI6CgdvdXRwdXRzGAggAygLMikuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudE91dHB1dCJRChdDcmVhdGVDb21wb25lbnRSZXNwb25zZRI2Cgljb21wb25lbnQYASABKAsyIy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50IjUKE0dldENvbXBvbmVudFJlcXVlc3QSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABASJOChRHZXRDb21wb25lbnRSZXNwb25zZRI2Cgljb21wb25lbnQYASABKAsyIy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50ImMKFUxpc3RDb21wb25lbnRzUmVxdWVzdBIYCgZmaWx0ZXIYASABKAlCCLpIBXIDGIAIEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkiagoWTGlzdENvbXBvbmVudHNSZXNwb25zZRI3Cgpjb21wb25lbnRzGAEgAygLMiMuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiqQEKFlVwZGF0ZUNvbXBvbmVudFJlcXVlc3QSPgoJY29tcG9uZW50GAEgASgLMiMuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNvbXBvbmVudEIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzaxIeCgxjb21wb25lbnRfaWQYAyABKAlCCLpIBXIDsAEBIlEKF1VwZGF0ZUNvbXBvbmVudFJlc3BvbnNlEjYKCWNvbXBvbmVudBgBIAEoCzIjLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnQiOAoWRGVsZXRlQ29tcG9uZW50UmVxdWVzdBIeCgxjb21wb25lbnRfaWQYASABKAlCCLpIBXIDsAEBIhkKF0RlbGV0ZUNvbXBvbmVudFJlc3BvbnNlIt8CChtTZXRDb21wb25lbnRPdmVycmlkZVJlcXVlc3QSHgoMY29tcG9uZW50X2lkGAEgASgJQgi6SAVyA7ABARIgCg5lbnZpcm9ubWVudF9pZBgCIAEoCUIIukgFcgOwAQESEAoIZGlzYWJsZWQYAyABKAgSIAoJc291cmNlX2lkGAQgASgJQgi6SAVyA7ABAUgAiAEBEhQKB3ZlcnNpb24YBSABKAlIAYgBARInCg92YWx1ZXNfdGVtcGxhdGUYBiABKAlCCbpIBnIEGICABEgCiAEBEiEKCmRlcGVuZHNfb24YByADKAlCDbpICpIBByIFcgOwAQESOgoHb3V0cHV0cxgIIAMoCzIpLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdXRwdXRCDAoKX3NvdXJjZV9pZEIKCghfdmVyc2lvbkISChBfdmFsdWVzX3RlbXBsYXRlIl0KHFNldENvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2USPQoIb3ZlcnJpZGUYASABKAsyKy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50T3ZlcnJpZGUiXwobR2V0Q29tcG9uZW50T3ZlcnJpZGVSZXF1ZXN0Eh4KDGNvbXBvbmVudF9pZBgBIAEoCUIIukgFcgOwAQESIAoOZW52aXJvbm1lbnRfaWQYAiABKAlCCLpIBXIDsAEBIl0KHEdldENvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2USPQoIb3ZlcnJpZGUYASABKAsyKy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ29tcG9uZW50T3ZlcnJpZGUiZwodTGlzdENvbXBvbmVudE92ZXJyaWRlc1JlcXVlc3QSFAoCaWQYASABKAlCCLpIBXIDsAEBEhwKCXBhZ2Vfc2l6ZRgCIAEoBUIJukgGGgQYZCgAEhIKCnBhZ2VfdG9rZW4YAyABKAkieQoeTGlzdENvbXBvbmVudE92ZXJyaWRlc1Jlc3BvbnNlEj4KCW92ZXJyaWRlcxgBIAMoCzIrLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5Db21wb25lbnRPdmVycmlkZRIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiYgoeRGVsZXRlQ29tcG9uZW50T3ZlcnJpZGVSZXF1ZXN0Eh4KDGNvbXBvbmVudF9pZBgBIAEoCUIIukgFcgOwAQESIAoOZW52aXJvbm1lbnRfaWQYAiABKAlCCLpIBXIDsAEBIiEKH0RlbGV0ZUNvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2UqfwoRQ29tcG9uZW50Q2F0ZWdvcnkSIgoeQ09NUE9ORU5UX0NBVEVHT1JZX1VOU1BFQ0lGSUVEEAASJQohQ09NUE9ORU5UX0NBVEVHT1JZX0lORlJBU1RSVUNUVVJFEAESHwobQ09NUE9ORU5UX0NBVEVHT1JZX1dPUktMT0FEEAIyhhAKDENvbXBvbmVudEFQSRLDAQoPQ3JlYXRlQ29tcG9uZW50EjAuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkNyZWF0ZUNvbXBvbmVudFJlcXVlc3QaMS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuQ3JlYXRlQ29tcG9uZW50UmVzcG9uc2UiS7pHIAoKQ29tcG9uZW50cxISQ3JlYXRlIGEgY29tcG9uZW50opckCwoJYXBwOndyaXRlgtPkkwITOgEqIg4vdjEvY29tcG9uZW50cxLHAQoMR2V0Q29tcG9uZW50Ei0uYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkdldENvbXBvbmVudFJlcXVlc3QaLi5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuR2V0Q29tcG9uZW50UmVzcG9uc2UiWLpHIgoKQ29tcG9uZW50cxIUUmV0cmlldmUgYSBjb21wb25lbnSilyQKCghhcHA6cmVhZILT5JMCHxIdL3YxL2NvbXBvbmVudHMve2NvbXBvbmVudF9pZH0SuQEKDkxpc3RDb21wb25lbnRzEi8uYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkxpc3RDb21wb25lbnRzUmVxdWVzdBowLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MS5MaXN0Q29tcG9uZW50c1Jlc3BvbnNlIkS6Rx0KCkNvbXBvbmVudHMSD0xpc3QgY29tcG9uZW50c6KXJAoKCGFwcDpyZWFkgtPkkwIQEg4vdjEvY29tcG9uZW50cxLSAQoPVXBkYXRlQ29tcG9uZW50EjAuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLlVwZGF0ZUNvbXBvbmVudFJlcXVlc3QaMS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuVXBkYXRlQ29tcG9uZW50UmVzcG9uc2UiWrpHIAoKQ29tcG9uZW50cxISVXBkYXRlIGEgY29tcG9uZW50opckCwoJYXBwOndyaXRlgtPkkwIiOgEqMh0vdjEvY29tcG9uZW50cy97Y29tcG9uZW50X2lkfRLPAQoPRGVsZXRlQ29tcG9uZW50EjAuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkRlbGV0ZUNvbXBvbmVudFJlcXVlc3QaMS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuRGVsZXRlQ29tcG9uZW50UmVzcG9uc2UiV7pHIAoKQ29tcG9uZW50cxISRGVsZXRlIGEgY29tcG9uZW50opckCwoJYXBwOndyaXRlgtPkkwIfKh0vdjEvY29tcG9uZW50cy97Y29tcG9uZW50X2lkfRKCAgoUU2V0Q29tcG9uZW50T3ZlcnJpZGUSNS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuU2V0Q29tcG9uZW50T3ZlcnJpZGVSZXF1ZXN0GjYuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLlNldENvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2Uie7pHJgoKQ29tcG9uZW50cxIYU2V0IGEgY29tcG9uZW50IG92ZXJyaWRlopckCwoJZW52OndyaXRlgtPkkwI9OgEqGjgvdjEvY29tcG9uZW50cy97Y29tcG9uZW50X2lkfS9vdmVycmlkZXMve2Vudmlyb25tZW50X2lkfRKDAgoUR2V0Q29tcG9uZW50T3ZlcnJpZGUSNS5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuR2V0Q29tcG9uZW50T3ZlcnJpZGVSZXF1ZXN0GjYuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkdldENvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2UifLpHKwoKQ29tcG9uZW50cxIdUmV0cmlldmUgYSBjb21wb25lbnQgb3ZlcnJpZGWilyQKCghlbnY6cmVhZILT5JMCOhI4L3YxL2NvbXBvbmVudHMve2NvbXBvbmVudF9pZH0vb3ZlcnJpZGVzL3tlbnZpcm9ubWVudF9pZH0S6QEKFkxpc3RDb21wb25lbnRPdmVycmlkZXMSNy5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuTGlzdENvbXBvbmVudE92ZXJyaWRlc1JlcXVlc3QaOC5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuTGlzdENvbXBvbmVudE92ZXJyaWRlc1Jlc3BvbnNlIly6RyYKCkNvbXBvbmVudHMSGExpc3QgY29tcG9uZW50IG92ZXJyaWRlc6KXJAoKCGVudjpyZWFkgtPkkwIfEh0vdjEvY29tcG9uZW50cy97aWR9L292ZXJyaWRlcxKLAgoXRGVsZXRlQ29tcG9uZW50T3ZlcnJpZGUSOC5hZG1pcmFsLmFwaS5jb21wb25lbnQudjEuRGVsZXRlQ29tcG9uZW50T3ZlcnJpZGVSZXF1ZXN0GjkuYWRtaXJhbC5hcGkuY29tcG9uZW50LnYxLkRlbGV0ZUNvbXBvbmVudE92ZXJyaWRlUmVzcG9uc2Uie7pHKQoKQ29tcG9uZW50cxIbRGVsZXRlIGEgY29tcG9uZW50IG92ZXJyaWRlopckCwoJZW52OndyaXRlgtPkkwI6KjgvdjEvY29tcG9uZW50cy97Y29tcG9uZW50X2lkfS9vdmVycmlkZXMve2Vudmlyb25tZW50X2lkfULvAQocY29tLmFkbWlyYWwuYXBpLmNvbXBvbmVudC52MUIOQ29tcG9uZW50UHJvdG9QAVo8Z28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvY29tcG9uZW50L3YxO2NvbXBvbmVudHYxogIDQUFDqgIYQWRtaXJhbC5BcGkuQ29tcG9uZW50LlYxygIYQWRtaXJhbFxBcGlcQ29tcG9uZW50XFYx4gIkQWRtaXJhbFxBcGlcQ29tcG9uZW50XFYxXEdQQk1ldGFkYXRh6gIbQWRtaXJhbDo6QXBpOjpDb21wb25lbnQ6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * ComponentOutput declares a named output value produced by a component.
  *
  * For infrastructure components (Terraform), outputs are auto-discovered from
- * the module's output blocks and this field is ignored — do not declare
+ * the module's output blocks and this field is ignored -- do not declare
  * outputs manually for Terraform components.
  *
  * For workload components (Helm, Kustomize, manifests), outputs must be
@@ -141,7 +141,7 @@ export type Component = Message<"admiral.api.component.v1.Component"> & {
   /**
    * Pinned version of the source artifact. For registry sources, a semver
    * string (e.g., "1.2.3"). For Git sources, a tag, branch, or commit SHA.
-   * Required — components always pin a version. Use UpdateComponent to
+   * Required -- components always pin a version. Use UpdateComponent to
    * change the version (rolling update).
    *
    * @generated from field: string version = 7;
@@ -320,7 +320,7 @@ export type ComponentOverride = Message<"admiral.api.component.v1.ComponentOverr
 
   /**
    * Override values template for this environment. When set, this template
-   * completely replaces the component's default values template — there is
+   * completely replaces the component's default values template -- there is
    * no merge.
    *
    * @generated from field: optional string values_template = 6;
@@ -477,39 +477,17 @@ export const CreateComponentResponseSchema: GenMessage<CreateComponentResponse> 
   messageDesc(file_admiral_api_component_v1_component, 4);
 
 /**
- * GetComponentRequest identifies a component to retrieve by ID or name.
+ * GetComponentRequest identifies a component to retrieve.
  *
  * @generated from message admiral.api.component.v1.GetComponentRequest
  */
 export type GetComponentRequest = Message<"admiral.api.component.v1.GetComponentRequest"> & {
   /**
-   * @generated from oneof admiral.api.component.v1.GetComponentRequest.identifier
-   */
-  identifier: {
-    /**
-     * Unique identifier of the component (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the component (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * Unique identifier of the component (UUID).
    *
-   * @generated from field: string application = 3;
+   * @generated from field: string component_id = 1;
    */
-  application: string;
+  componentId: string;
 };
 
 /**
@@ -559,12 +537,12 @@ export type ListComponentsRequest = Message<"admiral.api.component.v1.ListCompon
    * Filter expression using the PEG filter DSL.
    *
    * Common filter fields:
-   *   - `application_id` — scope to an application (required for meaningful
+   *   - `application_id` -- scope to an application (required for meaningful
    *     results since components always belong to an application).
-   *   - `environment_id` — when present, triggers the resolved view with
+   *   - `environment_id` -- when present, triggers the resolved view with
    *     environment overrides applied to each component.
-   *   - `category` — filter by component category (INFRASTRUCTURE, WORKLOAD).
-   *   - `name` — filter by component name.
+   *   - `category` -- filter by component category (INFRASTRUCTURE, WORKLOAD).
+   *   - `name` -- filter by component name.
    *
    * @generated from field: string filter = 1;
    */
@@ -645,33 +623,11 @@ export type UpdateComponentRequest = Message<"admiral.api.component.v1.UpdateCom
   updateMask?: FieldMask;
 
   /**
-   * @generated from oneof admiral.api.component.v1.UpdateComponentRequest.identifier
-   */
-  identifier: {
-    /**
-     * Unique identifier of the component to update (UUID).
-     *
-     * @generated from field: string id = 3;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the component (DNS label).
-     *
-     * @generated from field: string name = 4;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * Unique identifier of the component to update (UUID).
    *
-   * @generated from field: string application = 5;
+   * @generated from field: string component_id = 3;
    */
-  application: string;
+  componentId: string;
 };
 
 /**
@@ -703,41 +659,19 @@ export const UpdateComponentResponseSchema: GenMessage<UpdateComponentResponse> 
   messageDesc(file_admiral_api_component_v1_component, 10);
 
 /**
- * DeleteComponentRequest identifies a component to delete by ID or name.
+ * DeleteComponentRequest identifies a component to delete.
  *
  * @generated from message admiral.api.component.v1.DeleteComponentRequest
  */
 export type DeleteComponentRequest = Message<"admiral.api.component.v1.DeleteComponentRequest"> & {
   /**
-   * @generated from oneof admiral.api.component.v1.DeleteComponentRequest.identifier
-   */
-  identifier: {
-    /**
-     * Unique identifier of the component to delete (UUID).
-     * Fails if other components depend on this component (via depends_on
-     * or output references in values_template).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the component (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * Unique identifier of the component to delete (UUID).
+   * Fails if other components depend on this component (via depends_on
+   * or output references in values_template).
    *
-   * @generated from field: string application = 3;
+   * @generated from field: string component_id = 1;
    */
-  application: string;
+  componentId: string;
 };
 
 /**
@@ -1056,7 +990,7 @@ export const ComponentCategorySchema: GenEnum<ComponentCategory> = /*@__PURE__*/
 /**
  * ComponentAPI manages components within an application.
  *
- * A component binds an application to a source — it defines what artifact
+ * A component binds an application to a source -- it defines what artifact
  * (Terraform module, Helm chart, Kustomize overlay, etc.) to deploy and how
  * to configure it. Each component has a name (unique within the application),
  * a source reference, a pinned version, and a values template that maps
@@ -1092,11 +1026,7 @@ export const ComponentAPI: GenService<{
     output: typeof CreateComponentResponseSchema;
   },
   /**
-   * GetComponent retrieves a component by ID or name.
-   *
-   * When using name-based lookup, the `application` query parameter is required
-   * to scope the name within a parent application. The `application` parameter
-   * accepts either a UUID or a DNS-label name.
+   * GetComponent retrieves a component by ID.
    *
    * Scope: `app:read`
    *
@@ -1147,7 +1077,7 @@ export const ComponentAPI: GenService<{
   /**
    * DeleteComponent removes a component from an application. Fails if other
    * components depend on this component (via depends_on or output references
-   * in values_template) — remove or update those dependencies first. Also
+   * in values_template) -- remove or update those dependencies first. Also
    * removes all environment overrides for this component.
    * This action cannot be undone.
    *
@@ -1168,7 +1098,7 @@ export const ComponentAPI: GenService<{
    * For example, a "redis" component might use a Helm chart source in dev but
    * a Terraform ElastiCache module in prod.
    *
-   * This is an upsert — if an override already exists for this component +
+   * This is an upsert -- if an override already exists for this component +
    * environment combination, it is replaced.
    *
    * Scope: `env:write`

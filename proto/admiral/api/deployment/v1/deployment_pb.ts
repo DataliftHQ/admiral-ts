@@ -259,7 +259,7 @@ export type Revision = Message<"admiral.api.deployment.v1.Revision"> & {
   version: string;
 
   /**
-   * The resolved values template snapshot — the values_template with all
+   * The resolved values template snapshot -- the values_template with all
    * variable references and component output references fully resolved.
    * Stored for audit: shows exactly what inputs were used. Sensitive
    * variable values are masked in API responses.
@@ -278,7 +278,7 @@ export type Revision = Message<"admiral.api.deployment.v1.Revision"> & {
 
   /**
    * Component IDs that are blocking this revision. Only populated when
-   * status is BLOCKED — indicates which upstream components failed.
+   * status is BLOCKED -- indicates which upstream components failed.
    *
    * @generated from field: repeated string blocked_by = 11;
    */
@@ -511,10 +511,10 @@ export type ListDeploymentsRequest = Message<"admiral.api.deployment.v1.ListDepl
    * Filter expression using the PEG filter DSL.
    *
    * Common filter fields:
-   *   - `application_id` — deployments for a specific application.
-   *   - `environment_id` — deployments to a specific environment.
-   *   - `status` — filter by deployment status.
-   *   - `trigger_type` — filter by trigger type (MANUAL, CI, DESTROY).
+   *   - `application_id` -- deployments for a specific application.
+   *   - `environment_id` -- deployments to a specific environment.
+   *   - `status` -- filter by deployment status.
+   *   - `trigger_type` -- filter by trigger type (MANUAL, CI, DESTROY).
    *
    * @generated from field: string filter = 1;
    */
@@ -1037,7 +1037,7 @@ export const RevisionCategorySchema: GenEnum<RevisionCategory> = /*@__PURE__*/
  * in order: independent components run in parallel, dependent components
  * wait for their upstream to succeed.
  *
- * There is no special rollback mechanism — to revert a change, update the
+ * There is no special rollback mechanism -- to revert a change, update the
  * configuration (variables, component settings) and create a new deployment.
  * Every deployment is always rendered against the current state, ensuring
  * consistency between infrastructure outputs and workload inputs.
@@ -1101,7 +1101,7 @@ export const DeploymentAPI: GenService<{
   },
   /**
    * CancelDeployment cancels an in-progress deployment. Revisions that are
-   * already SUCCEEDED remain applied — cancellation only stops pending and
+   * already SUCCEEDED remain applied -- cancellation only stops pending and
    * queued revisions from proceeding. The deployment status becomes CANCELLED.
    *
    * Scope: `deploy:write`

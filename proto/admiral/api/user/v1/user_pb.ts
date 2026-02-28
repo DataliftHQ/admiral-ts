@@ -152,7 +152,7 @@ export type CreatePersonalAccessTokenRequest = Message<"admiral.api.user.v1.Crea
   /**
    * The scopes to grant this token. Must be valid scopes allowed for PATs.
    * The server enforces that issued scopes are a subset of the caller's own
-   * scopes — a token cannot grant more access than the user holds.
+   * scopes -- a token cannot grant more access than the user holds.
    *
    * @generated from field: repeated string scopes = 2;
    */
@@ -210,8 +210,13 @@ export const CreatePersonalAccessTokenResponseSchema: GenMessage<CreatePersonalA
  */
 export type ListPersonalAccessTokensRequest = Message<"admiral.api.user.v1.ListPersonalAccessTokensRequest"> & {
   /**
-   * Filter expression using the PEG filter DSL
-   * (e.g., `status == "active"` or `name == "ci-*"`).
+   * Filter expression to narrow results. Uses the Admiral filter DSL.
+   *
+   * Filterable fields:
+   *   - `name` -- filter by token name.
+   *   - `status` -- filter by token status (ACTIVE, REVOKED, EXPIRED).
+   *
+   * Example: `field['status'] = 'ACTIVE'`
    *
    * @generated from field: string filter = 1;
    */
@@ -402,7 +407,7 @@ export const UserAPI: GenService<{
   },
   /**
    * GetPersonalAccessToken retrieves a single PAT by ID.
-   * Returns metadata only — the token secret is never included.
+   * Returns metadata only -- the token secret is never included.
    *
    * Scope: `token:read`
    *

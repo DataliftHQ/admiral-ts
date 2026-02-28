@@ -16,7 +16,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file admiral/api/environment/v1/environment.proto.
  */
 export const file_admiral_api_environment_v1_environment: GenFile = /*@__PURE__*/
-  fileDesc("CixhZG1pcmFsL2FwaS9lbnZpcm9ubWVudC92MS9lbnZpcm9ubWVudC5wcm90bxIaYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEiMwoUSW5mcmFzdHJ1Y3R1cmVDb25maWcSGwoJcnVubmVyX2lkGAEgASgJQgi6SAVyA7ABASJWChBLdWJlcm5ldGVzQ29uZmlnEhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhYKCW5hbWVzcGFjZRgCIAEoCUgAiAEBQgwKCl9uYW1lc3BhY2Ui5wUKC0Vudmlyb25tZW50EhQKAmlkGAEgASgJQgi6SAVyA7ABARIgCg5hcHBsaWNhdGlvbl9pZBgCIAEoCUIIukgFcgOwAQESOgoEbmFtZRgDIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyQSHQoLZGVzY3JpcHRpb24YBCABKAlCCLpIBXIDGIAIEj0KDHJ1bnRpbWVfdHlwZRgFIAEoDjInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLlJ1bnRpbWVUeXBlEkIKCmt1YmVybmV0ZXMYBiABKAsyLC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5LdWJlcm5ldGVzQ29uZmlnSAASXAoGbGFiZWxzGAggAygLMjMuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACEkgKDmluZnJhc3RydWN0dXJlGAsgASgLMjAuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuSW5mcmFzdHJ1Y3R1cmVDb25maWcSGwoTaGFzX3BlbmRpbmdfY2hhbmdlcxgMIAEoCBI0ChBsYXN0X2RlcGxveWVkX2F0GA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpjcmVhdGVkX2J5GA4gASgJEhIKCnVwZGF0ZWRfYnkYDyABKAkSLgoKY3JlYXRlZF9hdBgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKdXBkYXRlZF9hdBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5ydW50aW1lX2NvbmZpZyKQBAoYQ3JlYXRlRW52aXJvbm1lbnRSZXF1ZXN0EiAKDmFwcGxpY2F0aW9uX2lkGAEgASgJQgi6SAVyA7ABARI6CgRuYW1lGAIgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgDIAEoCUIIukgFcgMYgAgSPQoMcnVudGltZV90eXBlGAQgASgOMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuUnVudGltZVR5cGUSQgoKa3ViZXJuZXRlcxgFIAEoCzIsLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkt1YmVybmV0ZXNDb25maWdIABJpCgZsYWJlbHMYByADKAsyQC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5DcmVhdGVFbnZpcm9ubWVudFJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACEkgKDmluZnJhc3RydWN0dXJlGAggASgLMjAuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuSW5mcmFzdHJ1Y3R1cmVDb25maWcaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5ydW50aW1lX2NvbmZpZyJZChlDcmVhdGVFbnZpcm9ubWVudFJlc3BvbnNlEjwKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQikAEKFUdldEVudmlyb25tZW50UmVxdWVzdBIWCgJpZBgBIAEoCUIIukgFcgOwAQFIABI8CgRuYW1lGAIgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JEgAEhMKC2FwcGxpY2F0aW9uGAMgASgJQgwKCmlkZW50aWZpZXIiVgoWR2V0RW52aXJvbm1lbnRSZXNwb25zZRI8CgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50ImUKF0xpc3RFbnZpcm9ubWVudHNSZXF1ZXN0EhgKBmZpbHRlchgBIAEoCUIIukgFcgMYgAgSHAoJcGFnZV9zaXplGAIgASgFQgm6SAYaBBhkKAASEgoKcGFnZV90b2tlbhgDIAEoCSJyChhMaXN0RW52aXJvbm1lbnRzUmVzcG9uc2USPQoMZW52aXJvbm1lbnRzGAEgAygLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJIooCChhVcGRhdGVFbnZpcm9ubWVudFJlcXVlc3QSRAoLZW52aXJvbm1lbnQYASABKAsyJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudEIGukgDyAEBEi8KC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzaxIWCgJpZBgDIAEoCUIIukgFcgOwAQFIABI8CgRuYW1lGAQgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JEgAEhMKC2FwcGxpY2F0aW9uGAUgASgJQgwKCmlkZW50aWZpZXIiWQoZVXBkYXRlRW52aXJvbm1lbnRSZXNwb25zZRI8CgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50IpMBChhEZWxldGVFbnZpcm9ubWVudFJlcXVlc3QSFgoCaWQYASABKAlCCLpIBXIDsAEBSAASPAoEbmFtZRgCIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyRIABITCgthcHBsaWNhdGlvbhgDIAEoCUIMCgppZGVudGlmaWVyIhsKGURlbGV0ZUVudmlyb25tZW50UmVzcG9uc2UqSAoLUnVudGltZVR5cGUSHAoYUlVOVElNRV9UWVBFX1VOU1BFQ0lGSUVEEAASGwoXUlVOVElNRV9UWVBFX0tVQkVSTkVURVMQATKcCQoORW52aXJvbm1lbnRBUEkS1AEKEUNyZWF0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuQ3JlYXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuQ3JlYXRlRW52aXJvbm1lbnRSZXNwb25zZSJSukclCgxFbnZpcm9ubWVudHMSFUNyZWF0ZSBhbiBlbnZpcm9ubWVudKKXJAsKCWVudjp3cml0ZYLT5JMCFToBKiIQL3YxL2Vudmlyb25tZW50cxLuAQoOR2V0RW52aXJvbm1lbnQSMS5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5HZXRFbnZpcm9ubWVudFJlcXVlc3QaMi5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5HZXRFbnZpcm9ubWVudFJlc3BvbnNlInW6RycKDEVudmlyb25tZW50cxIXUmV0cmlldmUgYW4gZW52aXJvbm1lbnSilyQKCghlbnY6cmVhZILT5JMCN1oeEhwvdjEvZW52aXJvbm1lbnRzL25hbWUve25hbWV9EhUvdjEvZW52aXJvbm1lbnRzL3tpZH0SyQEKEExpc3RFbnZpcm9ubWVudHMSMy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5MaXN0RW52aXJvbm1lbnRzUmVxdWVzdBo0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkxpc3RFbnZpcm9ubWVudHNSZXNwb25zZSJKukchCgxFbnZpcm9ubWVudHMSEUxpc3QgZW52aXJvbm1lbnRzopckCgoIZW52OnJlYWSC0+STAhISEC92MS9lbnZpcm9ubWVudHMS/AEKEVVwZGF0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuVXBkYXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuVXBkYXRlRW52aXJvbm1lbnRSZXNwb25zZSJ6ukclCgxFbnZpcm9ubWVudHMSFVVwZGF0ZSBhbiBlbnZpcm9ubWVudKKXJAsKCWVudjp3cml0ZYLT5JMCPToBKlohOgEqMhwvdjEvZW52aXJvbm1lbnRzL25hbWUve25hbWV9MhUvdjEvZW52aXJvbm1lbnRzL3tpZH0S9gEKEURlbGV0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXNwb25zZSJ0ukclCgxFbnZpcm9ubWVudHMSFURlbGV0ZSBhbiBlbnZpcm9ubWVudKKXJAsKCWVudjp3cml0ZYLT5JMCN1oeKhwvdjEvZW52aXJvbm1lbnRzL25hbWUve25hbWV9KhUvdjEvZW52aXJvbm1lbnRzL3tpZH1C/wEKHmNvbS5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MUIQRW52aXJvbm1lbnRQcm90b1ABWkBnby5hZG1pcmFsLmlvL3Nkay9wcm90by9hZG1pcmFsL2FwaS9lbnZpcm9ubWVudC92MTtlbnZpcm9ubWVudHYxogIDQUFFqgIaQWRtaXJhbC5BcGkuRW52aXJvbm1lbnQuVjHKAhpBZG1pcmFsXEFwaVxFbnZpcm9ubWVudFxWMeICJkFkbWlyYWxcQXBpXEVudmlyb25tZW50XFYxXEdQQk1ldGFkYXRh6gIdQWRtaXJhbDo6QXBpOjpFbnZpcm9ubWVudDo6VjFiBnByb3RvMw", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
+  fileDesc("CixhZG1pcmFsL2FwaS9lbnZpcm9ubWVudC92MS9lbnZpcm9ubWVudC5wcm90bxIaYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEiMwoUSW5mcmFzdHJ1Y3R1cmVDb25maWcSGwoJcnVubmVyX2lkGAEgASgJQgi6SAVyA7ABASJWChBLdWJlcm5ldGVzQ29uZmlnEhwKCmNsdXN0ZXJfaWQYASABKAlCCLpIBXIDsAEBEhYKCW5hbWVzcGFjZRgCIAEoCUgAiAEBQgwKCl9uYW1lc3BhY2Ui5wUKC0Vudmlyb25tZW50EhQKAmlkGAEgASgJQgi6SAVyA7ABARIgCg5hcHBsaWNhdGlvbl9pZBgCIAEoCUIIukgFcgOwAQESOgoEbmFtZRgDIAEoCUIsukgpcicQARg/MiFeW2Etel0oW2EtejAtOS1dezAsNjF9W2EtejAtOV0pPyQSHQoLZGVzY3JpcHRpb24YBCABKAlCCLpIBXIDGIAIEj0KDHJ1bnRpbWVfdHlwZRgFIAEoDjInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLlJ1bnRpbWVUeXBlEkIKCmt1YmVybmV0ZXMYBiABKAsyLC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5LdWJlcm5ldGVzQ29uZmlnSAASXAoGbGFiZWxzGAggAygLMjMuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACEkgKDmluZnJhc3RydWN0dXJlGAsgASgLMjAuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuSW5mcmFzdHJ1Y3R1cmVDb25maWcSGwoTaGFzX3BlbmRpbmdfY2hhbmdlcxgMIAEoCBI0ChBsYXN0X2RlcGxveWVkX2F0GA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpjcmVhdGVkX2J5GA4gASgJEhIKCnVwZGF0ZWRfYnkYDyABKAkSLgoKY3JlYXRlZF9hdBgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoKdXBkYXRlZF9hdBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5ydW50aW1lX2NvbmZpZyKQBAoYQ3JlYXRlRW52aXJvbm1lbnRSZXF1ZXN0EiAKDmFwcGxpY2F0aW9uX2lkGAEgASgJQgi6SAVyA7ABARI6CgRuYW1lGAIgASgJQiy6SClyJxABGD8yIV5bYS16XShbYS16MC05LV17MCw2MX1bYS16MC05XSk/JBIdCgtkZXNjcmlwdGlvbhgDIAEoCUIIukgFcgMYgAgSPQoMcnVudGltZV90eXBlGAQgASgOMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuUnVudGltZVR5cGUSQgoKa3ViZXJuZXRlcxgFIAEoCzIsLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkt1YmVybmV0ZXNDb25maWdIABJpCgZsYWJlbHMYByADKAsyQC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5DcmVhdGVFbnZpcm9ubWVudFJlcXVlc3QuTGFiZWxzRW50cnlCF7pIFJoBERBAIgZyBBABGD8qBXIDGIACEkgKDmluZnJhc3RydWN0dXJlGAggASgLMjAuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuSW5mcmFzdHJ1Y3R1cmVDb25maWcaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5ydW50aW1lX2NvbmZpZyJZChlDcmVhdGVFbnZpcm9ubWVudFJlc3BvbnNlEjwKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQiOQoVR2V0RW52aXJvbm1lbnRSZXF1ZXN0EiAKDmVudmlyb25tZW50X2lkGAEgASgJQgi6SAVyA7ABASJWChZHZXRFbnZpcm9ubWVudFJlc3BvbnNlEjwKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQiZQoXTGlzdEVudmlyb25tZW50c1JlcXVlc3QSGAoGZmlsdGVyGAEgASgJQgi6SAVyAxiACBIcCglwYWdlX3NpemUYAiABKAVCCbpIBhoEGGQoABISCgpwYWdlX3Rva2VuGAMgASgJInIKGExpc3RFbnZpcm9ubWVudHNSZXNwb25zZRI9CgxlbnZpcm9ubWVudHMYASADKAsyJy5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5FbnZpcm9ubWVudBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkiswEKGFVwZGF0ZUVudmlyb25tZW50UmVxdWVzdBJECgtlbnZpcm9ubWVudBgBIAEoCzInLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkVudmlyb25tZW50Qga6SAPIAQESLwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrEiAKDmVudmlyb25tZW50X2lkGAMgASgJQgi6SAVyA7ABASJZChlVcGRhdGVFbnZpcm9ubWVudFJlc3BvbnNlEjwKC2Vudmlyb25tZW50GAEgASgLMicuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRW52aXJvbm1lbnQiPAoYRGVsZXRlRW52aXJvbm1lbnRSZXF1ZXN0EiAKDmVudmlyb25tZW50X2lkGAEgASgJQgi6SAVyA7ABASIbChlEZWxldGVFbnZpcm9ubWVudFJlc3BvbnNlKkgKC1J1bnRpbWVUeXBlEhwKGFJVTlRJTUVfVFlQRV9VTlNQRUNJRklFRBAAEhsKF1JVTlRJTUVfVFlQRV9LVUJFUk5FVEVTEAEy3QgKDkVudmlyb25tZW50QVBJEtQBChFDcmVhdGVFbnZpcm9ubWVudBI0LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkNyZWF0ZUVudmlyb25tZW50UmVxdWVzdBo1LmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkNyZWF0ZUVudmlyb25tZW50UmVzcG9uc2UiUrpHJQoMRW52aXJvbm1lbnRzEhVDcmVhdGUgYW4gZW52aXJvbm1lbnSilyQLCgllbnY6d3JpdGWC0+STAhU6ASoiEC92MS9lbnZpcm9ubWVudHMS2gEKDkdldEVudmlyb25tZW50EjEuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuR2V0RW52aXJvbm1lbnRSZXF1ZXN0GjIuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuR2V0RW52aXJvbm1lbnRSZXNwb25zZSJhukcnCgxFbnZpcm9ubWVudHMSF1JldHJpZXZlIGFuIGVudmlyb25tZW50opckCgoIZW52OnJlYWSC0+STAiMSIS92MS9lbnZpcm9ubWVudHMve2Vudmlyb25tZW50X2lkfRLJAQoQTGlzdEVudmlyb25tZW50cxIzLmFkbWlyYWwuYXBpLmVudmlyb25tZW50LnYxLkxpc3RFbnZpcm9ubWVudHNSZXF1ZXN0GjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuTGlzdEVudmlyb25tZW50c1Jlc3BvbnNlIkq6RyEKDEVudmlyb25tZW50cxIRTGlzdCBlbnZpcm9ubWVudHOilyQKCghlbnY6cmVhZILT5JMCEhIQL3YxL2Vudmlyb25tZW50cxLlAQoRVXBkYXRlRW52aXJvbm1lbnQSNC5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5VcGRhdGVFbnZpcm9ubWVudFJlcXVlc3QaNS5hZG1pcmFsLmFwaS5lbnZpcm9ubWVudC52MS5VcGRhdGVFbnZpcm9ubWVudFJlc3BvbnNlImO6RyUKDEVudmlyb25tZW50cxIVVXBkYXRlIGFuIGVudmlyb25tZW50opckCwoJZW52OndyaXRlgtPkkwImOgEqMiEvdjEvZW52aXJvbm1lbnRzL3tlbnZpcm9ubWVudF9pZH0S4gEKEURlbGV0ZUVudmlyb25tZW50EjQuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXF1ZXN0GjUuYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjEuRGVsZXRlRW52aXJvbm1lbnRSZXNwb25zZSJgukclCgxFbnZpcm9ubWVudHMSFURlbGV0ZSBhbiBlbnZpcm9ubWVudKKXJAsKCWVudjp3cml0ZYLT5JMCIyohL3YxL2Vudmlyb25tZW50cy97ZW52aXJvbm1lbnRfaWR9Qv8BCh5jb20uYWRtaXJhbC5hcGkuZW52aXJvbm1lbnQudjFCEEVudmlyb25tZW50UHJvdG9QAVpAZ28uYWRtaXJhbC5pby9zZGsvcHJvdG8vYWRtaXJhbC9hcGkvZW52aXJvbm1lbnQvdjE7ZW52aXJvbm1lbnR2MaICA0FBRaoCGkFkbWlyYWwuQXBpLkVudmlyb25tZW50LlYxygIaQWRtaXJhbFxBcGlcRW52aXJvbm1lbnRcVjHiAiZBZG1pcmFsXEFwaVxFbnZpcm9ubWVudFxWMVxHUEJNZXRhZGF0YeoCHUFkbWlyYWw6OkFwaTo6RW52aXJvbm1lbnQ6OlYxYgZwcm90bzM", [file_admiral_common_v1_annotations, file_buf_validate_validate, file_google_api_annotations, file_gnostic_openapi_v3_annotations, file_google_protobuf_field_mask, file_google_protobuf_timestamp]);
 
 /**
  * InfrastructureConfig contains settings for infrastructure operations
@@ -110,7 +110,7 @@ export type Environment = Message<"admiral.api.environment.v1.Environment"> & {
   description: string;
 
   /**
-   * The kind of runtime this environment targets. Optional — can be assigned
+   * The kind of runtime this environment targets. Optional -- can be assigned
    * after creation.
    *
    * @generated from field: admiral.api.environment.v1.RuntimeType runtime_type = 5;
@@ -153,7 +153,7 @@ export type Environment = Message<"admiral.api.environment.v1.Environment"> & {
    * deployed. Server-derived by comparing current resolved config (variables,
    * component settings, overrides, source versions) against the last
    * successful deployment's snapshot. False if no successful deployment
-   * exists yet (a fresh environment with no deployments returns false —
+   * exists yet (a fresh environment with no deployments returns false --
    * use `last_deployed_at` to distinguish "clean" from "never deployed").
    *
    * @generated from field: bool has_pending_changes = 12;
@@ -233,7 +233,7 @@ export type CreateEnvironmentRequest = Message<"admiral.api.environment.v1.Creat
   description: string;
 
   /**
-   * The kind of runtime this environment targets. Optional — can be assigned
+   * The kind of runtime this environment targets. Optional -- can be assigned
    * later via UpdateEnvironment.
    *
    * @generated from field: admiral.api.environment.v1.RuntimeType runtime_type = 4;
@@ -299,39 +299,17 @@ export const CreateEnvironmentResponseSchema: GenMessage<CreateEnvironmentRespon
   messageDesc(file_admiral_api_environment_v1_environment, 4);
 
 /**
- * GetEnvironmentRequest identifies an environment to retrieve by ID or name.
+ * GetEnvironmentRequest identifies an environment to retrieve.
  *
  * @generated from message admiral.api.environment.v1.GetEnvironmentRequest
  */
 export type GetEnvironmentRequest = Message<"admiral.api.environment.v1.GetEnvironmentRequest"> & {
   /**
-   * @generated from oneof admiral.api.environment.v1.GetEnvironmentRequest.identifier
-   */
-  identifier: {
-    /**
-     * The unique identifier of the environment (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the environment (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * The unique identifier of the environment (UUID).
    *
-   * @generated from field: string application = 3;
+   * @generated from field: string environment_id = 1;
    */
-  application: string;
+  environmentId: string;
 };
 
 /**
@@ -369,7 +347,19 @@ export const GetEnvironmentResponseSchema: GenMessage<GetEnvironmentResponse> = 
  */
 export type ListEnvironmentsRequest = Message<"admiral.api.environment.v1.ListEnvironmentsRequest"> & {
   /**
-   * Filter expression using the PEG filter DSL.
+   * Filter expression to narrow results. Uses the Admiral filter DSL.
+   *
+   * Syntax: `field['name'] = 'value'` with AND/OR/NOT, comparison operators
+   * (=, !=, <, >, <=, >=, ~=), and predicates (IN, BETWEEN, CONTAINS,
+   * STARTS_WITH, ENDS_WITH, IS NULL, EXISTS).
+   *
+   * Filterable fields:
+   *   - `application_id` -- filter by parent application (UUID).
+   *   - `name` -- filter by environment name.
+   *   - `runtime_type` -- filter by runtime type (KUBERNETES).
+   *   - `labels.key` -- filter by label key.
+   *
+   * Example: `field['application_id'] = '<uuid>' AND field['name'] = 'prod'`
    *
    * @generated from field: string filter = 1;
    */
@@ -449,33 +439,11 @@ export type UpdateEnvironmentRequest = Message<"admiral.api.environment.v1.Updat
   updateMask?: FieldMask;
 
   /**
-   * @generated from oneof admiral.api.environment.v1.UpdateEnvironmentRequest.identifier
-   */
-  identifier: {
-    /**
-     * The unique identifier of the environment (UUID).
-     *
-     * @generated from field: string id = 3;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the environment (DNS label).
-     *
-     * @generated from field: string name = 4;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * The unique identifier of the environment (UUID).
    *
-   * @generated from field: string application = 5;
+   * @generated from field: string environment_id = 3;
    */
-  application: string;
+  environmentId: string;
 };
 
 /**
@@ -507,39 +475,17 @@ export const UpdateEnvironmentResponseSchema: GenMessage<UpdateEnvironmentRespon
   messageDesc(file_admiral_api_environment_v1_environment, 10);
 
 /**
- * DeleteEnvironmentRequest identifies an environment to delete by ID or name.
+ * DeleteEnvironmentRequest identifies an environment to delete.
  *
  * @generated from message admiral.api.environment.v1.DeleteEnvironmentRequest
  */
 export type DeleteEnvironmentRequest = Message<"admiral.api.environment.v1.DeleteEnvironmentRequest"> & {
   /**
-   * @generated from oneof admiral.api.environment.v1.DeleteEnvironmentRequest.identifier
-   */
-  identifier: {
-    /**
-     * The unique identifier of the environment to delete (UUID).
-     *
-     * @generated from field: string id = 1;
-     */
-    value: string;
-    case: "id";
-  } | {
-    /**
-     * The human-readable name of the environment (DNS label).
-     *
-     * @generated from field: string name = 2;
-     */
-    value: string;
-    case: "name";
-  } | { case: undefined; value?: undefined };
-
-  /**
-   * Required when using name-based lookup. Identifies the parent application
-   * by UUID or DNS-label name. Ignored when using ID-based lookup.
+   * The unique identifier of the environment to delete (UUID).
    *
-   * @generated from field: string application = 3;
+   * @generated from field: string environment_id = 1;
    */
-  application: string;
+  environmentId: string;
 };
 
 /**
@@ -597,7 +543,7 @@ export const RuntimeTypeSchema: GenEnum<RuntimeType> = /*@__PURE__*/
  * An environment is a named deployment target (e.g., dev, staging, prod) that
  * binds an application to a runtime where its workloads are deployed. Each
  * environment carries its own configuration, credentials, and compute targets.
- * Promotion between environments is explicit — Admiral never auto-promotes.
+ * Promotion between environments is explicit -- Admiral never auto-promotes.
  *
  * @generated from service admiral.api.environment.v1.EnvironmentAPI
  */
@@ -615,11 +561,7 @@ export const EnvironmentAPI: GenService<{
     output: typeof CreateEnvironmentResponseSchema;
   },
   /**
-   * GetEnvironment retrieves an environment by ID or name.
-   *
-   * When using name-based lookup, the `application` query parameter is required
-   * to scope the name within a parent application. The `application` parameter
-   * accepts either a UUID or a DNS-label name.
+   * GetEnvironment retrieves an environment by ID.
    *
    * Scope: `env:read`
    *
